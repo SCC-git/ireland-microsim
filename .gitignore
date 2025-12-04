@@ -1,0 +1,7 @@
+*.idea/
+*CSVs/
+*__pycache__/
+*.ipynb_checkpoints/
+*populations/
+*results/
+confidential_constants.py

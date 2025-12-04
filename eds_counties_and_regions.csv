@@ -1,0 +1,3418 @@
+ED_ID,ENGLISH,COUNTY,REGION
+027014_027038,Benbrack,Cavan,Border
+027058_027085,Killinagh,Cavan,Border
+037041_037018,Corlea,Clare,Mid-West
+037067_037008,Glenroe,Clare,Mid-West
+037068_037069,Inishcaltra North,Clare,Mid-West
+037151_037122,Tullig,Clare,Mid-West
+047041_047319,Bantry Rural,Cork,South-West
+047132_047235,Douglas,Cork,South-West
+047235_04702719,Lehenagh,Cork,South-West
+067069_067193,Cong,Galway,West
+067071_067168,Coos,Galway,West
+067081_067084,Derrycunlagh,Galway,West
+077037_077133,Canuig,Kerry,South-West
+077064_077050,Derriana,Kerry,South-West
+107001,Abbeyleix,Laois,Midland
+107002,Aghmacart,Laois,Midland
+107003,Arderin,Laois,Midland
+107004,Ardough,Laois,Midland
+107005,Arless,Laois,Midland
+107006,Ballickmoyler,Laois,Midland
+107007,Ballinakill,Laois,Midland
+107008,Ballyadams,Laois,Midland
+107009,Ballybrittas,Laois,Midland
+107010,Ballybrophy,Laois,Midland
+107011,Ballycarroll,Laois,Midland
+107012,Ballyfin,Laois,Midland
+107013,Ballylehane,Laois,Midland
+107014,Ballylynan,Laois,Midland
+107015,Ballyroan,Laois,Midland
+107016,Barrowhouse,Laois,Midland
+107017,Blandsfort,Laois,Midland
+107018,Borris,Laois,Midland
+107019,Borris-In-Ossory,Laois,Midland
+107020_107022,Brisha,Laois,Midland
+107021,Caher,Laois,Midland
+107023,Cappalough,Laois,Midland
+107024,Cardtown,Laois,Midland
+107025,Castlecuffe,Laois,Midland
+107026,Castletown,Laois,Midland
+107027,Clash,Laois,Midland
+107028,Clonaslee,Laois,Midland
+107029,Clondarrig,Laois,Midland
+107030,Clonin,Laois,Midland
+107031,Clonkeen,Laois,Midland
+107032,Clonmore,Laois,Midland
+107033,Colt,Laois,Midland
+107034,Coolrain,Laois,Midland
+107035,Cuffsborough,Laois,Midland
+107036,Cullahill,Laois,Midland
+107037,Cullenagh,Laois,Midland
+107038,Curraclone,Laois,Midland
+107039,Dangans,Laois,Midland
+107040,Donaghmore,Laois,Midland
+107041,Donore,Laois,Midland
+107042,Doonane,Laois,Midland
+107043,Dunmore,Laois,Midland
+107044,Durrow,Laois,Midland
+107045,Dysartgallen,Laois,Midland
+107046,Emo,Laois,Midland
+107047,Errill,Laois,Midland
+107048,Farnans,Laois,Midland
+107049,Fossy,Laois,Midland
+107050,Garrymore,Laois,Midland
+107051,Graigue,Laois,Midland
+107052,Graigue Rural,Laois,Midland
+107053,Grantstown,Laois,Midland
+107054,Jamestown,Laois,Midland
+107055,Kilcoke,Laois,Midland
+107056,Kilcolmanbane,Laois,Midland
+107057,Kildellig,Laois,Midland
+107058,Killabban,Laois,Midland
+107059,Killermogh,Laois,Midland
+107060,Kilmullen,Laois,Midland
+107061,Kilmurry,Laois,Midland
+107062,Kilnaseer,Laois,Midland
+107063,Kyle,Laois,Midland
+107064,Kyle South,Laois,Midland
+107065,Lacka,Laois,Midland
+107066,Luggacurren,Laois,Midland
+107067,Marymount,Laois,Midland
+107068,Meelick,Laois,Midland
+107069,Moneenalassa,Laois,Midland
+107070,Moneymore,Laois,Midland
+107071,Mountmellick Rural,Laois,Midland
+107072,Mountmellick Urban,Laois,Midland
+107073,Mountrath,Laois,Midland
+107074,Moyanna,Laois,Midland
+107075,Nealstown,Laois,Midland
+107076,Newtown,Laois,Midland
+107077,O'Moresforest,Laois,Midland
+107078,Portarlington South,Laois,Midland
+107079,Portlaoighise Rural,Laois,Midland
+107080,Portlaoighise Urban,Laois,Midland
+107081,Raheen,Laois,Midland
+107082,Rathaspick,Laois,Midland
+107083,Rathdowney,Laois,Midland
+107084,Rathsaran,Laois,Midland
+107085,Rearymore,Laois,Midland
+107086,Rosenallis,Laois,Midland
+107087,Rossmore,Laois,Midland
+107088,Sallyford,Laois,Midland
+107089,Shaen,Laois,Midland
+107090,Shrule,Laois,Midland
+107091,Stradbally,Laois,Midland
+107092,Tankardstown,Laois,Midland
+107093,Timahoe,Laois,Midland
+107094,Timogue,Laois,Midland
+107095,Tinnahinch,Laois,Midland
+107096,Trumra,Laois,Midland
+107097,Turra,Laois,Midland
+107098,Vicarstown,Laois,Midland
+117001,Aghacashel,Leitrim,Border
+117002_117005,Aghalateeve,Leitrim,Border
+117004,Aghavas,Leitrim,Border
+117006,Annaduff,Leitrim,Border
+117008,Ballaghameehan,Leitrim,Border
+117009,Ballinamore,Leitrim,Border
+117010,Barnameenagh,Leitrim,Border
+117011,Beihy,Leitrim,Border
+117012,Belhavel,Leitrim,Border
+117013,Breandrum,Leitrim,Border
+117014,Bunnybeg,Leitrim,Border
+117015,Carrick-On-Shannon,Leitrim,Border
+117016,Carrigallen East,Leitrim,Border
+117017,Carrigallen West,Leitrim,Border
+117018,Cashel,Leitrim,Border
+117019,Castlefore,Leitrim,Border
+117020,Cattan,Leitrim,Border
+117021,Cloonclare,Leitrim,Border
+117022,Cloone,Leitrim,Border
+117023,Cloonlogher,Leitrim,Border
+117024,Cloverhill,Leitrim,Border
+117025,Corrala,Leitrim,Border
+117026,Corriga,Leitrim,Border
+117027,Drumahaire,Leitrim,Border
+117028,Drumard,Leitrim,Border
+117029_117007_117054,Drumkeeran,Leitrim,Border
+117030,Drumod,Leitrim,Border
+117032,Drumreilly North,Leitrim,Border
+117033,Drumreilly South,Leitrim,Border
+117034,Drumreilly West,Leitrim,Border
+117035,Drumshanbo,Leitrim,Border
+117036,Drumsna,Leitrim,Border
+117037,Drumdoo,Leitrim,Border
+117038,Fenagh,Leitrim,Border
+117039,Garadice,Leitrim,Border
+117040,Garvagh,Leitrim,Border
+117041,Glenade,Leitrim,Border
+117042,Glenaniff,Leitrim,Border
+117043,Glenboy,Leitrim,Border
+117044,Glencar,Leitrim,Border
+117045,Glenfarn,Leitrim,Border
+117046,Gortermone,Leitrim,Border
+117047,Gortnagullion,Leitrim,Border
+117048,Gowel,Leitrim,Border
+117050,Gubacreeny,Leitrim,Border
+117051,Keeldra,Leitrim,Border
+117052,Keshcarrigan,Leitrim,Border
+117053,Killanummery,Leitrim,Border
+117055,Killygar,Leitrim,Border
+117056,Kiltubbrid,Leitrim,Border
+117057,Kiltyclogher,Leitrim,Border
+117058,Kinlough,Leitrim,Border
+117059,Leitrim,Leitrim,Border
+117060,Lisgillock,Leitrim,Border
+117061,Lurganboy,Leitrim,Border
+117062,Mahanagh,Leitrim,Border
+117063,Manorhamilton,Leitrim,Border
+117064,Melvin,Leitrim,Border
+117065,Moher,Leitrim,Border
+117066,Mohill,Leitrim,Border
+117067,Munakill,Leitrim,Border
+117068,Newtowngore,Leitrim,Border
+117069,Oughteragh,Leitrim,Border
+117070,Rinn,Leitrim,Border
+117071,Riverstown,Leitrim,Border
+117072,Roosky,Leitrim,Border
+117073,Rowan,Leitrim,Border
+117074,Sramore,Leitrim,Border
+117075,St. Patrick'S,Leitrim,Border
+117076_117031,Stralongford,Leitrim,Border
+117077,Tullaghan,Leitrim,Border
+117078,Yugan,Leitrim,Border
+127001,Abbeyfeale,Limerick,Mid-West
+127002,Abbeyville,Limerick,Mid-West
+127003,Abington,Limerick,Mid-West
+127004,Adare North,Limerick,Mid-West
+127005,Adare South,Limerick,Mid-West
+127006,Anglesborough,Limerick,Mid-West
+127007,Ardagh,Limerick,Mid-West
+127008,Ardpatrick,Limerick,Mid-West
+127009,Askeaton East,Limerick,Mid-West
+127010,Askeaton West,Limerick,Mid-West
+127011,Athlacca,Limerick,Mid-West
+127012,Aughinish,Limerick,Mid-West
+127013,Ballingarry,Limerick,Mid-West
+127014,Ballintober,Limerick,Mid-West
+127015,Ballyagran,Limerick,Mid-West
+127016,Ballyallinan,Limerick,Mid-West
+127017,Ballybricken,Limerick,Mid-West
+127018,Ballycummin,Limerick,Mid-West
+127019,Ballygrennan,Limerick,Mid-West
+127020,Ballylanders,Limerick,Mid-West
+127021,Ballymacshaneboy,Limerick,Mid-West
+127022,Ballynabanoge,Limerick,Mid-West
+127023,Ballynacarriga,Limerick,Mid-West
+127024,Ballynoe,Limerick,Mid-West
+127025,Ballynoe West,Limerick,Mid-West
+127026,Ballysimon,Limerick,Mid-West
+127027,Ballyvarra,Limerick,Mid-West
+127028,Bilboa,Limerick,Mid-West
+127029,Boola,Limerick,Mid-West
+127030,Broadford,Limerick,Mid-West
+127031,Bruff,Limerick,Mid-West
+127032,Bruree,Limerick,Mid-West
+127033,Bulgaden,Limerick,Mid-West
+127034,Caher,Limerick,Mid-West
+127035,Caherconlish East,Limerick,Mid-West
+127036,Caherconlish West,Limerick,Mid-West
+127037,Cahercorney,Limerick,Mid-West
+127038,Caherelly,Limerick,Mid-West
+127039,Cappamore,Limerick,Mid-West
+127040,Carrig,Limerick,Mid-West
+127041,Castleconnell,Limerick,Mid-West
+127042,Castletown,Limerick,Mid-West
+127043,Castletown,Limerick,Mid-West
+127044,Clarina,Limerick,Mid-West
+127045,Cleanglass,Limerick,Mid-West
+127046,Cloncagh,Limerick,Mid-West
+127047,Clonkeen,Limerick,Mid-West
+127048,Colmanswell,Limerick,Mid-West
+127049,Coolrus,Limerick,Mid-West
+127050,Craggs,Limerick,Mid-West
+127051,Crean,Limerick,Mid-West
+127052,Crecora,Limerick,Mid-West
+127053,Croagh,Limerick,Mid-West
+127054,Croom,Limerick,Mid-West
+127055,Cullane,Limerick,Mid-West
+127056,Danganbeg,Limerick,Mid-West
+127057,Darragh,Limerick,Mid-West
+127058,Doon South,Limerick,Mid-West
+127059,Doon West,Limerick,Mid-West
+127060,Dromard,Limerick,Mid-West
+127061,Dromcolliher,Limerick,Mid-West
+127062,Dromin,Limerick,Mid-West
+127063,Dromtrasna,Limerick,Mid-West
+127064,Dunmoylan East,Limerick,Mid-West
+127066,Dunnaman,Limerick,Mid-West
+127067,Duntryleague,Limerick,Mid-West
+127068,Emlygrennan,Limerick,Mid-West
+127069,Fedamore,Limerick,Mid-West
+127070,Feenagh,Limerick,Mid-West
+127071,Fleanmore,Limerick,Mid-West
+127072,Galbally,Limerick,Mid-West
+127073,Garrane,Limerick,Mid-West
+127074,Garryduff,Limerick,Mid-West
+127075,Glenagower,Limerick,Mid-West
+127076,Glenbrohane,Limerick,Mid-West
+127077,Glengort,Limerick,Mid-West
+127078,Glensharrold,Limerick,Mid-West
+127079,Glenstal,Limerick,Mid-West
+127080,Glin,Limerick,Mid-West
+127081,Grange,Limerick,Mid-West
+127082,Grean,Limerick,Mid-West
+127083,Griston,Limerick,Mid-West
+127084,Hospital,Limerick,Mid-West
+127085,Iveruss,Limerick,Mid-West
+127086,Kilbeheny,Limerick,Mid-West
+127087,Kilcornan,Limerick,Mid-West
+127088,Kildimo,Limerick,Mid-West
+127089,Kilfergus,Limerick,Mid-West
+127090,Kilfinnane,Limerick,Mid-West
+127091,Kilfinny,Limerick,Mid-West
+127092,Kilflyn,Limerick,Mid-West
+127093,Kilglass,Limerick,Mid-West
+127094,Kilmallock,Limerick,Mid-West
+127095,Kilmeedy,Limerick,Mid-West
+127096,Kilmoylan,Limerick,Mid-West
+127097,Kilmurry,Limerick,Mid-West
+127098,Kilpeacon,Limerick,Mid-West
+127099,Kilscannell,Limerick,Mid-West
+127100,Kilteely,Limerick,Mid-West
+127101,Knockaderry,Limerick,Mid-West
+127102,Knockainy,Limerick,Mid-West
+127103,Knocklong,Limerick,Mid-West
+127104,Knocknascrow,Limerick,Mid-West
+127105,Limerick North Rural,Limerick,Mid-West
+127106,Limerick South Rural,Limerick,Mid-West
+127107,Lismakeery,Limerick,Mid-West
+127108,Loghill,Limerick,Mid-West
+127109,Mahoonagh,Limerick,Mid-West
+127110_127065,Mohernagh,Limerick,Mid-West
+127111,Monagay,Limerick,Mid-West
+127112,Mountcollins,Limerick,Mid-West
+127113,Mountplummer,Limerick,Mid-West
+127114,Nantinan,Limerick,Mid-West
+127115,Newcastle Rural,Limerick,Mid-West
+127116,Newcastle Urban,Limerick,Mid-West
+127117,Oola,Limerick,Mid-West
+127118,Pallaskenry,Limerick,Mid-West
+127119,Particles,Limerick,Mid-West
+127120,Patrickswell,Limerick,Mid-West
+127121,Port,Limerick,Mid-West
+127122,Rathkeale Rural,Limerick,Mid-West
+127123,Rathkeale Urban,Limerick,Mid-West
+127124,Rathmore,Limerick,Mid-West
+127125,Rathronan,Limerick,Mid-West
+127126,Riddlestown,Limerick,Mid-West
+127127,Riversdale,Limerick,Mid-West
+127128,Rockhill,Limerick,Mid-West
+127129,Rooskagh,Limerick,Mid-West
+127130,Roxborough,Limerick,Mid-West
+127131,Shanagolden,Limerick,Mid-West
+127132,Shanid,Limerick,Mid-West
+127133,Templebredon,Limerick,Mid-West
+127134,Templeglentan,Limerick,Mid-West
+127135,Tobernea,Limerick,Mid-West
+127136,Uregare,Limerick,Mid-West
+128001,Abbey A,Limerick,Mid-West
+128002,Abbey B,Limerick,Mid-West
+128003,Abbey C,Limerick,Mid-West
+128004,Abbey D,Limerick,Mid-West
+128005,Ballinacurra A,Limerick,Mid-West
+128006,Ballinacurra B,Limerick,Mid-West
+128007,Ballynanty,Limerick,Mid-West
+128008,Castle A,Limerick,Mid-West
+128009,Castle B,Limerick,Mid-West
+128010,Castle C,Limerick,Mid-West
+128011,Castle D,Limerick,Mid-West
+128012,Coolraine,Limerick,Mid-West
+128013,Custom House,Limerick,Mid-West
+128014,Dock A,Limerick,Mid-West
+128015,Dock B,Limerick,Mid-West
+128016,Dock C,Limerick,Mid-West
+128017,Dock D,Limerick,Mid-West
+128018,Farranshone,Limerick,Mid-West
+128019,Galvone A,Limerick,Mid-West
+128020,Galvone B,Limerick,Mid-West
+128021,Glentworth A,Limerick,Mid-West
+128022,Glentworth B,Limerick,Mid-West
+128023,Glentworth C,Limerick,Mid-West
+128024,John'S A,Limerick,Mid-West
+128025,John'S B,Limerick,Mid-West
+128026,John'S C,Limerick,Mid-West
+128027,Killeely A,Limerick,Mid-West
+128028,Killeely B,Limerick,Mid-West
+128029,Market,Limerick,Mid-West
+128030,Prospect A,Limerick,Mid-West
+128031,Prospect B,Limerick,Mid-West
+128032,Rathbane,Limerick,Mid-West
+128033,Shannon A,Limerick,Mid-West
+128034,Shannon B,Limerick,Mid-West
+128035,Singland A,Limerick,Mid-West
+128036,Singland B,Limerick,Mid-West
+128037,St. Laurence,Limerick,Mid-West
+137001,Abbeylara,Longford,Midland
+137002,Aghaboy,Longford,Midland
+137003,Agharra,Longford,Midland
+137004,Ardagh East,Longford,Midland
+137005,Ardagh West,Longford,Midland
+137006,Ballinalee,Longford,Midland
+137007,Ballinamuck East,Longford,Midland
+137008,Ballinamuck West,Longford,Midland
+137009,Ballymahon,Longford,Midland
+137010,Ballymuigh,Longford,Midland
+137011,Breanrisk,Longford,Midland
+137012,Bunlahy,Longford,Midland
+137013,Caldragh,Longford,Midland
+137014,Cashel East,Longford,Midland
+137015,Cashel West,Longford,Midland
+137016,Cloondara,Longford,Midland
+137017,Cloonee,Longford,Midland
+137018,Columbkille,Longford,Midland
+137019,Coolamber,Longford,Midland
+137020,Corboy,Longford,Midland
+137021,Creevy,Longford,Midland
+137022,Crosagstown,Longford,Midland
+137023,Currygrane,Longford,Midland
+137024,Dalystown,Longford,Midland
+137025,Doory,Longford,Midland
+137026,Drumgort,Longford,Midland
+137027,Drumlish,Longford,Midland
+137028,Drummeel,Longford,Midland
+137029,Meathas Truim,Longford,Midland
+137030_137052,Firry,Longford,Midland
+137031,Forgney,Longford,Midland
+137032,Foxhall,Longford,Midland
+137033,Gelshagh,Longford,Midland
+137034,Granard Rural,Longford,Midland
+137035,Granard Urban,Longford,Midland
+137036,Kilcommock,Longford,Midland
+137037,Kilglass,Longford,Midland
+137038,Killashee,Longford,Midland
+137039,Killoe,Longford,Midland
+137040,Knockanbaun,Longford,Midland
+137041,Ledwithstown,Longford,Midland
+137042,Lislea,Longford,Midland
+137043,Longford No. 1 Urban,Longford,Midland
+137044,Longford No. 2 Urban,Longford,Midland
+137045,Longford Rural,Longford,Midland
+137046,Milltown,Longford,Midland
+137047,Moatfarrell,Longford,Midland
+137048,Mountdavis,Longford,Midland
+137049,Moydow,Longford,Midland
+137050,Moyne,Longford,Midland
+137051,Mullanalaghta,Longford,Midland
+137053,Newtown Forbes,Longford,Midland
+137054,Rathcline,Longford,Midland
+137055,Sonnagh,Longford,Midland
+147001,Ardee Rural,Louth,Mid-East
+147002,Ardee Urban,Louth,Mid-East
+147003,Ballymascanlan,Louth,Mid-East
+147004,Barronstown,Louth,Mid-East
+147005,Carlingford,Louth,Mid-East
+147006,Castlebellingham,Louth,Mid-East
+147007,Castlering,Louth,Mid-East
+147008,Castletown,Louth,Mid-East
+147009,Clogher,Louth,Mid-East
+147010,Clonkeen,Louth,Mid-East
+147011,Collon,Louth,Mid-East
+147012,Creggan Upper,Louth,Mid-East
+147013,Darver,Louth,Mid-East
+147014,Fair Gate,Louth,Mid-East
+147015,Dromin,Louth,Mid-East
+147016,Dromiskin,Louth,Mid-East
+147017,Drumcar,Louth,Mid-East
+147018,Drummullagh,Louth,Mid-East
+147019,Dundalk Rural,Louth,Mid-East
+147020,Dundalk No. 3 Urban,Louth,Mid-East
+147021,Dunleer,Louth,Mid-East
+147022,Dysart,Louth,Mid-East
+147023,Faughart,Louth,Mid-East
+147024,Greenore,Louth,Mid-East
+147025,Haggardstown,Louth,Mid-East
+147026,Jenkinstown,Louth,Mid-East
+147027,Killanny,Louth,Mid-East
+147028,Louth,Louth,Mid-East
+147029,Mansfieldstown,Louth,Mid-East
+147030,Monasterboice,Louth,Mid-East
+147031,Mullary,Louth,Mid-East
+147032,Rathcor,Louth,Mid-East
+147033,Ravensdale,Louth,Mid-East
+147034,West Gate,Louth,Mid-East
+147035,St. Peter'S,Louth,Mid-East
+147036,Stabannan,Louth,Mid-East
+147037,Tallanstown,Louth,Mid-East
+147038,Termonfeckin,Louth,Mid-East
+147039,St. Lawrence Gate,Louth,Mid-East
+147040,Dundalk No. 1 Urban,Louth,Mid-East
+147041,Dundalk No. 2 Urban,Louth,Mid-East
+147042,Dundalk No. 4 Urban,Louth,Mid-East
+147043,St. Mary'S (Part),Louth,Mid-East
+157001,Achill,Mayo,West
+157002,Addergoole,Mayo,West
+157003,Aghagower North,Mayo,West
+157004,Aghagower South,Mayo,West
+157005,Aghamore,Mayo,West
+157006,Aillemore,Mayo,West
+157007,An Geata Mór Theas,Mayo,West
+157008,An Geata Mór Thuaidh,Mayo,West
+157009,Ardagh,Mayo,West
+157010,Ardnaree North,Mayo,West
+157011,Ardnaree South Rural,Mayo,West
+157012,Attymass East,Mayo,West
+157013,Attymass West,Mayo,West
+157014,Balla,Mayo,West
+157015,Ballina Rural,Mayo,West
+157016,Ballina Urban,Mayo,West
+157017,Ballinafad,Mayo,West
+157018,Ballinamore,Mayo,West
+157019,Ballinchalla,Mayo,West
+157020,Ballindine,Mayo,West
+157021,Ballinrobe,Mayo,West
+157022,Ballycastle,Mayo,West
+157023,Ballycroy North,Mayo,West
+157024,Ballycroy South,Mayo,West
+157025,Ballyhaunis,Mayo,West
+157026,Ballyhean,Mayo,West
+157027,Ballyhowly,Mayo,West
+157028,Ballynagoraher,Mayo,West
+157029,Ballyovey,Mayo,West
+157030,Ballysakeery,Mayo,West
+157031,Bangor,Mayo,West
+157032,Barroosky,Mayo,West
+157033,Bekan,Mayo,West
+157034,Beldergmore,Mayo,West
+157035,Bellavary,Mayo,West
+157036,Belmullet,Mayo,West
+157037,Bohola,Mayo,West
+157038,Brackloon,Mayo,West
+157039,Breaghwy,Mayo,West
+157042,Burren,Mayo,West
+157043,Burriscarra,Mayo,West
+157044,Callow,Mayo,West
+157045,Cappaghduff,Mayo,West
+157046,Caraun,Mayo,West
+157047,Carrowmore,Mayo,West
+157048,Castlebar Rural,Mayo,West
+157049,Castlebar Urban,Mayo,West
+157050,Clare Island,Mayo,West
+157051,Claremorris,Mayo,West
+157052,Clogher,Mayo,West
+157053,Clogher,Mayo,West
+157054,Cloghermore,Mayo,West
+157055,Cloonkeen,Mayo,West
+157056,Cloonmore,Mayo,West
+157057,Cong,Mayo,West
+157058,Coolnaha,Mayo,West
+157059,Coonard,Mayo,West
+157060,Corraun,Mayo,West
+157061,Course,Mayo,West
+157062,Croaghmoyle,Mayo,West
+157063,Croaghpatrick,Mayo,West
+157064,Crossboyne,Mayo,West
+157065,Crossmolina North,Mayo,West
+157066,Crossmolina South,Mayo,West
+157067,Cuildoo,Mayo,West
+157068,Culnacleha,Mayo,West
+157069,Dalgan,Mayo,West
+157070,Deel,Mayo,West
+157071,Derry,Mayo,West
+157072,Derryloughan,Mayo,West
+157073,Doocastle,Mayo,West
+157074,Dooega,Mayo,West
+157075,Drummin,Mayo,West
+157076,Emlagh,Mayo,West
+157077,Erriff,Mayo,West
+157078,Fortland,Mayo,West
+157079,Garrymore,Mayo,West
+157080,Glenamoy,Mayo,West
+157081,Glencastle,Mayo,West
+157082_157136_157040,Glenco,Mayo,West
+157083,Glenhest,Mayo,West
+157084,Goolamore,Mayo,West
+157085,Hollymount,Mayo,West
+157086,Houndswood,Mayo,West
+157087,Islandeady,Mayo,West
+157088,Kilbeagh,Mayo,West
+157089,Kilcolman,Mayo,West
+157090,Kilcommon,Mayo,West
+157091,Kilfian East,Mayo,West
+157092,Kilfian South,Mayo,West
+157093,Kilfian West,Mayo,West
+157094,Kilgarvan,Mayo,West
+157095,Kilgeever,Mayo,West
+157096,Kilkelly,Mayo,West
+157097,Killala,Mayo,West
+157098,Killavally,Mayo,West
+157099,Killedan,Mayo,West
+157100,Kilmaclasser,Mayo,West
+157101,Kilmaine,Mayo,West
+157102,Kilmeena,Mayo,West
+157103,Kilmovee,Mayo,West
+157104,Kilsallagh,Mayo,West
+157105,Kiltamagh,Mayo,West
+157106,Kilvine,Mayo,West
+157107,Knappagh,Mayo,West
+157108,Knock North,Mayo,West
+157109,Knock South,Mayo,West
+157110,Knockadaff,Mayo,West
+157111,Knocknalower,Mayo,West
+157112,Lackan North,Mayo,West
+157113,Lackan South,Mayo,West
+157114,Letterbrick,Mayo,West
+157115,Loughanboy,Mayo,West
+157116,Louisburgh,Mayo,West
+157117,Manulla,Mayo,West
+157118,Mayo,Mayo,West
+157119,Meelick,Mayo,West
+157120,Mount Falcon,Mayo,West
+157121,Muingnabo,Mayo,West
+157122,Muings,Mayo,West
+157123,Murneen,Mayo,West
+157124,Neale,Mayo,West
+157125,Newbrook,Mayo,West
+157126,Newport East,Mayo,West
+157127,Newport West,Mayo,West
+157128,Owenbrin,Mayo,West
+157129_157041,Owennadornaun,Mayo,West
+157130,Pontoon,Mayo,West
+157131,Portroyal,Mayo,West
+157132,Rathhill,Mayo,West
+157133,Rathoma,Mayo,West
+157134,Roslee,Mayo,West
+157135,Sallymount,Mayo,West
+157137,Shrule,Mayo,West
+157138,Slievemahanagh,Mayo,West
+157139,Slievemore,Mayo,West
+157140,Sonnagh,Mayo,West
+157141,Sraheen,Mayo,West
+157142,Srahmore,Mayo,West
+157143,Strade,Mayo,West
+157144,Swineford,Mayo,West
+157145,Tagheen,Mayo,West
+157146,Tawnynagry,Mayo,West
+157147,Toocananagh,Mayo,West
+157148,Toomore,Mayo,West
+157149,Tumgesh,Mayo,West
+157150,Turlough,Mayo,West
+157151,Urlaur,Mayo,West
+157152,Westport Rural,Mayo,West
+157153,Westport Urban,Mayo,West
+157154,Ardnaree South Urban,Mayo,West
+167001,Ardagh,Meath,Mid-East
+167002,Ardbraccan,Meath,Mid-East
+167003,Ardcath,Meath,Mid-East
+167004,Ardmulchan,Meath,Mid-East
+167005,Ardnamullan,Meath,Mid-East
+167006,Athboy,Meath,Mid-East
+167007,Ballinlough,Meath,Mid-East
+167008,Ballyboggan,Meath,Mid-East
+167009,Ballyconnell,Meath,Mid-East
+167010,Balrathboyne,Meath,Mid-East
+167011,Bective,Meath,Mid-East
+167012,Boherboy,Meath,Mid-East
+167013,Burry,Meath,Mid-East
+167014,Carrickleck,Meath,Mid-East
+167015,Castlejordan,Meath,Mid-East
+167016,Castlekeeran,Meath,Mid-East
+167017,Castlerickard,Meath,Mid-East
+167018,Castletown,Meath,Mid-East
+167019,Cloghbrack,Meath,Mid-East
+167020,Clonmacduff,Meath,Mid-East
+167021,Crossakeel,Meath,Mid-East
+167022,Crosskeys,Meath,Mid-East
+167023,Cruicetown,Meath,Mid-East
+167024,Culmullin,Meath,Mid-East
+167025,Donaghmore,Meath,Mid-East
+167026,Donaghpatrick,Meath,Mid-East
+167027,Drumcondra,Meath,Mid-East
+167028,Duleek,Meath,Mid-East
+167029,Dunboyne,Meath,Mid-East
+167030,Dunshaughlin,Meath,Mid-East
+167031,Gallow,Meath,Mid-East
+167032,Galtrim,Meath,Mid-East
+167033,Girley,Meath,Mid-East
+167034,Grangegeeth,Meath,Mid-East
+167035,Grennanstown,Meath,Mid-East
+167036,Hill Of Down,Meath,Mid-East
+167037,Innfield,Meath,Mid-East
+167038,Julianstown,Meath,Mid-East
+167039,Ceanannas Mór Rural,Meath,Mid-East
+167040,Ceanannas Mór Urban,Meath,Mid-East
+167041,Kentstown,Meath,Mid-East
+167042,Kilbrew,Meath,Mid-East
+167043,Kilbride,Meath,Mid-East
+167044,Kilcooly,Meath,Mid-East
+167045,Kildalkey,Meath,Mid-East
+167046,Killaconnigan,Meath,Mid-East
+167047,Killallon,Meath,Mid-East
+167048,Killary,Meath,Mid-East
+167049,Killeagh,Meath,Mid-East
+167050,Killeen,Meath,Mid-East
+167051,Killyon,Meath,Mid-East
+167052,Kilmainham,Meath,Mid-East
+167053,Kilmessan,Meath,Mid-East
+167054,Kilmore,Meath,Mid-East
+167055,Kilskeer,Meath,Mid-East
+167056,Knocklough,Meath,Mid-East
+167057,Laracor,Meath,Mid-East
+167058,Loughan,Meath,Mid-East
+167059,Maperath,Meath,Mid-East
+167060,Martry,Meath,Mid-East
+167061,Mellifont,Meath,Mid-East
+167062,Moybolgue,Meath,Mid-East
+167063,Moylagh,Meath,Mid-East
+167064,Moynalty,Meath,Mid-East
+167065,Navan Rural,Meath,Mid-East
+167066,Navan Urban,Meath,Mid-East
+167067,Newcastle,Meath,Mid-East
+167068,Newtown,Meath,Mid-East
+167069,Nobber,Meath,Mid-East
+167070,Oldcastle,Meath,Mid-East
+167071,Painestown,Meath,Mid-East
+167072,Posseckstown,Meath,Mid-East
+167073,Rahinstown,Meath,Mid-East
+167074,Rathfeigh,Meath,Mid-East
+167075,Rathkenny,Meath,Mid-East
+167076,Rathmore,Meath,Mid-East
+167077,Rathmolyon,Meath,Mid-East
+167078,Ratoath,Meath,Mid-East
+167079,Rodanstown,Meath,Mid-East
+167080,Skreen,Meath,Mid-East
+167081,Slane,Meath,Mid-East
+167082,St. Mary'S,Meath,Mid-East
+167083,Stackallan,Meath,Mid-East
+167084,Staholmog,Meath,Mid-East
+167085,Stamullin,Meath,Mid-East
+167086,Stonefield,Meath,Mid-East
+167087,Summerhill,Meath,Mid-East
+167088,Tara,Meath,Mid-East
+167089,Teltown,Meath,Mid-East
+167090,Trim Rural,Meath,Mid-East
+167091,Trim Urban,Meath,Mid-East
+167092,Trohanny,Meath,Mid-East
+17001,Agha,Carlow,South-East
+17002,Ballinacarrig,Carlow,South-East
+17003,Ballintemple,Carlow,South-East
+17004,Ballon,Carlow,South-East
+17005,Ballyellin,Carlow,South-East
+17006,Ballymoon,Carlow,South-East
+17007,Ballymurphy,Carlow,South-East
+17008,Borris,Carlow,South-East
+17009,Burton Hall,Carlow,South-East
+17010,Carlow Rural,Carlow,South-East
+17011,Carlow Urban,Carlow,South-East
+17012,Clogrenan,Carlow,South-East
+17013,Clonegall,Carlow,South-East
+17014,Clonmore,Carlow,South-East
+17015,Coonogue,Carlow,South-East
+17016,Corries,Carlow,South-East
+17017,Cranemore,Carlow,South-East
+17018,Fennagh,Carlow,South-East
+17019,Garryhill,Carlow,South-East
+17020,Glynn,Carlow,South-East
+17021,Grangeford,Carlow,South-East
+17022,Hacketstown,Carlow,South-East
+17023,Haroldstown,Carlow,South-East
+17024,Johnstown,Carlow,South-East
+17025,Kellistown,Carlow,South-East
+17026,Kilbride,Carlow,South-East
+17027,Killedmond,Carlow,South-East
+17028,Killerrig,Carlow,South-East
+17029,Kineagh,Carlow,South-East
+17030,Kyle,Carlow,South-East
+17031,Leighlinbridge,Carlow,South-East
+17032,Marley,Carlow,South-East
+17033,Muinebeag Rural,Carlow,South-East
+17034,Muinebeag Urban,Carlow,South-East
+17035,Myshall,Carlow,South-East
+17036,Nurney,Carlow,South-East
+17037,Oldleighlin,Carlow,South-East
+17038,Rahill,Carlow,South-East
+17039,Rathanna,Carlow,South-East
+17040,Rathornan,Carlow,South-East
+17041,Rathrush,Carlow,South-East
+17042,Rathvilly,Carlow,South-East
+17043,Ridge,Carlow,South-East
+17044,Shangarry,Carlow,South-East
+17045,Sliguff,Carlow,South-East
+17046,Tankardstown,Carlow,South-East
+17047,Templepeter,Carlow,South-East
+17048,Tiknock,Carlow,South-East
+17049,Tinnahinch,Carlow,South-East
+17050,Tullow Rural,Carlow,South-East
+17051,Tullow Urban,Carlow,South-East
+17052,Tullowbeg,Carlow,South-East
+17053,Williamstown,Carlow,South-East
+17054,Graigue Urban,Carlow,South-East
+177001,Aghabog,Monaghan,Border
+177002,Anketell Grove,Monaghan,Border
+177003,Annayalla,Monaghan,Border
+177004,Anny,Monaghan,Border
+177005,Ballybay Rural,Monaghan,Border
+177006,Ballybay Urban,Monaghan,Border
+177007,Ballymackney,Monaghan,Border
+177008,Bellanode,Monaghan,Border
+177009,Bellatrain,Monaghan,Border
+177010,Bocks,Monaghan,Border
+177011,Bragan,Monaghan,Border
+177012,Broomfield,Monaghan,Border
+177013,Caddagh,Monaghan,Border
+177014,Carrickaslane,Monaghan,Border
+177015,Carrickatee,Monaghan,Border
+177016,Carrickmacross Rural,Monaghan,Border
+177017,Carrickmacross Urban,Monaghan,Border
+177018,Castleblayney Urban,Monaghan,Border
+177019,Castleblayney Rural,Monaghan,Border
+177020,Castleshane,Monaghan,Border
+177021,Church Hill,Monaghan,Border
+177022,Clones,Monaghan,Border
+177023,Clones Rural,Monaghan,Border
+177024,Clones Urban,Monaghan,Border
+177025,Clontibret,Monaghan,Border
+177026,Cormeen,Monaghan,Border
+177027,Corracharra,Monaghan,Border
+177028,Creeve,Monaghan,Border
+177029,Cremartin,Monaghan,Border
+177030,Crossalare,Monaghan,Border
+177031,Currin,Monaghan,Border
+177032,Dawsongrove,Monaghan,Border
+177033,Derrygorry,Monaghan,Border
+177034,Donaghmoyne,Monaghan,Border
+177035,Drum,Monaghan,Border
+177036,Drumboory,Monaghan,Border
+177037,Drumcarrow,Monaghan,Border
+177038,Drumgurra,Monaghan,Border
+177039,Drumhillagh,Monaghan,Border
+177040,Drummully,Monaghan,Border
+177041,Drumsnat,Monaghan,Border
+177042,Emyvale,Monaghan,Border
+177043,Enagh,Monaghan,Border
+177044,Enagh,Monaghan,Border
+177045,Figullar,Monaghan,Border
+177046,Glaslough,Monaghan,Border
+177047,Greagh,Monaghan,Border
+177048,Inishkeen,Monaghan,Border
+177049,Killeevan,Monaghan,Border
+177050,Killylough,Monaghan,Border
+177051,Killynenagh,Monaghan,Border
+177052,Kilmore,Monaghan,Border
+177053,Kilmurry,Monaghan,Border
+177054,Kiltybegs,Monaghan,Border
+177055,Laragh,Monaghan,Border
+177056,Lisnaveane,Monaghan,Border
+177057,Lough Fea,Monaghan,Border
+177058,Monaghan Rural,Monaghan,Border
+177059,Monaghan Urban,Monaghan,Border
+177060,Mullyash,Monaghan,Border
+177061,Newbliss,Monaghan,Border
+177062,Rackwallace,Monaghan,Border
+177063,Raferagh,Monaghan,Border
+177064,Scotstown,Monaghan,Border
+177065,Shanmullagh,Monaghan,Border
+177066,Sheskin,Monaghan,Border
+177067,St. Tierney,Monaghan,Border
+177068,Tedavnet,Monaghan,Border
+177069,Tehallan,Monaghan,Border
+177070,Tullycorbet,Monaghan,Border
+187001,Aghancon,Offaly,Midland
+187003,Ballincor,Offaly,Midland
+187004,Ballyburly,Offaly,Midland
+187005,Ballycommon,Offaly,Midland
+187006,Ballycumber,Offaly,Midland
+187007,Ballymacwilliam,Offaly,Midland
+187008,Ballyshear,Offaly,Midland
+187009,Banagher,Offaly,Midland
+187010,Barna,Offaly,Midland
+187011,Bawn,Offaly,Midland
+187012,Birr Rural,Offaly,Midland
+187013,Birr Urban,Offaly,Midland
+187014,Bracknagh,Offaly,Midland
+187015,Broughal,Offaly,Midland
+187016,Cangort,Offaly,Midland
+187017,Cappancur,Offaly,Midland
+187018,Clara,Offaly,Midland
+187019,Cloghan,Offaly,Midland
+187020,Clonbulloge,Offaly,Midland
+187021,Clonmacnoise,Offaly,Midland
+187022,Clonmore,Offaly,Midland
+187023,Clonygowan,Offaly,Midland
+187024,Croghan,Offaly,Midland
+187025,Cullenwaine,Offaly,Midland
+187026,Daingean,Offaly,Midland
+187027,Derrinboy,Offaly,Midland
+187028,Derryad,Offaly,Midland
+187029,Derrycooly,Offaly,Midland
+187030,Doon,Offaly,Midland
+187031,Dromoyle,Offaly,Midland
+187032,Drumcullen,Offaly,Midland
+187033,Dunkerrin,Offaly,Midland
+187034,Durrow,Offaly,Midland
+187035,Edenderry Rural,Offaly,Midland
+187036,Edenderry Urban,Offaly,Midland
+187037,Eglish,Offaly,Midland
+187038_187002,Esker,Offaly,Midland
+187039,Ettagh,Offaly,Midland
+187040,Ferbane,Offaly,Midland
+187041,Gallen,Offaly,Midland
+187042,Geashill,Offaly,Midland
+187043,Gorteen,Offaly,Midland
+187044,Gorteen,Offaly,Midland
+187045,Hammerlane,Offaly,Midland
+187046,Hinds,Offaly,Midland
+187047,Huntston,Offaly,Midland
+187048,Kilclonfert,Offaly,Midland
+187049,Kilcolman,Offaly,Midland
+187050,Kilcormac,Offaly,Midland
+187051,Kilcumreragh,Offaly,Midland
+187052,Killeigh,Offaly,Midland
+187053,Killooly,Offaly,Midland
+187054,Killoughy,Offaly,Midland
+187055,Killyon,Offaly,Midland
+187056,Kinnitty,Offaly,Midland
+187057,Knockbarron,Offaly,Midland
+187058,Knockdrin,Offaly,Midland
+187059,Lea,Offaly,Midland
+187060,Letter,Offaly,Midland
+187061,Lumcloon,Offaly,Midland
+187062,Lusmagh,Offaly,Midland
+187063,Monasteroris,Offaly,Midland
+187064,Mountbriscoe,Offaly,Midland
+187065,Mounterin,Offaly,Midland
+187066,Mountheaton,Offaly,Midland
+187067,Moyclare,Offaly,Midland
+187068,O'Dempsey,Offaly,Midland
+187069,Portarlington North,Offaly,Midland
+187070,Rahan,Offaly,Midland
+187071,Raheenakeeran,Offaly,Midland
+187072,Rathfeston,Offaly,Midland
+187073,Rathrobin,Offaly,Midland
+187074,Roscomroe,Offaly,Midland
+187075,Screggan,Offaly,Midland
+187076,Seirkieran,Offaly,Midland
+187077,Shannonbridge,Offaly,Midland
+187078,Shannonharbour,Offaly,Midland
+187079,Shinrone,Offaly,Midland
+187080,Silverbrook,Offaly,Midland
+187081,Srah,Offaly,Midland
+187082,Templeharry,Offaly,Midland
+187083,Tinamuck,Offaly,Midland
+187084,Tinnycross,Offaly,Midland
+187085,Tulla,Offaly,Midland
+187086,Tullamore Rural,Offaly,Midland
+187087,Tullamore Urban,Offaly,Midland
+197001,Aghafin,Roscommon,West
+197003,Annaghmore,Roscommon,West
+197004,Artagh North,Roscommon,West
+197005,Artagh South,Roscommon,West
+197006,Athleague East,Roscommon,West
+197007,Athleague West,Roscommon,West
+197008,Athlone West Rural,Roscommon,West
+197009,Aughrim East,Roscommon,West
+197010,Aughrim West,Roscommon,West
+197011,Ballaghaderreen,Roscommon,West
+197012,Ballinlough,Roscommon,West
+197013,Ballintober,Roscommon,West
+197014,Ballydangan,Roscommon,West
+197015,Ballyfarnan,Roscommon,West
+197016,Ballyformoyle,Roscommon,West
+197017,Ballygarden,Roscommon,West
+197018,Ballynamona,Roscommon,West
+197019,Baslick,Roscommon,West
+197020,Bellanagare,Roscommon,West
+197021,Boyle Rural,Roscommon,West
+197022,Boyle Urban,Roscommon,West
+197023,Breedoge,Roscommon,West
+197024,Buckill,Roscommon,West
+197025,Bumlin,Roscommon,West
+197026,Caltragh,Roscommon,West
+197027,Cams,Roscommon,West
+197028,Carnagh,Roscommon,West
+197029,Carrowduff,Roscommon,West
+197030,Carrowreagh,Roscommon,West
+197031,Castleplunket,Roscommon,West
+197032,Castlereagh,Roscommon,West
+197033,Castlesampson,Roscommon,West
+197034,Castleteheen,Roscommon,West
+197035,Cloonburren,Roscommon,West
+197036,Cloonfinlough,Roscommon,West
+197037,Cloonfower,Roscommon,West
+197038,Cloonown,Roscommon,West
+197039,Cloonteen,Roscommon,West
+197040,Cloontuskert,Roscommon,West
+197041,Cloonygormican,Roscommon,West
+197042,Cloonyquin,Roscommon,West
+197043,Coolougher,Roscommon,West
+197044,Crannagh,Roscommon,West
+197045,Creagh,Roscommon,West
+197046,Creeve,Roscommon,West
+197047,Creeve,Roscommon,West
+197048,Cregga,Roscommon,West
+197049,Croghan,Roscommon,West
+197050,Crossna,Roscommon,West
+197051,Culliagh,Roscommon,West
+197052,Danesfort,Roscommon,West
+197053,Drumdaff,Roscommon,West
+197054,Drumlosh,Roscommon,West
+197055,Dunamon,Roscommon,West
+197056,Dysart,Roscommon,West
+197057,Edmondstown,Roscommon,West
+197058,Elia,Roscommon,West
+197059,Elphin,Roscommon,West
+197060,Estersnow,Roscommon,West
+197061,Fairymount,Roscommon,West
+197062,Frenchpark,Roscommon,West
+197063,Fuerty,Roscommon,West
+197064,Keadew,Roscommon,West
+197065,Kilbride North,Roscommon,West
+197066,Kilbride South,Roscommon,West
+197067,Kilbryan,Roscommon,West
+197068,Kilcar,Roscommon,West
+197070,Kilgefin,Roscommon,West
+197071,Kilglass North,Roscommon,West
+197072,Kilglass South,Roscommon,West
+197073,Killavackan,Roscommon,West
+197074,Killukin,Roscommon,West
+197075,Killukin,Roscommon,West
+197076,Killummod,Roscommon,West
+197077_197069,Kilmacumsy,Roscommon,West
+197078,Kilmore,Roscommon,West
+197079,Kilteevan,Roscommon,West
+197080,Kiltoom,Roscommon,West
+197081,Kiltullagh,Roscommon,West
+197082,Lackan,Roscommon,West
+197083,Lecarrow,Roscommon,West
+197084_197089,Lisgarve,Roscommon,West
+197085,Lismaha,Roscommon,West
+197086,Lissonuffy,Roscommon,West
+197087_197002,Lough Allen,Roscommon,West
+197088,Loughglinn,Roscommon,West
+197090,Moore,Roscommon,West
+197091,Mote,Roscommon,West
+197092,Oakport,Roscommon,West
+197093,Ogulla,Roscommon,West
+197094,Rockhill,Roscommon,West
+197095,Rockingham,Roscommon,West
+197096,Roosky,Roscommon,West
+197097,Roscommon Rural,Roscommon,West
+197098,Roscommon Urban,Roscommon,West
+197099,Rosmoylan,Roscommon,West
+197100,Rossmore,Roscommon,West
+197101,Rushfield,Roscommon,West
+197102,Scregg,Roscommon,West
+197103,Strokestown,Roscommon,West
+197104,Taghboy,Roscommon,West
+197105,Taghmaconnell,Roscommon,West
+197106,Termonbarry,Roscommon,West
+197107,Thomastown,Roscommon,West
+197108,Tivannagh,Roscommon,West
+197109,Tulsk,Roscommon,West
+197110,Tumna North,Roscommon,West
+197111,Tumna South,Roscommon,West
+197112,Turrock,Roscommon,West
+207001,Achonry East,Sligo,Border
+207002,Achonry West,Sligo,Border
+207003,Aclare,Sligo,Border
+207004,Aghanagh,Sligo,Border
+207005,Annagh,Sligo,Border
+207006,Aughris,Sligo,Border
+207007,Ballintogher East,Sligo,Border
+207008,Ballintogher West,Sligo,Border
+207009,Ballymote,Sligo,Border
+207010,Ballynakill,Sligo,Border
+207011,Ballynashee,Sligo,Border
+207012,Ballysadare East,Sligo,Border
+207013,Ballysadare West,Sligo,Border
+207014,Banada,Sligo,Border
+207015_207062_207063,Branchfield,Sligo,Border
+207016,Breencorragh,Sligo,Border
+207017,Bricklieve,Sligo,Border
+207018,Buncrowey,Sligo,Border
+207019,Calry,Sligo,Border
+207020,Carney,Sligo,Border
+207021,Carrickbanagher,Sligo,Border
+207022,Carrownaskeagh,Sligo,Border
+207023,Cartron,Sligo,Border
+207024,Castleconor East,Sligo,Border
+207025,Castleconor West,Sligo,Border
+207026,Cliffony North,Sligo,Border
+207027,Cliffony South,Sligo,Border
+207028,Cloonacool,Sligo,Border
+207029,Cloonoghill,Sligo,Border
+207030,Collooney,Sligo,Border
+207031,Coolaney,Sligo,Border
+207032,Coolavin,Sligo,Border
+207033,Cuilmore,Sligo,Border
+207034,Dromard East,Sligo,Border
+207035,Dromard West,Sligo,Border
+207036,Dromore,Sligo,Border
+207037,Drumcliff East,Sligo,Border
+207038,Drumcliff West,Sligo,Border
+207039,Drumcolumb,Sligo,Border
+207040,Drumfin,Sligo,Border
+207041,Drumrat,Sligo,Border
+207042,Easky East,Sligo,Border
+207043,Easky West,Sligo,Border
+207044,Glencar,Sligo,Border
+207045,Glendarragh,Sligo,Border
+207046,Kilfree,Sligo,Border
+207047,Kilglass,Sligo,Border
+207048,Killadoon,Sligo,Border
+207049,Killaraght,Sligo,Border
+207050,Kilmacowen,Sligo,Border
+207051,Kilmacteige,Sligo,Border
+207052,Kilmactranny,Sligo,Border
+207053,Kilshalvy,Sligo,Border
+207054,Kilturra,Sligo,Border
+207055,Knockaree,Sligo,Border
+207056,Lakeview,Sligo,Border
+207057,Leitrim,Sligo,Border
+207058,Lisconny,Sligo,Border
+207059,Lissadill East,Sligo,Border
+207060,Lissadill North,Sligo,Border
+207061,Lissadill West,Sligo,Border
+207064,Owenmore,Sligo,Border
+207065,Rathmacurkey,Sligo,Border
+207066,Riverstown,Sligo,Border
+207067,Rossinver East,Sligo,Border
+207068,Rossinver West,Sligo,Border
+207069,Shancough,Sligo,Border
+207070,Skreen,Sligo,Border
+207071,Sligo West,Sligo,Border
+207072,Streamstown,Sligo,Border
+207073,Temple,Sligo,Border
+207074,Templeboy North,Sligo,Border
+207075,Templeboy South,Sligo,Border
+207076,Templevanny,Sligo,Border
+207077,Tobercurry,Sligo,Border
+207078,Toberpatrick East,Sligo,Border
+207079,Toberpatrick West,Sligo,Border
+207080,Toomour,Sligo,Border
+207081,Sligo North,Sligo,Border
+207082,Sligo East,Sligo,Border
+217001,Abington,Tipperary,Mid-West
+217002,Aghnameadle,Tipperary,Mid-West
+217003,Aglishcloghane,Tipperary,Mid-West
+217004,Anner,Tipperary,Mid-West
+217005,Ardcrony,Tipperary,Mid-West
+217006,Ardfinnan,Tipperary,Mid-West
+217007,Ardmayle,Tipperary,Mid-West
+217008,Ardsallagh,Tipperary,Mid-West
+217009,Ballina,Tipperary,Mid-West
+217010,Ballingarry,Tipperary,Mid-West
+217011,Ballingarry,Tipperary,Mid-West
+217012,Ballybacon,Tipperary,Mid-West
+217013,Ballycahill,Tipperary,Mid-West
+217014,Ballycarron,Tipperary,Mid-West
+217015,Ballyclerahan,Tipperary,Mid-West
+217016,Ballygibbon,Tipperary,Mid-West
+217017,Ballygriffin,Tipperary,Mid-West
+217018,Ballykisteen,Tipperary,Mid-West
+217019,Ballylusky,Tipperary,Mid-West
+217020,Ballymackey,Tipperary,Mid-West
+217021,Ballymurreen,Tipperary,Mid-West
+217022,Ballynaclogh,Tipperary,Mid-West
+217023,Ballyphilip,Tipperary,Mid-West
+217024,Ballyporeen,Tipperary,Mid-West
+217025,Ballysheehan,Tipperary,Mid-West
+217026,Bansha,Tipperary,Mid-West
+217027,Birdhill,Tipperary,Mid-West
+217028,Borrisnafarney,Tipperary,Mid-West
+217029,Borrisnoe,Tipperary,Mid-West
+217030,Borrisokane,Tipperary,Mid-West
+217031,Borrisoleigh,Tipperary,Mid-West
+217032,Bourney East,Tipperary,Mid-West
+217033,Bourney West,Tipperary,Mid-West
+217034,Bruis,Tipperary,Mid-West
+217035,Buolick,Tipperary,Mid-West
+217036,Burgesbeg,Tipperary,Mid-West
+217037,Burncourt,Tipperary,Mid-West
+217038,Caher,Tipperary,Mid-West
+217039,Cappagh,Tipperary,Mid-West
+217040,Carrick-On-Suir Rural,Tipperary,Mid-West
+217041,Carrick-On-Suir Urban,Tipperary,Mid-West
+217042,Carrickbeg Urban,Tipperary,Mid-West
+217043,Carrig,Tipperary,Mid-West
+217044,Carrigatogher,Tipperary,Mid-West
+217045,Cashel Rural,Tipperary,Mid-West
+217046,Cashel Urban,Tipperary,Mid-West
+217047,Castletown,Tipperary,Mid-West
+217048,Clogheen,Tipperary,Mid-West
+217049,Clogher,Tipperary,Mid-West
+217050,Cloghjordan,Tipperary,Mid-West
+217051,Cloghprior,Tipperary,Mid-West
+217052,Clohaskin,Tipperary,Mid-West
+217053,Clonbeg,Tipperary,Mid-West
+217054,Cloneen,Tipperary,Mid-West
+217055,Clonmel Rural,Tipperary,Mid-West
+217056,Clonmel West Urban,Tipperary,Mid-West
+217057,Clonoulty East,Tipperary,Mid-West
+217058,Clonoulty West,Tipperary,Mid-West
+217059,Colman,Tipperary,Mid-West
+217060,Coolagarranroe,Tipperary,Mid-West
+217061,Cooleagh,Tipperary,Mid-West
+217062,Crohane,Tipperary,Mid-West
+217063,Cullen,Tipperary,Mid-West
+217064,Curraheen,Tipperary,Mid-West
+217065,Derrycastle,Tipperary,Mid-West
+217066,Derrygrath,Tipperary,Mid-West
+217067,Dolla,Tipperary,Mid-West
+217068,Donohill,Tipperary,Mid-West
+217069,Drangan,Tipperary,Mid-West
+217070,Drom,Tipperary,Mid-West
+217071,Drumwood,Tipperary,Mid-West
+217072,Emly,Tipperary,Mid-West
+217073,Farranrory,Tipperary,Mid-West
+217074,Fennor,Tipperary,Mid-West
+217075,Finnoe,Tipperary,Mid-West
+217076,Foilnaman,Tipperary,Mid-West
+217077,Gaile,Tipperary,Mid-West
+217078,Garrangibbon,Tipperary,Mid-West
+217079,Glengar,Tipperary,Mid-West
+217080,Glenkeen,Tipperary,Mid-West
+217081,Golden,Tipperary,Mid-West
+217082,Gortkelly,Tipperary,Mid-West
+217083,Graigue,Tipperary,Mid-West
+217084,Graigue,Tipperary,Mid-West
+217085,Graystown,Tipperary,Mid-West
+217086_217117,Greenhall,Tipperary,Mid-West
+217087,Holycross,Tipperary,Mid-West
+217088,Inch,Tipperary,Mid-West
+217089,Inishlounaght,Tipperary,Mid-West
+217090,Kilbarron,Tipperary,Mid-West
+217091,Kilcash,Tipperary,Mid-West
+217092,Kilcomenty,Tipperary,Mid-West
+217093,Kilcommon,Tipperary,Mid-West
+217094,Kilcooly,Tipperary,Mid-West
+217095,Kilcoran,Tipperary,Mid-West
+217096,Kilfeakle,Tipperary,Mid-West
+217097,Kilkeary,Tipperary,Mid-West
+217098,Killadriffe,Tipperary,Mid-West
+217100,Killavinoge,Tipperary,Mid-West
+217101,Killea,Tipperary,Mid-West
+217102,Killeenasteena,Tipperary,Mid-West
+217103,Killenaule,Tipperary,Mid-West
+217104,Killoscully,Tipperary,Mid-West
+217105,Kilmore,Tipperary,Mid-West
+217106,Kilmucklin,Tipperary,Mid-West
+217107,Kilmurry,Tipperary,Mid-West
+217108,Kilnaneave,Tipperary,Mid-West
+217109,Kilnarath,Tipperary,Mid-West
+217110,Kilpatrick,Tipperary,Mid-West
+217111,Kilrush,Tipperary,Mid-West
+217112,Kilsheelan,Tipperary,Mid-West
+217113,Kiltinan,Tipperary,Mid-West
+217114,Kilvemnon,Tipperary,Mid-West
+217115,Knigh,Tipperary,Mid-West
+217116,Knockgraffon,Tipperary,Mid-West
+217118,Latteragh,Tipperary,Mid-West
+217119,Lattin,Tipperary,Mid-West
+217120,Lisronagh,Tipperary,Mid-West
+217121,Littleton,Tipperary,Mid-West
+217122,Longfordpass,Tipperary,Mid-West
+217123,Lorrha East,Tipperary,Mid-West
+217124,Lorrha West,Tipperary,Mid-West
+217125,Loughmore,Tipperary,Mid-West
+217126,Magorban,Tipperary,Mid-West
+217127,Mertonhall,Tipperary,Mid-West
+217128,Modeshil,Tipperary,Mid-West
+217129,Monsea,Tipperary,Mid-West
+217130,Mortlestown,Tipperary,Mid-West
+217131,Moyaliff,Tipperary,Mid-West
+217132,Moycarky,Tipperary,Mid-West
+217133,Moyne,Tipperary,Mid-West
+217134,Mullinahone,Tipperary,Mid-West
+217135,Nenagh Rural,Tipperary,Mid-West
+217136,Nenagh West Urban,Tipperary,Mid-West
+217137,New Birmingham,Tipperary,Mid-West
+217138,Newcastle,Tipperary,Mid-West
+217139,Newport,Tipperary,Mid-West
+217140,Newtown,Tipperary,Mid-West
+217141,Nodstown,Tipperary,Mid-West
+217142,Oughterleague,Tipperary,Mid-West
+217143,Peppardstown,Tipperary,Mid-West
+217144,Poyntstown,Tipperary,Mid-West
+217145,Rahelty,Tipperary,Mid-West
+217146,Rathcabban,Tipperary,Mid-West
+217147,Rathlynin,Tipperary,Mid-West
+217148,Rathnaveoge,Tipperary,Mid-West
+217149,Redwood,Tipperary,Mid-West
+217150,Riverstown,Tipperary,Mid-West
+217151,Rodus,Tipperary,Mid-West
+217152,Roscrea,Tipperary,Mid-West
+217153,Shronell,Tipperary,Mid-West
+217154,Solloghodbeg,Tipperary,Mid-West
+217155,Templederry,Tipperary,Mid-West
+217156,Templemore,Tipperary,Mid-West
+217157,Templeneiry,Tipperary,Mid-West
+217158,Templetouhy,Tipperary,Mid-West
+217159,Terryglass,Tipperary,Mid-West
+217160,Thomastown,Tipperary,Mid-West
+217161,Thurles Rural,Tipperary,Mid-West
+217162,Thurles Urban,Tipperary,Mid-West
+217163,Timoney,Tipperary,Mid-West
+217164,Tipperary East Urban,Tipperary,Mid-West
+217165,Tipperary Rural,Tipperary,Mid-West
+217166,Tipperary West Urban,Tipperary,Mid-West
+217167,Tubbrid,Tipperary,Mid-West
+217168,Tullaghmelan,Tipperary,Mid-West
+217169,Tullaghorton,Tipperary,Mid-West
+217170,Tullamain,Tipperary,Mid-West
+217171,Two-Mile-Borris,Tipperary,Mid-West
+217172,Upperchurch,Tipperary,Mid-West
+217173,Uskane,Tipperary,Mid-West
+217174,Youghalarra,Tipperary,Mid-West
+217175,Fethard,Tipperary,Mid-West
+217176,Clonmel East Urban,Tipperary,Mid-West
+217177,Nenagh East Urban,Tipperary,Mid-West
+227001,Annestown,Waterford,South-East
+227002,Ardmore,Waterford,South-East
+227003,Ardmore,Waterford,South-East
+227004,Ballyduff,Waterford,South-East
+227005,Ballydurn,Waterford,South-East
+227006,Ballyhane,Waterford,South-East
+227007,Ballyheeny,Waterford,South-East
+227008,Ballyin,Waterford,South-East
+227009,Ballylaneen,Waterford,South-East
+227010,Ballymacarbry,Waterford,South-East
+227011,Ballymacart,Waterford,South-East
+227012,Ballynakill,Waterford,South-East
+227013,Ballynamult,Waterford,South-East
+227014,Ballysaggartmore,Waterford,South-East
+227015,Bohadoon,Waterford,South-East
+227016,Cappagh,Waterford,South-East
+227017,Cappoquin,Waterford,South-East
+227018,Carrickbeg Rural,Waterford,South-East
+227019,Carrigcastle,Waterford,South-East
+227020,Carriglea,Waterford,South-East
+227021,Castlerichard,Waterford,South-East
+227022,Clashmore,Waterford,South-East
+227023,Clonea,Waterford,South-East
+227024,Clonea,Waterford,South-East
+227025,Colligan,Waterford,South-East
+227026,Comeragh,Waterford,South-East
+227027,Coumaraglin,Waterford,South-East
+227028,Dromana,Waterford,South-East
+227029,Dromore,Waterford,South-East
+227030,Drumcannon,Waterford,South-East
+227031,Drumroe,Waterford,South-East
+227032,Dungarvan No. 1 Urban,Waterford,South-East
+227033,Dungarvan No. 2 Urban,Waterford,South-East
+227034,Dungarvan Rural,Waterford,South-East
+227035,Dunhill,Waterford,South-East
+227036,Faithlegg,Waterford,South-East
+227037,Fenoagh,Waterford,South-East
+227038,Fews,Waterford,South-East
+227039,Fox'S Castle,Waterford,South-East
+227040,Gardenmorris,Waterford,South-East
+227041,Georgestown,Waterford,South-East
+227042,Glen,Waterford,South-East
+227043,Glenwilliam,Waterford,South-East
+227044,Gortnapeaky,Waterford,South-East
+227045,Graignagower,Waterford,South-East
+227046,Grallagh,Waterford,South-East
+227047,Grange,Waterford,South-East
+227048,Gurteen,Waterford,South-East
+227049,Islandikane,Waterford,South-East
+227050,Keereen,Waterford,South-East
+227051,Kilbarry,Waterford,South-East
+227052,Kilbarrymeaden,Waterford,South-East
+227053,Kilcockan,Waterford,South-East
+227054,Killea,Waterford,South-East
+227055,Killoteran,Waterford,South-East
+227056,Kilmacleague,Waterford,South-East
+227057,Kilmacomma,Waterford,South-East
+227058,Kilmacthomas,Waterford,South-East
+227059,Kilmeadan,Waterford,South-East
+227060,Kilmeadan,Waterford,South-East
+227061,Kilronan,Waterford,South-East
+227062,Kilwatermoy East,Waterford,South-East
+227063,Kilwatermoy West,Waterford,South-East
+227064,Kinsalebeg,Waterford,South-East
+227065,Knockaunbrandaun,Waterford,South-East
+227066,Knockmahon,Waterford,South-East
+227067,Lismore Rural,Waterford,South-East
+227068,Mocollop,Waterford,South-East
+227069,Modelligo,Waterford,South-East
+227070,Modelligo,Waterford,South-East
+227071,Mothel,Waterford,South-East
+227072,Mountkennedy,Waterford,South-East
+227073,Mountstuart,Waterford,South-East
+227074,Newcastle,Waterford,South-East
+227075,Newtown,Waterford,South-East
+227076,Pembrokestown,Waterford,South-East
+227077,Portlaw,Waterford,South-East
+227078,Rathgormuck,Waterford,South-East
+227079,Rathmoylan,Waterford,South-East
+227080,Reisk,Waterford,South-East
+227081,Ringville,Waterford,South-East
+227082,Ross,Waterford,South-East
+227083,Seskinan,Waterford,South-East
+227084,St. Mary'S,Waterford,South-East
+227085,Stradbally,Waterford,South-East
+227086,Tallow,Waterford,South-East
+227087,Templemichael,Waterford,South-East
+227088,Tinnasaggart,Waterford,South-East
+227089,Lismore Urban,Waterford,South-East
+227090,Tramore,Waterford,South-East
+227091,Whitechurch,Waterford,South-East
+227092,Woodstown,Waterford,South-East
+228001,Ballybeg North,Waterford,South-East
+228002_228006,Ballybeg South,Waterford,South-East
+228003,Ballybricken,Waterford,South-East
+228004,Ballymaclode,Waterford,South-East
+228005,Ballynakill,Waterford,South-East
+228007,Ballytruckle,Waterford,South-East
+228008,Bilberry,Waterford,South-East
+228009,Centre A,Waterford,South-East
+228010,Centre B,Waterford,South-East
+228011,Cleaboy,Waterford,South-East
+228012,Custom House A,Waterford,South-East
+228013,Custom House B,Waterford,South-East
+228014,Farranshoneen,Waterford,South-East
+228015,Ferrybank,Waterford,South-East
+228016,Gracedieu,Waterford,South-East
+228017,Grange South,Waterford,South-East
+228018,Grange Upper,Waterford,South-East
+228019,Kilbarry,Waterford,South-East
+228020,Kingsmeadow,Waterford,South-East
+228021,Larchville,Waterford,South-East
+228022,Lisduggan,Waterford,South-East
+228023,Military Road,Waterford,South-East
+228024,Morrisson'S Avenue East,Waterford,South-East
+228025,Morrisson'S Avenue West,Waterford,South-East
+228026,Morrisson'S Road,Waterford,South-East
+228027,Mount Sion,Waterford,South-East
+228028,Newport'S Square,Waterford,South-East
+228029,Newtown,Waterford,South-East
+228030,Park,Waterford,South-East
+228031,Poleberry,Waterford,South-East
+228032,Roanmore,Waterford,South-East
+228033,Shortcourse,Waterford,South-East
+228034,Slievekeale,Waterford,South-East
+228035,The Glen,Waterford,South-East
+228036,Ticor North,Waterford,South-East
+228037,Ticor South,Waterford,South-East
+228038,Grange North,Waterford,South-East
+237001,Ardnaglew,Westmeath,Midland
+237002,Ardnagragh,Westmeath,Midland
+237003,Athlone East Urban,Westmeath,Midland
+237004,Athlone East Rural,Westmeath,Midland
+237005,Athlone West Urban,Westmeath,Midland
+237006,Auburn,Westmeath,Midland
+237007,Ballinalack,Westmeath,Midland
+237008,Ballinlough,Westmeath,Midland
+237009,Ballymorin,Westmeath,Midland
+237010,Ballybroder,Westmeath,Midland
+237011,Ballyhealy,Westmeath,Midland
+237012,Ballykilmore,Westmeath,Midland
+237013,Ballymore,Westmeath,Midland
+237014,Ballynagore,Westmeath,Midland
+237015,Ballynaskeagh,Westmeath,Midland
+237016,Bellanalack,Westmeath,Midland
+237017,Belvidere,Westmeath,Midland
+237018,Boherquill,Westmeath,Midland
+237019,Bracklin,Westmeath,Midland
+237020,Carn,Westmeath,Midland
+237021,Carrick,Westmeath,Midland
+237022,Castle,Westmeath,Midland
+237023,Castledaly,Westmeath,Midland
+237024,Castlelost,Westmeath,Midland
+237025,Castletown,Westmeath,Midland
+237026,Churchtown,Westmeath,Midland
+237027,Cloghan,Westmeath,Midland
+237028,Clonarney,Westmeath,Midland
+237029,Clonfad,Westmeath,Midland
+237030,Clonlost,Westmeath,Midland
+237031,Collinstown,Westmeath,Midland
+237032,Coole,Westmeath,Midland
+237033,Coolure,Westmeath,Midland
+237034,Copperalley,Westmeath,Midland
+237035,Delvin,Westmeath,Midland
+237036,Derrymore,Westmeath,Midland
+237037,Doonis,Westmeath,Midland
+237038,Drumraney,Westmeath,Midland
+237039,Dysart,Westmeath,Midland
+237040,Emper,Westmeath,Midland
+237041,Enniscoffey,Westmeath,Midland
+237042,Faughalstown,Westmeath,Midland
+237043,Finnea,Westmeath,Midland
+237044,Fore East,Westmeath,Midland
+237045,Fore West,Westmeath,Midland
+237046,Gaybrook,Westmeath,Midland
+237047,Glassan,Westmeath,Midland
+237048,Glenlough,Westmeath,Midland
+237049,Glore,Westmeath,Midland
+237050,Greenpark,Westmeath,Midland
+237051,Griffinstown,Westmeath,Midland
+237052,Heathstown,Westmeath,Midland
+237053,Hilltown,Westmeath,Midland
+237054,Milltown,Westmeath,Midland
+237055,Hopestown,Westmeath,Midland
+237056,Huntingdon,Westmeath,Midland
+237057,Jamestown,Westmeath,Midland
+237058,Kilbeggan,Westmeath,Midland
+237059,Kilbixy,Westmeath,Midland
+237060,Kilcumny,Westmeath,Midland
+237061,Kilcumreragh,Westmeath,Midland
+237062,Killare,Westmeath,Midland
+237063,Killinure,Westmeath,Midland
+237064,Killua,Westmeath,Midland
+237065,Killucan,Westmeath,Midland
+237066,Killulagh,Westmeath,Midland
+237067,Kilpatrick,Westmeath,Midland
+237068,Kinnegad,Westmeath,Midland
+237069,Kinturk,Westmeath,Midland
+237070,Knockarrow,Westmeath,Midland
+237071,Knockdrin,Westmeath,Midland
+237072,Lackan,Westmeath,Midland
+237073,Lauree,Westmeath,Midland
+237074,Middleton,Westmeath,Midland
+237075,Moate,Westmeath,Midland
+237076,Mount Temple,Westmeath,Midland
+237077,Moydrum,Westmeath,Midland
+237078,Muckanagh,Westmeath,Midland
+237079,Mullingar Rural,Westmeath,Midland
+237080,Mullingar South Urban,Westmeath,Midland
+237081,Multyfarnham,Westmeath,Midland
+237082,Newtown,Westmeath,Midland
+237083,Noughaval,Westmeath,Midland
+237084,Owel,Westmeath,Midland
+237085,Piercetown,Westmeath,Midland
+237086,Portloman,Westmeath,Midland
+237087,Raharney,Westmeath,Midland
+237088,Rahugh,Westmeath,Midland
+237089,Rathconrath,Westmeath,Midland
+237090,Rathowen,Westmeath,Midland
+237091,Riverdale,Westmeath,Midland
+237092,Rosmead,Westmeath,Midland
+237093,Russellstown,Westmeath,Midland
+237094,Skeagh,Westmeath,Midland
+237095,Sonna,Westmeath,Midland
+237096,Stonehall,Westmeath,Midland
+237097,Streamstown,Westmeath,Midland
+237098,Street,Westmeath,Midland
+237099,Taghmon,Westmeath,Midland
+237100,Templepatrick,Westmeath,Midland
+237101,Tubbrit,Westmeath,Midland
+237102,Tullaghan,Westmeath,Midland
+237103,Umma,Westmeath,Midland
+237104,Winetown,Westmeath,Midland
+237105,Woodland,Westmeath,Midland
+237106,Mullingar North Urban,Westmeath,Midland
+247001,Adamstown,Wexford,South-East
+247002,Ardamine,Wexford,South-East
+247003,Ardcavan,Wexford,South-East
+247004,Ardcolm,Wexford,South-East
+247005,Artramon,Wexford,South-East
+247006,Aughwilliam,Wexford,South-East
+247007,Ballindaggan,Wexford,South-East
+247008,Ballyanne,Wexford,South-East
+247009,Ballybeg,Wexford,South-East
+247010,Ballycanew,Wexford,South-East
+247011,Ballycarney,Wexford,South-East
+247012,Ballyellis,Wexford,South-East
+247013,Ballygarrett,Wexford,South-East
+247014,Ballyhack,Wexford,South-East
+247015,Ballyhoge,Wexford,South-East
+247016,Ballyhuskard,Wexford,South-East
+247017,Ballylarkin,Wexford,South-East
+247018,Ballymitty,Wexford,South-East
+247019,Ballymore,Wexford,South-East
+247020,Ballynestragh,Wexford,South-East
+247021,Balloughter,Wexford,South-East
+247022,Ballyvaldon,Wexford,South-East
+247023,Bannow,Wexford,South-East
+247024,Barrack Village,Wexford,South-East
+247025,Barronstown,Wexford,South-East
+247026,Bolaboy,Wexford,South-East
+247027,Bree,Wexford,South-East
+247028,Bridgetown,Wexford,South-East
+247029,Cahore,Wexford,South-East
+247030,Carnagh,Wexford,South-East
+247031,Carrick,Wexford,South-East
+247032,Carrickbyrne,Wexford,South-East
+247033,Castle Ellis,Wexford,South-East
+247034,Castleboro,Wexford,South-East
+247035,Castle Talbot,Wexford,South-East
+247036,Clongeen,Wexford,South-East
+247037,Clonleigh,Wexford,South-East
+247038,Clonroche,Wexford,South-East
+247039,Coolgreany,Wexford,South-East
+247040,Courtown,Wexford,South-East
+247041,Drinagh,Wexford,South-East
+247042,Duncormick,Wexford,South-East
+247043,Dunmain,Wexford,South-East
+247044,Edermine,Wexford,South-East
+247045,Enniscorthy Rural,Wexford,South-East
+247046,Enniscorthy Urban,Wexford,South-East
+247047,Ferns,Wexford,South-East
+247048,Fethard,Wexford,South-East
+247049,Ford,Wexford,South-East
+247050,Forth,Wexford,South-East
+247051,Glynn,Wexford,South-East
+247052,Gorey Rural,Wexford,South-East
+247053,Gorey Urban,Wexford,South-East
+247054,Harperstown,Wexford,South-East
+247055,Harristown,Wexford,South-East
+247056,Horetown,Wexford,South-East
+247057,Huntingtown,Wexford,South-East
+247058,Inch,Wexford,South-East
+247059,Kilbora,Wexford,South-East
+247060,Kilbride,Wexford,South-East
+247061,Kilcomb,Wexford,South-East
+247062,Kilcormick,Wexford,South-East
+247063,Kilcowan,Wexford,South-East
+247064,Kilgarvan,Wexford,South-East
+247065,Kilgorman,Wexford,South-East
+247066,Killag,Wexford,South-East
+247067,Killann,Wexford,South-East
+247068,Killenagh,Wexford,South-East
+247069,Killesk,Wexford,South-East
+247070,Killincooly,Wexford,South-East
+247071,Killinick,Wexford,South-East
+247072,Killoughrum,Wexford,South-East
+247073,Killurin,Wexford,South-East
+247074,Kilmallock,Wexford,South-East
+247075,Kilmokea,Wexford,South-East
+247076,Kilmore,Wexford,South-East
+247077,Kilnahue,Wexford,South-East
+247078,Kilpatrick,Wexford,South-East
+247079,Castledockrell,Wexford,South-East
+247080,Kilrush,Wexford,South-East
+247081,Kilscoran,Wexford,South-East
+247082,Kiltealy,Wexford,South-East
+247083,Lady'S Island,Wexford,South-East
+247084,Limerick,Wexford,South-East
+247085,Marshalstown,Wexford,South-East
+247086,Mayglass,Wexford,South-East
+247087,Monamolin,Wexford,South-East
+247088,Monaseed,Wexford,South-East
+247089,Moyacomb,Wexford,South-East
+247090,New Ross Rural,Wexford,South-East
+247091,New Ross Urban,Wexford,South-East
+247092,Newbawn,Wexford,South-East
+247093,Newcastle,Wexford,South-East
+247094,Newtownbarry,Wexford,South-East
+247095,Oldcourt,Wexford,South-East
+247096,Old Ross,Wexford,South-East
+247097,Rathaspick,Wexford,South-East
+247098,Rathroe,Wexford,South-East
+247099,Rochestown,Wexford,South-East
+247100,Rosbercon Urban,Wexford,South-East
+247101,Rossard,Wexford,South-East
+247102,Rosslare,Wexford,South-East
+247103,Rossminoge,Wexford,South-East
+247104,St. Helen'S,Wexford,South-East
+247105,St. Mary'S,Wexford,South-East
+247106,Tacumshin,Wexford,South-East
+247107,Taghmon,Wexford,South-East
+247108,Templeludigan,Wexford,South-East
+247109,Templetown,Wexford,South-East
+247110,The Harrow,Wexford,South-East
+247111,The Leap,Wexford,South-East
+247112,Tinnacross,Wexford,South-East
+247113,Tintern,Wexford,South-East
+247114,Tombrack,Wexford,South-East
+247115,Tomhaggard,Wexford,South-East
+247116,Wells,Wexford,South-East
+247117,Wexford Rural,Wexford,South-East
+247118,Wexford No. 1 Urban,Wexford,South-East
+247119,Whitechurch,Wexford,South-East
+247120,Whitechurch,Wexford,South-East
+247121,Whitemoor,Wexford,South-East
+247122,Wingfield,Wexford,South-East
+247123,Wexford No. 3 Urban,Wexford,South-East
+247124,Wexford No. 2 Urban,Wexford,South-East
+257001,Aghowle,Wicklow,Mid-East
+257002,Altidore,Wicklow,Mid-East
+257003,Arklow Rural,Wicklow,Mid-East
+257004,Arklow No. 1 Urban,Wicklow,Mid-East
+257005,Aughrim,Wicklow,Mid-East
+257006,Ballinaclash,Wicklow,Mid-East
+257007,Ballinacor,Wicklow,Mid-East
+257008,Ballinderry,Wicklow,Mid-East
+257009,Ballingate,Wicklow,Mid-East
+257010,Ballinglen,Wicklow,Mid-East
+257011,Ballinguile,Wicklow,Mid-East
+257012,Ballyarthur,Wicklow,Mid-East
+257013,Ballybeg,Wicklow,Mid-East
+257014,Ballycullen,Wicklow,Mid-East
+257015,Baltinglass,Wicklow,Mid-East
+257016,Blessington,Wicklow,Mid-East
+257017,Bray No. 3,Wicklow,Mid-East
+257018,Brockagh,Wicklow,Mid-East
+257019,Burgage,Wicklow,Mid-East
+257020,Calary,Wicklow,Mid-East
+257021,Carnew,Wicklow,Mid-East
+257022,Coolattin,Wicklow,Mid-East
+257023,Coolballintaggart,Wicklow,Mid-East
+257024,Coolboy,Wicklow,Mid-East
+257025,Cronebane,Wicklow,Mid-East
+257026,Cronelea,Wicklow,Mid-East
+257027,Delgany,Wicklow,Mid-East
+257028,Donaghmore,Wicklow,Mid-East
+257029,Donard,Wicklow,Mid-East
+257030,Dunganstown East,Wicklow,Mid-East
+257031,Dunganstown South,Wicklow,Mid-East
+257032,Dunganstown West,Wicklow,Mid-East
+257033,Dunlavin,Wicklow,Mid-East
+257034,Eadestown,Wicklow,Mid-East
+257035,Ennereilly,Wicklow,Mid-East
+257036,Enniskerry,Wicklow,Mid-East
+257037,Glendalough,Wicklow,Mid-East
+257038,Glenealy,Wicklow,Mid-East
+257039,Greystones,Wicklow,Mid-East
+257040,Hartstown,Wicklow,Mid-East
+257041,Hollywood,Wicklow,Mid-East
+257042,Humewood,Wicklow,Mid-East
+257043,Imael North,Wicklow,Mid-East
+257044,Imael South,Wicklow,Mid-East
+257045,Kilballyowen,Wicklow,Mid-East
+257046,Kilbride,Wicklow,Mid-East
+257047,Kilbride,Wicklow,Mid-East
+257048,Kilcoole,Wicklow,Mid-East
+257049,Killinure,Wicklow,Mid-East
+257050,Killiskey,Wicklow,Mid-East
+257051,Kilmacanoge,Wicklow,Mid-East
+257052,Kilpipe,Wicklow,Mid-East
+257053,Knockrath,Wicklow,Mid-East
+257054,Lackan,Wicklow,Mid-East
+257055,Lugglass,Wicklow,Mid-East
+257056,Money,Wicklow,Mid-East
+257057,Moneystown,Wicklow,Mid-East
+257058,Newcastle Lower,Wicklow,Mid-East
+257059,Newcastle Upper,Wicklow,Mid-East
+257060,Oldtown,Wicklow,Mid-East
+257061,Ovoca,Wicklow,Mid-East
+257062,Powerscourt,Wicklow,Mid-East
+257063,Rath,Wicklow,Mid-East
+257064,Rathdangan,Wicklow,Mid-East
+257065,Rathdrum,Wicklow,Mid-East
+257066,Rathsallagh,Wicklow,Mid-East
+257067,Shillelagh,Wicklow,Mid-East
+257068,Stratford,Wicklow,Mid-East
+257069,Talbotstown,Wicklow,Mid-East
+257070,The Grange,Wicklow,Mid-East
+257071,Tinahely,Wicklow,Mid-East
+257072,Tober,Wicklow,Mid-East
+257073,Togher,Wicklow,Mid-East
+257074,Togher,Wicklow,Mid-East
+257075,Trooperstown,Wicklow,Mid-East
+257076,Tuckmill,Wicklow,Mid-East
+257077,Wicklow Rural,Wicklow,Mid-East
+257078,Wicklow Urban,Wicklow,Mid-East
+257079,Arklow No. 2 Urban,Wicklow,Mid-East
+257080,Bray No. 1,Wicklow,Mid-East
+257081,Bray No. 2,Wicklow,Mid-East
+257082,Rathmichael (Bray),Wicklow,Mid-East
+267001,Airport,Dublin,Dublin
+267002,Balbriggan Rural,Dublin,Dublin
+267003,Balbriggan Urban,Dublin,Dublin
+267004,Baldoyle,Dublin,Dublin
+267005,Balgriffin,Dublin,Dublin
+267006,Ballinascorney,Dublin,Dublin
+267007,Ballinteer-Woodpark,Dublin,Dublin
+267008,Ballinteer-Broadford,Dublin,Dublin
+267009,Ballinteer-Ludford,Dublin,Dublin
+267010,Ballinteer-Marley,Dublin,Dublin
+267011,Ballinteer-Meadowbroads,Dublin,Dublin
+267012,Ballinteer-Meadowmount,Dublin,Dublin
+267013,Ballyboden,Dublin,Dublin
+267014,Ballyboghil,Dublin,Dublin
+267015,Ballybrack,Dublin,Dublin
+267016,Balscadden,Dublin,Dublin
+267017,Blackrock-Monkstown,Dublin,Dublin
+267018,Blackrock-Seapoint,Dublin,Dublin
+267019,Blackrock-Booterstown,Dublin,Dublin
+267020,Blackrock-Carysfort,Dublin,Dublin
+267021,Blackrock-Central,Dublin,Dublin
+267022,Blackrock-Glenomena,Dublin,Dublin
+267023,Blackrock-Newpark,Dublin,Dublin
+267024,Blackrock-Stradbrook,Dublin,Dublin
+267025,Blackrock-Templehill,Dublin,Dublin
+267026,Blackrock-Williamstown,Dublin,Dublin
+267027,Blanchardstown-Abbotstown,Dublin,Dublin
+267028,Blanchardstown-Blakestown,Dublin,Dublin
+267029,Blanchardstown-Coolmine,Dublin,Dublin
+267030,Blanchardstown-Corduff,Dublin,Dublin
+267031,Blanchardstown-Delwood,Dublin,Dublin
+267032,Blanchardstown-Mulhuddart,Dublin,Dublin
+267033,Blanchardstown-Roselawn,Dublin,Dublin
+267034,Blanchardstown-Tyrrelstown,Dublin,Dublin
+267035,Bohernabreena,Dublin,Dublin
+267036,Cabinteely-Granitefield,Dublin,Dublin
+267037,Cabinteely-Kilbogget,Dublin,Dublin
+267038,Cabinteely-Loughlinstown,Dublin,Dublin
+267039,Cabinteely-Pottery,Dublin,Dublin
+267040,Castleknock-Knockmaroon,Dublin,Dublin
+267041,Castleknock-Park,Dublin,Dublin
+267042,Churchtown-Castle,Dublin,Dublin
+267043,Churchtown-Landscape,Dublin,Dublin
+267044,Churchtown-Nutgrove,Dublin,Dublin
+267045,Churchtown-Orwell,Dublin,Dublin
+267046,Churchtown-Woodlawn,Dublin,Dublin
+267047,Clondalkin-Ballymount,Dublin,Dublin
+267048,Clondalkin-Cappaghmore,Dublin,Dublin
+267049,Clondalkin-Dunawley,Dublin,Dublin
+267050,Clondalkin-Monastery,Dublin,Dublin
+267051,Clondalkin-Moorfield,Dublin,Dublin
+267052,Clondalkin-Rowlagh,Dublin,Dublin
+267053,Clondalkin Village,Dublin,Dublin
+267054,Clonmethan,Dublin,Dublin
+267055,Clonskeagh-Milltown,Dublin,Dublin
+267056,Clonskeagh-Belfield,Dublin,Dublin
+267057,Clonskeagh-Farranboley,Dublin,Dublin
+267058,Clonskeagh-Roebuck,Dublin,Dublin
+267059,Clonskeagh-Windy Arbour,Dublin,Dublin
+267060,Dalkey Hill,Dublin,Dublin
+267061,Dalkey Upper,Dublin,Dublin
+267062,Dalkey-Avondale,Dublin,Dublin
+267063,Dalkey-Bullock,Dublin,Dublin
+267064,Dalkey-Coliemore,Dublin,Dublin
+267065,Donabate,Dublin,Dublin
+267066,Dubber,Dublin,Dublin
+267067,Dun Laoghaire-East Central,Dublin,Dublin
+267068,Dun Laoghaire-Glasthule,Dublin,Dublin
+267069,Dun Laoghaire-Glenageary,Dublin,Dublin
+267070,Dun Laoghaire-Monkstown Farm,Dublin,Dublin
+267071,Dun Laoghaire-Mount Town,Dublin,Dublin
+267072,Dun Laoghaire-Sallynoggin East,Dublin,Dublin
+267073,Dun Laoghaire-Sallynoggin South,Dublin,Dublin
+267074,Dun Laoghaire-Sallynoggin West,Dublin,Dublin
+267075,Dun Laoghaire-Salthill,Dublin,Dublin
+267076,Dun Laoghaire-Sandycove,Dublin,Dublin
+267077,Dun Laoghaire-West Central,Dublin,Dublin
+267078,Dundrum-Balally,Dublin,Dublin
+267079,Dundrum-Kilmacud,Dublin,Dublin
+267080,Dundrum-Sandyford,Dublin,Dublin
+267081,Dundrum-Sweetmount,Dublin,Dublin
+267082,Dundrum-Taney,Dublin,Dublin
+267083,Edmondstown,Dublin,Dublin
+267084,Firhouse Village,Dublin,Dublin
+267085,Firhouse-Ballycullen,Dublin,Dublin
+267086,Firhouse-Knocklyon,Dublin,Dublin
+267087,Foxrock-Beechpark,Dublin,Dublin
+267088,Foxrock-Carrickmines,Dublin,Dublin
+267089,Foxrock-Deansgrange,Dublin,Dublin
+267090,Foxrock-Torquay,Dublin,Dublin
+267091,Garristown,Dublin,Dublin
+267092,Glencullen,Dublin,Dublin
+267093,Hollywood,Dublin,Dublin
+267094,Holmpatrick,Dublin,Dublin
+267095,Howth,Dublin,Dublin
+267096,Killiney North,Dublin,Dublin
+267097,Killiney South,Dublin,Dublin
+267098,Kilsallaghan,Dublin,Dublin
+267099,Kinsaley,Dublin,Dublin
+267100,Lucan-Esker,Dublin,Dublin
+267101,Lucan Heights,Dublin,Dublin
+267102,Lucan North,Dublin,Dublin
+267103,Lucan-St. Helens,Dublin,Dublin
+267104,Lusk,Dublin,Dublin
+267105,Malahide East,Dublin,Dublin
+267106,Malahide West,Dublin,Dublin
+267107,Newcastle,Dublin,Dublin
+267108,Palmerston Village,Dublin,Dublin
+267109,Palmerston West,Dublin,Dublin
+267110,Portmarnock North,Dublin,Dublin
+267111,Portmarnock South,Dublin,Dublin
+267112,Rathcoole,Dublin,Dublin
+267113,Rathfarnham-Ballyroan,Dublin,Dublin
+267114,Rathfarnham-Butterfield,Dublin,Dublin
+267115,Rathfarnham-Hermitage,Dublin,Dublin
+267116,Rathfarnham-St. Enda'S,Dublin,Dublin
+267117,Rathfarnham Village,Dublin,Dublin
+267118,Rush,Dublin,Dublin
+267119,Saggart,Dublin,Dublin
+267120,Shankill-Rathmichael,Dublin,Dublin
+267121,Shankill-Rathsallagh,Dublin,Dublin
+267122,Shankill-Shanganagh,Dublin,Dublin
+267123,Skerries,Dublin,Dublin
+267124,Stillorgan-Deerpark,Dublin,Dublin
+267125,Stillorgan-Kilmacud,Dublin,Dublin
+267126,Stillorgan-Leopardstown,Dublin,Dublin
+267127,Stillorgan-Merville,Dublin,Dublin
+267128,Stillorgan-Mount Merrion,Dublin,Dublin
+267129,Stillorgan-Priory,Dublin,Dublin
+267130,Sutton,Dublin,Dublin
+267131,Swords-Glasmore,Dublin,Dublin
+267132,Swords-Forrest,Dublin,Dublin
+267133,Swords-Lissenhall,Dublin,Dublin
+267134,Swords-Seatown,Dublin,Dublin
+267135,Swords Village,Dublin,Dublin
+267136,Tallaght-Avonbeg,Dublin,Dublin
+267137,Tallaght-Belgard,Dublin,Dublin
+267138,Tallaght-Fettercairn,Dublin,Dublin
+267139,Tallaght-Glenview,Dublin,Dublin
+267140,Tallaght-Jobstown,Dublin,Dublin
+267141,Tallaght-Killinardan,Dublin,Dublin
+267142,Tallaght-Kilnamanagh,Dublin,Dublin
+267143,Tallaght-Kiltipper,Dublin,Dublin
+267144,Tallaght-Kingswood,Dublin,Dublin
+267145,Tallaght-Millbrook,Dublin,Dublin
+267146,Tallaght-Oldbawn,Dublin,Dublin
+267147,Tallaght-Springfield,Dublin,Dublin
+267148,Tallaght-Tymon,Dublin,Dublin
+267149,Templeogue-Cypress,Dublin,Dublin
+267150,Templeogue-Kimmage Manor,Dublin,Dublin
+267151,Templeogue-Limekiln,Dublin,Dublin
+267152,Templeogue-Orwell,Dublin,Dublin
+267153,Templeogue-Osprey,Dublin,Dublin
+267154,Templeogue Village,Dublin,Dublin
+267155,Terenure-Cherryfield,Dublin,Dublin
+267156,Terenure-Greentrees,Dublin,Dublin
+267157,Terenure-St. James,Dublin,Dublin
+267158,The Ward,Dublin,Dublin
+267159,Tibradden,Dublin,Dublin
+267160,Turnapin,Dublin,Dublin
+268001,Arran Quay A,Dublin,Dublin
+268002,Arran Quay B,Dublin,Dublin
+268003,Arran Quay C,Dublin,Dublin
+268004,Arran Quay D,Dublin,Dublin
+268005,Arran Quay E,Dublin,Dublin
+268006,Ashtown A,Dublin,Dublin
+268007,Ashtown B,Dublin,Dublin
+268008,Ayrfield,Dublin,Dublin
+268009,Ballybough A,Dublin,Dublin
+268010,Ballybough B,Dublin,Dublin
+268011,Ballygall C,Dublin,Dublin
+268012,Ballygall A,Dublin,Dublin
+268013,Ballygall B,Dublin,Dublin
+268014,Ballygall D,Dublin,Dublin
+268015,Ballymun A,Dublin,Dublin
+268016,Ballymun B,Dublin,Dublin
+268017,Ballymun C,Dublin,Dublin
+268018,Ballymun D,Dublin,Dublin
+268019,Ballymun E,Dublin,Dublin
+268020,Ballymun F,Dublin,Dublin
+268021,Beaumont A,Dublin,Dublin
+268022,Beaumont B,Dublin,Dublin
+268023,Beaumont C,Dublin,Dublin
+268024,Beaumont D,Dublin,Dublin
+268025,Beaumont E,Dublin,Dublin
+268026,Beaumont F,Dublin,Dublin
+268027,Botanic A,Dublin,Dublin
+268028,Botanic B,Dublin,Dublin
+268029,Botanic C,Dublin,Dublin
+268030,Cabra East A,Dublin,Dublin
+268031,Cabra East B,Dublin,Dublin
+268032,Cabra East C,Dublin,Dublin
+268033,Cabra West A,Dublin,Dublin
+268034,Cabra West B,Dublin,Dublin
+268035,Cabra West C,Dublin,Dublin
+268036,Cabra West D,Dublin,Dublin
+268037,Chapelizod,Dublin,Dublin
+268038,Cherry Orchard A,Dublin,Dublin
+268039,Carna,Dublin,Dublin
+268040,Cherry Orchard C,Dublin,Dublin
+268041,Clontarf East A,Dublin,Dublin
+268042,Clontarf East B,Dublin,Dublin
+268043,Clontarf East C,Dublin,Dublin
+268044,Clontarf East D,Dublin,Dublin
+268045,Clontarf East E,Dublin,Dublin
+268046,Clontarf West A,Dublin,Dublin
+268047,Clontarf West B,Dublin,Dublin
+268048,Clontarf West C,Dublin,Dublin
+268049,Clontarf West D,Dublin,Dublin
+268050,Clontarf West E,Dublin,Dublin
+268051,Crumlin A,Dublin,Dublin
+268052,Crumlin B,Dublin,Dublin
+268053,Crumlin C,Dublin,Dublin
+268054,Crumlin D,Dublin,Dublin
+268055,Crumlin E,Dublin,Dublin
+268056,Crumlin F,Dublin,Dublin
+268057,Decies,Dublin,Dublin
+268058,Drumcondra South A,Dublin,Dublin
+268059,Drumcondra South B,Dublin,Dublin
+268060,Drumcondra South C,Dublin,Dublin
+268061,Drumfinn,Dublin,Dublin
+268062,Edenmore,Dublin,Dublin
+268063,Finglas North A,Dublin,Dublin
+268064,Finglas North B,Dublin,Dublin
+268065,Finglas North C,Dublin,Dublin
+268066,Finglas South A,Dublin,Dublin
+268067,Finglas South B,Dublin,Dublin
+268068,Finglas South C,Dublin,Dublin
+268069,Finglas South D,Dublin,Dublin
+268070,Grace Park,Dublin,Dublin
+268071,Grange A,Dublin,Dublin
+268072,Grange B,Dublin,Dublin
+268073,Grange C,Dublin,Dublin
+268074,Grange D,Dublin,Dublin
+268075,Grange E,Dublin,Dublin
+268076,Harmonstown A,Dublin,Dublin
+268077,Harmonstown B,Dublin,Dublin
+268078,Inchicore A,Dublin,Dublin
+268079,Inchicore B,Dublin,Dublin
+268080,Inns Quay A,Dublin,Dublin
+268081,Inns Quay B,Dublin,Dublin
+268082,Inns Quay C,Dublin,Dublin
+268083,Kilmainham A,Dublin,Dublin
+268084,Kilmainham B,Dublin,Dublin
+268085,Kilmainham C,Dublin,Dublin
+268086,Kilmore C,Dublin,Dublin
+268087,Kilmore D,Dublin,Dublin
+268088,Kilmore A,Dublin,Dublin
+268089,Kilmore B,Dublin,Dublin
+268090,Kimmage A,Dublin,Dublin
+268091,Kimmage B,Dublin,Dublin
+268092,Kimmage C,Dublin,Dublin
+268093,Kimmage D,Dublin,Dublin
+268094,Kimmage E,Dublin,Dublin
+268095,Kylemore,Dublin,Dublin
+268096,Mansion House A,Dublin,Dublin
+268097,Mansion House B,Dublin,Dublin
+268098,Merchants Quay A,Dublin,Dublin
+268099,Merchants Quay B,Dublin,Dublin
+268100,Merchants Quay C,Dublin,Dublin
+268101,Merchants Quay D,Dublin,Dublin
+268102,Merchants Quay E,Dublin,Dublin
+268103,Merchants Quay F,Dublin,Dublin
+268104,Mountjoy A,Dublin,Dublin
+268105,Mountjoy B,Dublin,Dublin
+268106,North City,Dublin,Dublin
+268107,North Dock A,Dublin,Dublin
+268108,North Dock B,Dublin,Dublin
+268109,North Dock C,Dublin,Dublin
+268110,Pembroke East A,Dublin,Dublin
+268111,Pembroke East B,Dublin,Dublin
+268112,Pembroke East C,Dublin,Dublin
+268113,Pembroke East D,Dublin,Dublin
+268114,Pembroke East E,Dublin,Dublin
+268115,Pembroke West A,Dublin,Dublin
+268116,Pembroke West B,Dublin,Dublin
+268117,Pembroke West C,Dublin,Dublin
+268118,Phoenix Park,Dublin,Dublin
+268119,Priorswood C,Dublin,Dublin
+268120,Priorswood D,Dublin,Dublin
+268121,Priorswood A,Dublin,Dublin
+268122,Priorswood B,Dublin,Dublin
+268123,Priorswood E,Dublin,Dublin
+268124,Raheny-Foxfield,Dublin,Dublin
+268125,Raheny-Greendale,Dublin,Dublin
+268126,Raheny-St. Assam,Dublin,Dublin
+268127,Rathfarnham,Dublin,Dublin
+268128,Rathmines East A,Dublin,Dublin
+268129,Rathmines East B,Dublin,Dublin
+268130,Rathmines East C,Dublin,Dublin
+268131,Rathmines East D,Dublin,Dublin
+268132,Rathmines West A,Dublin,Dublin
+268133,Rathmines West B,Dublin,Dublin
+268134,Rathmines West C,Dublin,Dublin
+268135,Rathmines West D,Dublin,Dublin
+268136,Rathmines West E,Dublin,Dublin
+268137,Rathmines West F,Dublin,Dublin
+268138,Rotunda A,Dublin,Dublin
+268139,Rotunda B,Dublin,Dublin
+268140,Royal Exchange A,Dublin,Dublin
+268141,Royal Exchange B,Dublin,Dublin
+268142,Saint Kevin'S,Dublin,Dublin
+268143,South Dock,Dublin,Dublin
+268144,Terenure A,Dublin,Dublin
+268145,Terenure B,Dublin,Dublin
+268146,Terenure C,Dublin,Dublin
+268147,Terenure D,Dublin,Dublin
+268148,Ushers A,Dublin,Dublin
+268149,Ushers B,Dublin,Dublin
+268150,Ushers C,Dublin,Dublin
+268151,Ushers D,Dublin,Dublin
+268152,Ushers E,Dublin,Dublin
+268153,Ushers F,Dublin,Dublin
+268154,Walkinstown A,Dublin,Dublin
+268155,Walkinstown B,Dublin,Dublin
+268156,Walkinstown C,Dublin,Dublin
+268157,Whitehall A,Dublin,Dublin
+268158,Whitehall B,Dublin,Dublin
+268159,Whitehall C,Dublin,Dublin
+268160,Whitehall D,Dublin,Dublin
+268161,Wood Quay A,Dublin,Dublin
+268162,Wood Quay B,Dublin,Dublin
+27001,Ardue,Cavan,Border
+27002,Arvagh,Cavan,Border
+27003,Ashfield,Cavan,Border
+27004,Bailieborough,Cavan,Border
+27005,Ballintemple,Cavan,Border
+27006,Ballyconnell,Cavan,Border
+27007,Ballyhaise,Cavan,Border
+27008,Ballyjamesduff,Cavan,Border
+27009,Ballymachugh,Cavan,Border
+27010,Ballymagauran,Cavan,Border
+27011,Bawnboy,Cavan,Border
+27012,Bellananagh,Cavan,Border
+27013,Belturbet,Cavan,Border
+27015,Bilberry,Cavan,Border
+27016,Bruce Hall,Cavan,Border
+27017,Butler'S Bridge,Cavan,Border
+27018,Canningstown,Cavan,Border
+27019,Carn,Cavan,Border
+27020,Carnagarve,Cavan,Border
+27021,Carrafin,Cavan,Border
+27022,Castlerahan,Cavan,Border
+27023,Castlesaunderson,Cavan,Border
+27024,Cavan Rural,Cavan,Border
+27025,Cavan Urban,Cavan,Border
+27026,Clonervy,Cavan,Border
+27027,Cootehill Rural,Cavan,Border
+27028,Cootehill Urban,Cavan,Border
+27029,Corr,Cavan,Border
+27030,Corraneary,Cavan,Border
+27031,Crossbane,Cavan,Border
+27032,Crossdoney,Cavan,Border
+27033,Crosskeys,Cavan,Border
+27034,Cuttragh,Cavan,Border
+27035,Denn,Cavan,Border
+27036,Derrin,Cavan,Border
+27037,Derrylahan,Cavan,Border
+27039,Diamond,Cavan,Border
+27040,Doogary,Cavan,Border
+27041,Dowra,Cavan,Border
+27042,Drumanespick,Cavan,Border
+27043,Drumcarban,Cavan,Border
+27044,Drumcarn,Cavan,Border
+27045,Drumlumman,Cavan,Border
+27046,Drung,Cavan,Border
+27048,Enniskeen,Cavan,Border
+27049,Eskey,Cavan,Border
+27050,Graddum,Cavan,Border
+27051,Grilly,Cavan,Border
+27052,Kilbride,Cavan,Border
+27053,Kilcogy,Cavan,Border
+27054,Kilconny,Cavan,Border
+27055,Kilgolagh,Cavan,Border
+27056,Kill,Cavan,Border
+27057,Killashandra,Cavan,Border
+27059,Killinkere,Cavan,Border
+27060,Killykeen,Cavan,Border
+27061,Kilnaleck,Cavan,Border
+27062,Kinawley,Cavan,Border
+27063,Kingscourt,Cavan,Border
+27064,Knappagh,Cavan,Border
+27065,Larah North,Cavan,Border
+27066,Larah South,Cavan,Border
+27067,Lisagoan,Cavan,Border
+27068,Lissanover,Cavan,Border
+27069,Loughdawan,Cavan,Border
+27070,Lurgan,Cavan,Border
+27071,Milltown,Cavan,Border
+27072,Moynehall,Cavan,Border
+27073,Mullagh,Cavan,Border
+27074,Munterconnaught,Cavan,Border
+27076,Rakenny,Cavan,Border
+27077,Redhill,Cavan,Border
+27078,Scrabby,Cavan,Border
+27079,Shercock,Cavan,Border
+27080,Skeagh,Cavan,Border
+27081,Springfield,Cavan,Border
+27082,Stradone,Cavan,Border
+27083,Swanlinbar,Cavan,Border
+27084,Taghart,Cavan,Border
+27086,Templeport,Cavan,Border
+27087,Termon,Cavan,Border
+27088,Tircahan,Cavan,Border
+27089,Tuam,Cavan,Border
+27090,Tullyvin East,Cavan,Border
+27091,Tullyvin West,Cavan,Border
+27092,Virginia,Cavan,Border
+27093,Waterloo,Cavan,Border
+37001,Abbey,Clare,Mid-West
+37002,Annagh,Clare,Mid-West
+37003,Ayle,Clare,Mid-West
+37004,Ballagh,Clare,Mid-West
+37005,Ballyblood,Clare,Mid-West
+37006,Ballycannan,Clare,Mid-West
+37007,Ballyea,Clare,Mid-West
+37009,Ballyglass,Clare,Mid-West
+37010,Ballynacally,Clare,Mid-West
+37011,Ballynahinch,Clare,Mid-West
+37012,Ballysteen,Clare,Mid-West
+37013,Ballyvaskin,Clare,Mid-West
+37014,Boherglass,Clare,Mid-West
+37015,Boston,Clare,Mid-West
+37016,Caher,Clare,Mid-West
+37017,Caherhurly,Clare,Mid-West
+37019,Cahermurphy,Clare,Mid-West
+37020,Cappaghabaun,Clare,Mid-West
+37021,Cappavilla,Clare,Mid-West
+37022,Carran,Clare,Mid-West
+37023,Carrowbaun,Clare,Mid-West
+37024,Castlecrine,Clare,Mid-West
+37025,Castletown,Clare,Mid-West
+37026,Clareabbey,Clare,Mid-West
+37027,Clenagh,Clare,Mid-West
+37028,Cloghaun,Clare,Mid-West
+37029,Cloghera,Clare,Mid-West
+37030,Clondagad,Clare,Mid-West
+37031,Cloonadrum,Clare,Mid-West
+37032,Cloonanaha,Clare,Mid-West
+37033,Clooncoorha,Clare,Mid-West
+37034,Clooney,Clare,Mid-West
+37035,Clooney,Clare,Mid-West
+37036,Cloontra,Clare,Mid-West
+37037,Cloonusker,Clare,Mid-West
+37038,Coolmeen,Clare,Mid-West
+37039,Coolreagh,Clare,Mid-West
+37040,Cooraclare,Clare,Mid-West
+37042,Corrofin,Clare,Mid-West
+37043,Cratloe,Clare,Mid-West
+37044,Creegh,Clare,Mid-West
+37045,Crusheen,Clare,Mid-West
+37046,Dangan,Clare,Mid-West
+37047,Derreen,Clare,Mid-West
+37048,Derrynagittagh,Clare,Mid-West
+37049,Doonbeg,Clare,Mid-West
+37050,Doora,Clare,Mid-West
+37051,Drumcreehy,Clare,Mid-West
+37052,Drumellihy,Clare,Mid-West
+37053,Drumline,Clare,Mid-West
+37054,Drummaan,Clare,Mid-West
+37055,Dysert,Clare,Mid-West
+37056,Einagh,Clare,Mid-West
+37057,Ennis Rural,Clare,Mid-West
+37058,Ennis No. 2 Urban,Clare,Mid-West
+37059,Ennistimon,Clare,Mid-West
+37060,Fahymore,Clare,Mid-West
+37061,Feakle,Clare,Mid-West
+37062,Formoyle,Clare,Mid-West
+37063,Furroor,Clare,Mid-West
+37064,Glendree,Clare,Mid-West
+37065,Gleninagh,Clare,Mid-West
+37066,Glenmore,Clare,Mid-West
+37070,Kilballyowen,Clare,Mid-West
+37071,Kilchreest,Clare,Mid-West
+37072,Kilcloher,Clare,Mid-West
+37073,Kilfearagh,Clare,Mid-West
+37075,Kilfenora,Clare,Mid-West
+37076,Kilfiddane,Clare,Mid-West
+37077,Kilkee,Clare,Mid-West
+37078,Kilkishen,Clare,Mid-West
+37079,Killadysert,Clare,Mid-West
+37080,Killaloe,Clare,Mid-West
+37081,Killanena,Clare,Mid-West
+37082,Killanniv,Clare,Mid-West
+37083,Killard,Clare,Mid-West
+37084,Killaspuglonane,Clare,Mid-West
+37085,Killeely,Clare,Mid-West
+37086,Killilagh,Clare,Mid-West
+37087,Killimer,Clare,Mid-West
+37088,Killinaboy,Clare,Mid-West
+37089,Killofin,Clare,Mid-West
+37090,Killokennedy,Clare,Mid-West
+37091,Killone,Clare,Mid-West
+37092,Killuran,Clare,Mid-West
+37093,Kilmihil,Clare,Mid-West
+37094,Kilmurry,Clare,Mid-West
+37095,Kilmurry,Clare,Mid-West
+37096,Kilnamona,Clare,Mid-West
+37097,Kilraghtis,Clare,Mid-West
+37098,Kilrush Rural,Clare,Mid-West
+37099,Kilrush Urban,Clare,Mid-West
+37100,Kilseily,Clare,Mid-West
+37101,Kilshanny,Clare,Mid-West
+37102,Kiltannon,Clare,Mid-West
+37103,Kiltenanlea,Clare,Mid-West
+37104,Kiltoraght,Clare,Mid-West
+37105,Kinturk,Clare,Mid-West
+37106,Knock,Clare,Mid-West
+37107,Knocknaboley,Clare,Mid-West
+37108,Knocknagore,Clare,Mid-West
+37109,Kyle,Clare,Mid-West
+37110,Lackareagh,Clare,Mid-West
+37111,Liscannor,Clare,Mid-West
+37112,Liscasey,Clare,Mid-West
+37113,Lisdoonvarna,Clare,Mid-West
+37114,Lisheen,Clare,Mid-West
+37115,Loughea,Clare,Mid-West
+37116,Lurraga,Clare,Mid-West
+37117,Magherareagh,Clare,Mid-West
+37118,Milltown Malbay,Clare,Mid-West
+37119,Mount Elva,Clare,Mid-West
+37120,Mountievers,Clare,Mid-West
+37121,Mountshannon,Clare,Mid-West
+37123,Moy,Clare,Mid-West
+37124,Moyarta,Clare,Mid-West
+37125,Muckanagh,Clare,Mid-West
+37126,Mullagh,Clare,Mid-West
+37127,Newgrove,Clare,Mid-West
+37128,Newmarket,Clare,Mid-West
+37129,Noughaval,Clare,Mid-West
+37130,O'Briensbridge,Clare,Mid-West
+37131,Ogonnelloe,Clare,Mid-West
+37132,Oughtmama,Clare,Mid-West
+37133,Querrin,Clare,Mid-West
+37134,Quin,Clare,Mid-West
+37135,Rahona,Clare,Mid-West
+37136,Rath,Clare,Mid-West
+37137,Rathborney,Clare,Mid-West
+37138,Rathclooney,Clare,Mid-West
+37139,Rinealon,Clare,Mid-West
+37140,Rossroe,Clare,Mid-West
+37141,Ruan,Clare,Mid-West
+37142,Scarriff,Clare,Mid-West
+37143,Sixmilebridge,Clare,Mid-West
+37144,Smithstown,Clare,Mid-West
+37145,Spancelhill,Clare,Mid-West
+37146,St. Martin'S,Clare,Mid-West
+37147,Templemaley,Clare,Mid-West
+37148,Toberbreeda,Clare,Mid-West
+37149,Tomfinlough,Clare,Mid-West
+37150,Tulla,Clare,Mid-West
+37152,Tullycreen,Clare,Mid-West
+37153,Urlan,Clare,Mid-West
+37154,Ennis No. 1 Urban,Clare,Mid-West
+37155,Ennis No. 3 Urban,Clare,Mid-West
+37156,Ennis No. 4 Urban,Clare,Mid-West
+47001,Abbeymahon,Cork,South-West
+47002,Adrigole,Cork,South-West
+47003,Aghadown North,Cork,South-West
+47004,Aghadown South,Cork,South-West
+47005,Aghern,Cork,South-West
+47006,Aghinagh,Cork,South-West
+47007,Aglish,Cork,South-West
+47008,Ahil,Cork,South-West
+47009,Allow,Cork,South-West
+47010,Ardagh,Cork,South-West
+47011,Ardfield,Cork,South-West
+47012,Ardskeagh,Cork,South-West
+47013,Argideen,Cork,South-West
+47014,Aultagh,Cork,South-West
+47015,Ballinadee,Cork,South-West
+47016,Ballincollig,Cork,South-West
+4701619,Ballincollig,Cork,South-West
+47017,Ballingurteen,Cork,South-West
+47018,Ballinspittle,Cork,South-West
+47019,Ballintemple,Cork,South-West
+47020,Ballyarthur,Cork,South-West
+47021,Ballybane,Cork,South-West
+47022,Ballyclogh,Cork,South-West
+47023,Ballycottin,Cork,South-West
+47024,Ballydehob,Cork,South-West
+47025,Ballyfeard,Cork,South-West
+47026,Ballyfoyle,Cork,South-West
+47027,Ballygarvan,Cork,South-West
+47028,Ballygroman,Cork,South-West
+47029,Ballyhoolahan,Cork,South-West
+47030,Ballyhooly,Cork,South-West
+47031,Ballymackean,Cork,South-West
+47032,Ballymartle,Cork,South-West
+47033,Ballymodan,Cork,South-West
+47034,Ballymoney,Cork,South-West
+47035,Ballymurphy,Cork,South-West
+47036,Ballynaglogh,Cork,South-West
+47037,Ballynamona,Cork,South-West
+47038,Ballynoe,Cork,South-West
+47039,Ballyspillane,Cork,South-West
+47040,Banteer,Cork,South-West
+47042,Bantry Urban,Cork,South-West
+47043,Barleyhill,Cork,South-West
+47044,Barnacurra,Cork,South-West
+47045,Baurleigh,Cork,South-West
+47046,Bawncross,Cork,South-West
+47047,Bealanageary,Cork,South-West
+47048,Bealanageary,Cork,South-West
+47049,Bealock,Cork,South-West
+47050,Bear,Cork,South-West
+47051,Bengour,Cork,South-West
+47052,Bishopstown,Cork,South-West
+47053,Blackpool,Cork,South-West
+47054,Blarney,Cork,South-West
+4705419,Blarney,Cork,South-West
+47055,Boherboy,Cork,South-West
+47056,Boulteen,Cork,South-West
+47057,Bredagh,Cork,South-West
+47058,Brinny,Cork,South-West
+47059,Butlerstown,Cork,South-West
+47060,Buttevant,Cork,South-West
+47061,Caheragh,Cork,South-West
+47062,Caherbarnagh,Cork,South-West
+47063,Caherduggan,Cork,South-West
+47064,Caherlag,Cork,South-West
+4706419,Caherlag,Cork,South-West
+47065,Cahermore,Cork,South-West
+47066,Candroma,Cork,South-West
+47067,Cannaway,Cork,South-West
+47068,Cape Clear,Cork,South-West
+47069,Carrig,Cork,South-West
+47070,Carrig,Cork,South-West
+47071,Carrigaline,Cork,South-West
+47072,Carrigaline,Cork,South-West
+47073,Carrigbaun,Cork,South-West
+47074,Carrigboy,Cork,South-West
+47075,Carrignavar,Cork,South-West
+47076,Carrigrohanebeg,Cork,South-West
+4707619,Carrigrohanebeg,Cork,South-West
+47077,Carrigtohill,Cork,South-West
+47078,Cashel,Cork,South-West
+47079,Castle Hyde,Cork,South-West
+47080,Castlecooke,Cork,South-West
+47081,Castlecor,Cork,South-West
+47082,Castlehaven North,Cork,South-West
+47083,Castlehaven South,Cork,South-West
+47084,Castlelyons,Cork,South-West
+47085,Castlemagner,Cork,South-West
+47086,Castlemartyr,Cork,South-West
+47087,Castletownroche,Cork,South-West
+47088,Castletown,Cork,South-West
+47089,Castleventry,Cork,South-West
+47090,Rathluirc,Cork,South-West
+47091,Churchtown,Cork,South-West
+47092,Cleanrath,Cork,South-West
+47093,Clenor,Cork,South-West
+47094,Cloghdonnell,Cork,South-West
+47095,Clonakilty Rural,Cork,South-West
+47096,Clonakilty Urban,Cork,South-West
+47097,Clondrohid,Cork,South-West
+47098,Clonfert East,Cork,South-West
+47099,Clonfert West,Cork,South-West
+47100,Clonmeen,Cork,South-West
+47101,Clonmoyle,Cork,South-West
+47102,Clonmult,Cork,South-West
+47103,Clonpriest,Cork,South-West
+47104,Cloonkeen,Cork,South-West
+47105,Cloyne,Cork,South-West
+47106,Cobh Rural,Cork,South-West
+47107,Cobh Urban,Cork,South-West
+47108,Coolagh,Cork,South-West
+47109,Coolclogh,Cork,South-West
+47110,Coolcraheen,Cork,South-West
+47111,Coole,Cork,South-West
+47112,Coolmain,Cork,South-West
+47113,Coolmountain,Cork,South-West
+47114,Coomlogane,Cork,South-West
+47115,Corkbeg,Cork,South-West
+47116,Coulagh,Cork,South-West
+47117,Courtmacsherry,Cork,South-West
+47118,Crinnaloo,Cork,South-West
+47119,Crookhaven,Cork,South-West
+47120,Cullen,Cork,South-West
+47121,Cullen,Cork,South-West
+47122,Curraglass,Cork,South-West
+47123,Curryglass,Cork,South-West
+47124,Dangan,Cork,South-West
+47125,Derragh,Cork,South-West
+47126,Derry,Cork,South-West
+47127,Derryfineen,Cork,South-West
+47128,Derryvillane,Cork,South-West
+47129,Doneraile,Cork,South-West
+47130,Doonasleen,Cork,South-West
+47131,Douce,Cork,South-West
+47132,Douglas,Cork,South-West
+4713219_4707219_4726119,Douglas,Cork,South-West
+47133,Drinagh,Cork,South-West
+47134,Drinagh,Cork,South-West
+47135,Dripsey,Cork,South-West
+47136,Drishane,Cork,South-West
+47137,Dromdaleague South,Cork,South-West
+47138,Dromdaleague North,Cork,South-West
+47139,Dromina,Cork,South-West
+47140,Dromore,Cork,South-West
+47141,Dunbeacon,Cork,South-West
+47142,Dunderrow,Cork,South-West
+47143,Dungourney,Cork,South-West
+47144,Dunmanus,Cork,South-West
+47145,Dunmanway North,Cork,South-West
+47146,Dunmanway South,Cork,South-West
+47147,Durrus East,Cork,South-West
+47148,Durrus West,Cork,South-West
+47149,Farahy,Cork,South-West
+47150,Farranbrien,Cork,South-West
+47151,Fermoy Rural,Cork,South-West
+47152,Fermoy Urban,Cork,South-West
+47153,Firmount,Cork,South-West
+47154,Garranes,Cork,South-West
+47155,Garrown,Cork,South-West
+47156,Garryvoe,Cork,South-West
+47157,Glanlough,Cork,South-West
+47158,Glanworth East,Cork,South-West
+47159,Glanworth West,Cork,South-West
+47160,Glengarriff,Cork,South-West
+47161,Glenlara,Cork,South-West
+47162,Glenville,Cork,South-West
+47163,Goleen,Cork,South-West
+47164,Gortmore,Cork,South-West
+47165,Gortnascreeny,Cork,South-West
+47166,Gortnaskehy,Cork,South-West
+47167,Gortnatubbrid,Cork,South-West
+47168,Gortroe,Cork,South-West
+47169,Gowlane,Cork,South-West
+47170,Greenane,Cork,South-West
+47171,Greenfort,Cork,South-West
+47172,Greenville,Cork,South-West
+47173,Ightermurragh,Cork,South-West
+47174,Imphrick,Cork,South-West
+47175,Inch,Cork,South-West
+47176,Inchigeelagh,Cork,South-West
+47177,Inishannon,Cork,South-West
+47178,Inishkenny,Cork,South-West
+4717819,Inishkenny,Cork,South-West
+47179,Kanturk,Cork,South-West
+47180,Keale,Cork,South-West
+47181,Kealkill,Cork,South-West
+47182,Kilberrihert,Cork,South-West
+47183,Kilbonane,Cork,South-West
+47184,Kilbrin,Cork,South-West
+47185,Kilbrittain,Cork,South-West
+47186,Kilbrogan,Cork,South-West
+47187,Kilcaskan,Cork,South-West
+47188,Kilcatherine,Cork,South-West
+47189,Kilcoe,Cork,South-West
+47190,Kilcor,Cork,South-West
+47191,Kilcorney,Cork,South-West
+47192,Kilcronat,Cork,South-West
+47193,Kilcullen,Cork,South-West
+47194,Kilcummer,Cork,South-West
+47195,Kildinan,Cork,South-West
+47196,Kildorrery,Cork,South-West
+47197,Kilfaughnabeg,Cork,South-West
+47198,Kilgullane,Cork,South-West
+47199,Kilkerranmore,Cork,South-West
+47200,Killaconenagh,Cork,South-West
+47201,Killathy,Cork,South-West
+47202,Killeagh,Cork,South-West
+47203,Killeagh,Cork,South-West
+47204,Killeenleagh,Cork,South-West
+47205,Kilmacdonogh,Cork,South-West
+47206,Kilmaclenine,Cork,South-West
+47207,Kilmaloda East,Cork,South-West
+47208,Kilmaloda West,Cork,South-West
+47209,Kilmeen,Cork,South-West
+47210,Kilmonoge,Cork,South-West
+47211,Kilmoylerane,Cork,South-West
+47212,Kilnagross,Cork,South-West
+47213,Kilnamanagh,Cork,South-West
+47214,Kilnamartery,Cork,South-West
+47215,Kilpatrick,Cork,South-West
+47216,Kilphelan,Cork,South-West
+47217,Kilshannig,Cork,South-West
+47218,Kilworth,Cork,South-West
+47219,Williamstown,Cork,South-West
+47220,Kinneigh,Cork,South-West
+47221,Kinsale Rural,Cork,South-West
+47222,Kinsale Urban,Cork,South-West
+47223,Kinure,Cork,South-West
+47224,Knockantota,Cork,South-West
+47225,Knockatooan,Cork,South-West
+47226,Knockavilly,Cork,South-West
+47227,Knockmourne,Cork,South-West
+47228,Knocknagree,Cork,South-West
+47229,Knockraha,Cork,South-West
+47230,Knockroe,Cork,South-West
+47231,Knocks,Cork,South-West
+47232,Knockskagh,Cork,South-West
+47233,Knocktemple,Cork,South-West
+47234,Laherne,Cork,South-West
+47236,Leighmoney,Cork,South-West
+47237,Leitrim,Cork,South-West
+47238,Liscarroll,Cork,South-West
+47239,Liscleary,Cork,South-West
+47240,Lisgoold,Cork,South-West
+47241,Lowertown,Cork,South-West
+47242,Macloneigh,Cork,South-West
+47243,Macroom Urban,Cork,South-West
+47244,Magourney,Cork,South-West
+47245,Mallow Rural,Cork,South-West
+47246,Mallow South Urban,Cork,South-West
+47247,Manch,Cork,South-West
+47248,Marshalstown,Cork,South-West
+47249,Mashanaglass,Cork,South-West
+47250,Matehy,Cork,South-West
+4725019,Matehy,Cork,South-West
+47251,Mealagh,Cork,South-West
+47252,Meens,Cork,South-West
+47253,Midleton Rural,Cork,South-West
+47254,Midleton Urban,Cork,South-West
+47255,Milane,Cork,South-West
+47256,Milford,Cork,South-West
+47257,Milltown,Cork,South-West
+47258,Mitchelstown,Cork,South-West
+47259,Mogeely,Cork,South-West
+47260,Monanimy,Cork,South-West
+47261,Monkstown Rural,Cork,South-West
+47262,Mountrivers,Cork,South-West
+47263,Moviddy,Cork,South-West
+47264,Murragh,Cork,South-West
+47265,Myross,Cork,South-West
+47266,Nad,Cork,South-West
+47267,Newmarket,Cork,South-West
+47268,Newtown,Cork,South-West
+47269,Nohaval,Cork,South-West
+47270,Ovens,Cork,South-West
+4727019,Ovens,Cork,South-West
+47271,Monkstown Urban,Cork,South-West
+47272,Rahalisk,Cork,South-West
+47273,Rahan,Cork,South-West
+47274,Rathbarry,Cork,South-West
+47275,Rathclarin,Cork,South-West
+47276,Rathcool,Cork,South-West
+47277,Rathcooney,Cork,South-West
+4727719,Rathcooney,Cork,South-West
+47278,Rathcormack,Cork,South-West
+47279,Riverstown,Cork,South-West
+4727919,Riverstown,Cork,South-West
+47280,Roskeen,Cork,South-West
+47281,Rosnalee,Cork,South-West
+47282,Rosscarbery,Cork,South-West
+47283,Rossmore,Cork,South-West
+47284,Rostellan,Cork,South-West
+47285,Rowls,Cork,South-West
+47286,Scart,Cork,South-West
+47287,Seefin,Cork,South-West
+47288,Shanballymore,Cork,South-West
+47289,Sheepshead,Cork,South-West
+47290,Shreelane,Cork,South-West
+47291,Skagh,Cork,South-West
+47292,Skahanagh,Cork,South-West
+47293,Skibbereen Rural,Cork,South-West
+47294,Skibbereen Urban,Cork,South-West
+47295,Skull,Cork,South-West
+47296,Slievereagh,Cork,South-West
+47297,Springfort,Cork,South-West
+47298,St. Mary'S,Cork,South-West
+47299,Streamhill,Cork,South-West
+47300,Teadies,Cork,South-West
+47301,Teerelton,Cork,South-West
+47302,Templebodan,Cork,South-West
+47303,Templebreedy,Cork,South-West
+47304,Templemartin,Cork,South-West
+47305,Templemary,Cork,South-West
+47306,Templemichael,Cork,South-West
+47307,Templemolaga,Cork,South-West
+47308,Templenacarriga,Cork,South-West
+47309,Templeomalus,Cork,South-West
+47310,Timoleague,Cork,South-West
+47311,Tincoora,Cork,South-West
+47312,Toormore,Cork,South-West
+47313,Tullagh,Cork,South-West
+47314,Tullylease,Cork,South-West
+47315,Ullanes,Cork,South-West
+47316,Wallstown,Cork,South-West
+47317,Warrenscourt,Cork,South-West
+47318,Watergrasshill,Cork,South-West
+47320,Whitechurch,Cork,South-West
+4732019,Whitechurch,Cork,South-West
+47321,Woodfort,Cork,South-West
+47322,Youghal Rural,Cork,South-West
+47323,Youghal Urban,Cork,South-West
+47324,Mallow North Urban,Cork,South-West
+47325,Bandon,Cork,South-West
+48001,Ballinlough A,Cork,South-West
+48002,Ballinlough B,Cork,South-West
+48003,Ballinlough C,Cork,South-West
+48004,Ballyphehane A,Cork,South-West
+48005,Ballyphehane B,Cork,South-West
+48006,Bishopstown A,Cork,South-West
+48007,Bishopstown B,Cork,South-West
+48008,Bishopstown C,Cork,South-West
+48009,Bishopstown E,Cork,South-West
+48010,Bishopstown D,Cork,South-West
+48011,Blackpool A,Cork,South-West
+48012,Blackpool B,Cork,South-West
+48013,Browningstown,Cork,South-West
+48014,Centre A,Cork,South-West
+48015,Centre B,Cork,South-West
+48016,Churchfield,Cork,South-West
+48017,City Hall A,Cork,South-West
+48018,City Hall B,Cork,South-West
+48019,Commons,Cork,South-West
+48020,Evergreen,Cork,South-West
+48021,Fair Hill A,Cork,South-West
+48022,Fair Hill B,Cork,South-West
+48023,Fair Hill C,Cork,South-West
+48024,Farranferris A,Cork,South-West
+48025,Farranferris B,Cork,South-West
+48026,Farranferris C,Cork,South-West
+48027,Gurranebraher D,Cork,South-West
+48028,Gillabbey A,Cork,South-West
+48029,Gillabbey B,Cork,South-West
+48030,Gillabbey C,Cork,South-West
+48031,Glasheen A,Cork,South-West
+48032,Glasheen B,Cork,South-West
+48033,Glasheen C,Cork,South-West
+48034,Greenmount,Cork,South-West
+48035,Gurranebraher A,Cork,South-West
+48036,Gurranebraher B,Cork,South-West
+48037,Gurranebraher C,Cork,South-West
+48038,Gurranebraher E,Cork,South-West
+48039,Knocknaheeny,Cork,South-West
+48040,Knockrea A,Cork,South-West
+48041,Knockrea B,Cork,South-West
+48042,Mahon A,Cork,South-West
+48043,Mahon B,Cork,South-West
+48044,Mahon C,Cork,South-West
+48045,Mardyke,Cork,South-West
+48046,Mayfield,Cork,South-West
+48047,Montenotte A,Cork,South-West
+48048,Montenotte B,Cork,South-West
+48049,Pouladuff A,Cork,South-West
+48050,Pouladuff B,Cork,South-West
+48051,Shanakiel,Cork,South-West
+48052,Shandon A,Cork,South-West
+48053,Shandon B,Cork,South-West
+48054,South Gate A,Cork,South-West
+48055,South Gate B,Cork,South-West
+48056,St. Patrick'S A,Cork,South-West
+48057,St. Patrick'S B,Cork,South-West
+48058,St. Patrick'S C,Cork,South-West
+48059,Sunday'S Well A,Cork,South-West
+48060,Sunday'S Well B,Cork,South-West
+48061,The Glen A,Cork,South-West
+48062,The Glen B,Cork,South-West
+48063,The Lough,Cork,South-West
+48064,Tivoli A,Cork,South-West
+48065,Tivoli B,Cork,South-West
+48066,Togher A,Cork,South-West
+48067,Togher B,Cork,South-West
+48068,Tramore A,Cork,South-West
+48069,Tramore B,Cork,South-West
+48070,Tramore C,Cork,South-West
+48071,Turner'S Cross A,Cork,South-West
+48072,Turner'S Cross B,Cork,South-West
+48073,Turner'S Cross C,Cork,South-West
+48074,Turner'S Cross D,Cork,South-West
+57001,Altnapaste,Donegal,Border
+57002,Annagary,Donegal,Border
+57003,Aran,Donegal,Border
+57004,Ardara,Donegal,Border
+57005,Ardmalin,Donegal,Border
+57006,Ards,Donegal,Border
+57007,Ballintra,Donegal,Border
+57008,Ballintra,Donegal,Border
+57009,Ballyliffin,Donegal,Border
+57010,Ballyarr,Donegal,Border
+57011,Ballymacool,Donegal,Border
+57012,Ballyshannon Urban,Donegal,Border
+57013,Ballyshannon Rural,Donegal,Border
+57014,Binbane,Donegal,Border
+57015,Birdstown,Donegal,Border
+57016,Bonnyglen,Donegal,Border
+57017,Buncrana Rural,Donegal,Border
+57018,Buncrana Urban,Donegal,Border
+57019,Bundoran Rural,Donegal,Border
+57020,Bundoran Urban,Donegal,Border
+57021,Burt,Donegal,Border
+57022,Carndonagh,Donegal,Border
+57023,Carrickart,Donegal,Border
+57024,Carrickboy,Donegal,Border
+57025,Carrowkeel,Donegal,Border
+57026,Carthage,Donegal,Border
+57027,Castlecary,Donegal,Border
+57028,Castlefinn,Donegal,Border
+57029,Castleforward,Donegal,Border
+57030,Castlewray,Donegal,Border
+57031,Cavangarden,Donegal,Border
+57032,Church Hill,Donegal,Border
+57033,Cliff,Donegal,Border
+57034,Cloghan,Donegal,Border
+57035,Cloghard,Donegal,Border
+57036,Clogher,Donegal,Border
+57037,Clonleigh North,Donegal,Border
+57038,Clonleigh South,Donegal,Border
+57039,Convoy,Donegal,Border
+57040,Corkermore,Donegal,Border
+57041,Corravaddy,Donegal,Border
+57042,Cranford,Donegal,Border
+57043,Creenasmear,Donegal,Border
+57044,Creeslough,Donegal,Border
+57045,Cross Roads,Donegal,Border
+57046,Crovehy,Donegal,Border
+57047,Crowkeeragh,Donegal,Border
+57048,Crownarad,Donegal,Border
+57049,Culdaff,Donegal,Border
+57050,Dawros,Donegal,Border
+57051,Desertegny,Donegal,Border
+57052,Doe Castle,Donegal,Border
+57053,Donegal,Donegal,Border
+57054,Doocharry,Donegal,Border
+57055,Dooish,Donegal,Border
+57056,Dunaff,Donegal,Border
+57057,Dunfanaghy,Donegal,Border
+57058,Dunglow,Donegal,Border
+57059,Dunkineely,Donegal,Border
+57060,Dunlewy,Donegal,Border
+57061,Eanymore,Donegal,Border
+57062,Edenacarnan,Donegal,Border
+57063,Fahan,Donegal,Border
+57064,Fanad North,Donegal,Border
+57065,Fanad West,Donegal,Border
+57066,Feddyglass,Donegal,Border
+57067,Figart,Donegal,Border
+57068,Fintown,Donegal,Border
+57069,Gartan,Donegal,Border
+57070,Glen,Donegal,Border
+57071,Glenalla,Donegal,Border
+57072,West Donegal,Donegal,Border
+57073,Gleneely,Donegal,Border
+57074,Gleneely,Donegal,Border
+57075,Glengesh,Donegal,Border
+57076,Glenleheen,Donegal,Border
+57077,Gleneganon,Donegal,Border
+57078,Glenties,Donegal,Border
+57079,Glentogher,Donegal,Border
+57080,Goland,Donegal,Border
+57081,Gortahork,Donegal,Border
+57082,Gortnavern,Donegal,Border
+57083,Graffy,Donegal,Border
+57084,Greencastle,Donegal,Border
+57085,Greenfort,Donegal,Border
+57086,Grousehall,Donegal,Border
+57087,Haugh,Donegal,Border
+57088,Illies,Donegal,Border
+57089,Inch Island,Donegal,Border
+57090,Inishkeel,Donegal,Border
+57091,Inver,Donegal,Border
+57092,Kilcar,Donegal,Border
+57093,Kilderry,Donegal,Border
+57094,Kilgoly,Donegal,Border
+57095,Killea,Donegal,Border
+57096,Killybegs,Donegal,Border
+57097,Killygarvan,Donegal,Border
+57098,Killygordon,Donegal,Border
+57099,Killymasny,Donegal,Border
+57100,Kilmacrenan,Donegal,Border
+57101,Kincraigy,Donegal,Border
+57102,Knock,Donegal,Border
+57103,Knockalla,Donegal,Border
+57104,Laghy,Donegal,Border
+57105,Largymore,Donegal,Border
+57106,Letterkenny Rural,Donegal,Border
+57107,Letterkenny Urban,Donegal,Border
+57108,Lettermacaward,Donegal,Border
+57109,Lettermore,Donegal,Border
+57110,Lough Eask,Donegal,Border
+57111,Loughkeel,Donegal,Border
+57112,Maas,Donegal,Border
+57113,Magheraboy,Donegal,Border
+57114,Magheraclogher,Donegal,Border
+57115,Maghery,Donegal,Border
+57116,Malin,Donegal,Border
+57117,Malinbeg,Donegal,Border
+57118,Manorcunningham,Donegal,Border
+57119,Meenaclady,Donegal,Border
+57120,Meencargagh,Donegal,Border
+57121,Millford,Donegal,Border
+57122,Mintiaghs,Donegal,Border
+57123,Moville,Donegal,Border
+57124,Mulmosog,Donegal,Border
+57125,Newtown Cunningham,Donegal,Border
+57126,Pettigoe,Donegal,Border
+57127,Raphoe,Donegal,Border
+57128,Rathmelton,Donegal,Border
+57129,Rathmullan,Donegal,Border
+57130,Redcastle,Donegal,Border
+57131,Rosguill,Donegal,Border
+57132,Rosnakill,Donegal,Border
+57133,Rutland,Donegal,Border
+57134,Seacor,Donegal,Border
+57135,St. Johnstown,Donegal,Border
+57136,Straid,Donegal,Border
+57137,Stranorlar,Donegal,Border
+57138,Tantallon,Donegal,Border
+57139,Tawnawully,Donegal,Border
+57140,Templecarn,Donegal,Border
+57141,Templedouglas,Donegal,Border
+57142,Termon,Donegal,Border
+57143,Three Trees,Donegal,Border
+57144,Tieveskeelta,Donegal,Border
+57145,Treantaghmucklagh,Donegal,Border
+57146,Tullynaught,Donegal,Border
+57147,Turmone,Donegal,Border
+57148,Urney West,Donegal,Border
+57149,Whitecastle,Donegal,Border
+67001,Abbey East,Galway,West
+67002,Abbey West,Galway,West
+67003,Abbeygormacan,Galway,West
+67004,Abbeyville,Galway,West
+67005,Addergoole,Galway,West
+67006,Ahascragh,Galway,West
+67007,Aille,Galway,West
+67008,Annagh,Galway,West
+67009,Annaghdown,Galway,West
+67010,Annaghdown,Galway,West
+67011,Ardamullivan,Galway,West
+67012,Ardrahan,Galway,West
+67013,Athenry,Galway,West
+67014,Aughrim,Galway,West
+67015,Aughrim,Galway,West
+67016,Ballinasloe Rural,Galway,West
+67017,Ballinasloe Urban,Galway,West
+67018,Ballinastack,Galway,West
+67019,Ballinderry,Galway,West
+67020,Ballinduff,Galway,West
+67021,Ballintemple,Galway,West
+67022,Ballycahalan,Galway,West
+67023,Ballyglass,Galway,West
+67024,Ballymacward,Galway,West
+67025,Ballymoe,Galway,West
+67026,Ballynacourty,Galway,West
+67027,Ballynagar,Galway,West
+67028,Ballynakill,Galway,West
+67029,Ballynakill,Galway,West
+67030,Ballynakill,Galway,West
+67031,Ballynapark,Galway,West
+67032,Barna,Galway,West
+67033,Beagh,Galway,West
+67034,Beaghmore,Galway,West
+67035,Belclare,Galway,West
+67036,Belleville,Galway,West
+67037,Bencorr,Galway,West
+67038,Boyounagh,Galway,West
+67039,Bracklagh,Galway,West
+67040,Bullaun,Galway,West
+67041,Bunowen,Galway,West
+67042,Cahermore,Galway,West
+67043,Caltra,Galway,West
+67044,Camus,Galway,West
+67045,Cappalusk,Galway,West
+67046,Cappard,Galway,West
+67047,Carnmore,Galway,West
+67048,Carrowbrowne,Galway,West
+67049,Carrownagur,Galway,West
+67050,Carrowrevagh,Galway,West
+67051,Castleblakeney,Galway,West
+67052,Castleboy,Galway,West
+67053,Castleffrench,Galway,West
+67054,Castletaylor,Galway,West
+67055,Claregalway,Galway,West
+67056,Claretuam,Galway,West
+67057,Clarinbridge,Galway,West
+67058,Cleggan,Galway,West
+67059,Clifden,Galway,West
+67060,Clonbern,Galway,West
+67061,Clonbrock,Galway,West
+67062,Clonfert,Galway,West
+67063,Clontuskert,Galway,West
+67064,Cloonbur,Galway,West
+67065,Cloonkeen,Galway,West
+67066,Cloonkeen,Galway,West
+67067,Cloonkeen,Galway,West
+67068,Colmanstown,Galway,West
+67070,Cooloo,Galway,West
+67072,Craughwell,Galway,West
+67073,Creggs,Galway,West
+67074,Crumpaun,Galway,West
+67075,Cummer,Galway,West
+67076,Cur,Galway,West
+67077,Curraghmore,Galway,West
+67078,Crump Island,Galway,West
+67079,Deerpark,Galway,West
+67080,Derrew,Galway,West
+67082,Derryglassaun,Galway,West
+67083,Derrylaur,Galway,West
+67085,Donaghpatrick,Galway,West
+67086,Doonbally,Galway,West
+67087,Doonloughan,Galway,West
+67088,Doorus,Galway,West
+67089,Drumacoo,Galway,West
+67090,Drumkeary,Galway,West
+67091,Drummin,Galway,West
+67092,Dunmore North,Galway,West
+67093,Dunmore South,Galway,West
+67094,Errislannan,Galway,West
+67095,Eyrecourt,Galway,West
+67096,Foxhall,Galway,West
+67097,Furbogh,Galway,West
+67098,Galway Rural,Galway,West
+67100,Glennamaddy,Galway,West
+67101,Gort,Galway,West
+67102,Gorumna,Galway,West
+67103,Graigabbey,Galway,West
+67104,Grange,Galway,West
+67105,Greethill,Galway,West
+67106,Headford,Galway,West
+67107,Hillsbrook,Galway,West
+67108,Illion,Galway,West
+67109,Inishbofin,Galway,West
+67110,Inishmore,Galway,West
+67111,Island,Galway,West
+67112,Kellysgrove,Galway,West
+67113,Kilbeacanty,Galway,West
+67114,Kilbennan,Galway,West
+67115,Kilchreest,Galway,West
+67116,Kilconickny,Galway,West
+67117,Kilconierin,Galway,West
+67118,Kilconnell,Galway,West
+67119,Kilcoona,Galway,West
+67120,Kilcroan,Galway,West
+67121,Kilcummin,Galway,West
+67122,Kilcummin,Galway,West
+67123,Killaan,Galway,West
+67124,Killallaghtan,Galway,West
+67125,Killannin,Galway,West
+67126,Killeany,Galway,West
+67127,Killeely,Galway,West
+67128,Killeen,Galway,West
+67129,Killeenavarra,Galway,West
+67130,Killererin,Galway,West
+67131,Killeroran,Galway,West
+67132,Killian,Galway,West
+67133,Killimor,Galway,West
+67134,Killimor,Galway,West
+67135,Killinny,Galway,West
+67136,Killogilleen,Galway,West
+67137,Killoran,Galway,West
+67138,Killower,Galway,West
+67139,Killure,Galway,West
+67140,Killursa,Galway,West
+67141,Kilmacshane,Galway,West
+67142,Kilmalinoge,Galway,West
+67143,Kilmeen,Galway,West
+67144,Kilmoylan,Galway,West
+67145,Kilquain,Galway,West
+67146,Kilreekill,Galway,West
+67147,Kilshanvy,Galway,West
+67148,Kiltartan,Galway,West
+67149,Kilteskill,Galway,West
+67150,Kilthomas,Galway,West
+67151,Kiltormer,Galway,West
+67152,Kiltullagh,Galway,West
+67153,Kiltullagh,Galway,West
+67154,Kinvarra,Galway,West
+67155,Knockboy,Galway,West
+67156,Kylemore,Galway,West
+67157,Lackaghbeg,Galway,West
+67158,Lackalea,Galway,West
+67159,Laurencetown,Galway,West
+67160,Leitrim,Galway,West
+67161,Letterbrickaun,Galway,West
+67162,Letterfore,Galway,West
+67163,Lettermore,Galway,West
+67164,Levally,Galway,West
+67165,Liscananaun,Galway,West
+67166,Lisheenavalla,Galway,West
+67167,Lismanny,Galway,West
+67169,Loughrea Rural,Galway,West
+67170,Loughrea Urban,Galway,West
+67172,Meelick,Galway,West
+67173,Milltown,Galway,West
+67174,Moat,Galway,West
+67175,Monivea,Galway,West
+67176,Mount Bellew,Galway,West
+67177,Mountain,Galway,West
+67178,Mounthazel,Galway,West
+67179,Moycullen,Galway,West
+67180,Moyne,Galway,West
+67181,Moyode,Galway,West
+67182,Moyrus,Galway,West
+67183,Oatfield,Galway,West
+67184,Oranmore,Galway,West
+67185,Oughterard,Galway,West
+67186,Owengowla,Galway,West
+67187,Pallas,Galway,West
+67188,Portumna,Galway,West
+67189,Raford,Galway,West
+67190,Rahasane,Galway,West
+67191,Raheen,Galway,West
+67192,Rinvyle,Galway,West
+67194,Roundstone,Galway,West
+67195,Ryehill,Galway,West
+67196,Scregg,Galway,West
+67197,Selerna,Galway,West
+67198,Shankill,Galway,West
+67199,Sillerna,Galway,West
+67200,Skannive,Galway,West
+67201,Skehanagh,Galway,West
+67202,Slieveaneena,Galway,West
+67203,Spiddle,Galway,West
+67204,Stradbally,Galway,West
+67205,Taghboy,Galway,West
+67206,Templetogher,Galway,West
+67207,Tiaquin,Galway,West
+67208,Tiranascragh,Galway,West
+67209,Toberadosh,Galway,West
+67210,Toberroe,Galway,West
+67211,Tuam Rural,Galway,West
+67212,Tuam Urban,Galway,West
+67213,Tullokyne,Galway,West
+67214,Turlough,Galway,West
+67215,Tynagh,Galway,West
+67216,Woodford,Galway,West
+67217,Wormhole,Galway,West
+68001,Ballybaan,Galway,West
+68002,Ballybrit,Galway,West
+68003,Barna,Galway,West
+68004,Castlegar,Galway,West
+68005,Claddagh,Galway,West
+68006,Dangan,Galway,West
+68007,Eyre Square,Galway,West
+68008,Knocknacarragh,Galway,West
+68009,Lough Atalia,Galway,West
+68010,Menlough,Galway,West
+68011,Mervue,Galway,West
+68012,Murroogh,Galway,West
+68013,Newcastle,Galway,West
+68014,Nuns Island,Galway,West
+68015,Rahoon,Galway,West
+68016,Renmore,Galway,West
+68017,Rockbarton,Galway,West
+68018,Salthill,Galway,West
+68019,Shantalla,Galway,West
+68020,St. Nicholas,Galway,West
+68021,Taylors Hill,Galway,West
+68022,Wellpark,Galway,West
+77001,Abbeydorney,Kerry,South-West
+77002,Aghadoe,Kerry,South-West
+77003,Aglish,Kerry,South-West
+77004,Arabela,Kerry,South-West
+77005,Ardagh,Kerry,South-West
+77006,Ardea,Kerry,South-West
+77007,Ardfert,Kerry,South-West
+77008,Astee,Kerry,South-West
+77009,Bahaghs,Kerry,South-West
+77010,Ballincloher,Kerry,South-West
+77011,Ballinskelligs,Kerry,South-West
+77012,Ballinvoher,Kerry,South-West
+77013,Ballybrack,Kerry,South-West
+77014,Ballyconry,Kerry,South-West
+77015,Ballyduff,Kerry,South-West
+77016,Ballyduff,Kerry,South-West
+77017,Ballyegan,Kerry,South-West
+77018,Ballyegan,Kerry,South-West
+77019,Ballyhar,Kerry,South-West
+77020,Ballyheige,Kerry,South-West
+77021,Ballyhorgan,Kerry,South-West
+77022,Ballynacourty,Kerry,South-West
+77023,Ballynahaglish,Kerry,South-West
+77024,Ballynorig,Kerry,South-West
+77025,Ballyseedy,Kerry,South-West
+77026,Banawn,Kerry,South-West
+77027,Banna,Kerry,South-West
+77028,Baurtregaum,Kerry,South-West
+77029,Beal,Kerry,South-West
+77030,Blennerville,Kerry,South-West
+77031,Boolteens,Kerry,South-West
+77032,Brandon,Kerry,South-West
+77033,Brewsterfield,Kerry,South-West
+77034,Brosna,Kerry,South-West
+77035,Caher,Kerry,South-West
+77036,Caherdaniel,Kerry,South-West
+77038,Cappagh,Kerry,South-West
+77039,Carker,Kerry,South-West
+77040,Caragh,Kerry,South-West
+77041,Carrig,Kerry,South-West
+77042,Castlecove,Kerry,South-West
+77043,Castlegregory,Kerry,South-West
+77044,Castleisland,Kerry,South-West
+77045,Castlequin,Kerry,South-West
+77046,Causeway,Kerry,South-West
+77047,Churchtown,Kerry,South-West
+77048,Cloghane,Kerry,South-West
+77049,Clogherbrien,Kerry,South-West
+77051,Cloontubbrid,Kerry,South-West
+77052,Clydagh,Kerry,South-West
+77053,Coolies,Kerry,South-West
+77054,Coom,Kerry,South-West
+77055,Cordal,Kerry,South-West
+77056,Crinny,Kerry,South-West
+77057,Curraghbeg,Kerry,South-West
+77058,Curraghmore,Kerry,South-West
+77059,Currans,Kerry,South-West
+77060,Darrynane,Kerry,South-West
+77061,Dawros,Kerry,South-West
+77062,Deelis,Kerry,South-West
+77063,Derreen,Kerry,South-West
+77065,Dingle,Kerry,South-West
+77066,Doocarrig,Kerry,South-West
+77067,Doon,Kerry,South-West
+77068,Dromin,Kerry,South-West
+77069,Drommartin,Kerry,South-West
+77070,Dromore,Kerry,South-West
+77071,Duagh,Kerry,South-West
+77072,Dunloe,Kerry,South-West
+77073,Dunquin,Kerry,South-West
+77074,Dunurlin,Kerry,South-West
+77075,Emlagh,Kerry,South-West
+77076,Ennismore,Kerry,South-West
+77077,Flesk,Kerry,South-West
+77078,Glanbehy,Kerry,South-West
+77079,Glanlee,Kerry,South-West
+77080,Glanlough,Kerry,South-West
+77081,Glanmore,Kerry,South-West
+77082,Glinn,Kerry,South-West
+77083,Gneeves,Kerry,South-West
+77084,Greenane,Kerry,South-West
+77085,Gullane,Kerry,South-West
+77086,Gunsborough,Kerry,South-West
+77087,Headfort,Kerry,South-West
+77088,Inch,Kerry,South-West
+77089,Kenmare,Kerry,South-West
+77090,Kerryhead,Kerry,South-West
+77091,Kilbonane,Kerry,South-West
+77092,Kilcummin,Kerry,South-West
+77093,Kilfeighny,Kerry,South-West
+77094,Kilfelim,Kerry,South-West
+77095,Kilflyn,Kerry,South-West
+77096,Kilgarrylander,Kerry,South-West
+77097,Kilgarvan,Kerry,South-West
+77098,Kilgobban,Kerry,South-West
+77099,Kilgobnet,Kerry,South-West
+77100,Killahan,Kerry,South-West
+77101,Killarney Rural,Kerry,South-West
+77102,Killarney Urban,Kerry,South-West
+77103,Killeentierna,Kerry,South-West
+77104,Killehenny,Kerry,South-West
+77105,Killinane,Kerry,South-West
+77106,Killorglin,Kerry,South-West
+77107,Killury,Kerry,South-West
+77108,Kilmalkedar,Kerry,South-West
+77109,Kilmeany,Kerry,South-West
+77110,Kilmurry,Kerry,South-West
+77111,Kilnanare,Kerry,South-West
+77112,Kilquane,Kerry,South-West
+77113,Kilshenane,Kerry,South-West
+77114,Kiltallagh,Kerry,South-West
+77115,Kiltomy,Kerry,South-West
+77116,Kinard,Kerry,South-West
+77117,Knockglass,Kerry,South-West
+77118,Knocknagashel,Kerry,South-West
+77119,Knocknahoe,Kerry,South-West
+77120,Lack,Kerry,South-West
+77121,Lackabaun,Kerry,South-West
+77122,Lahard,Kerry,South-West
+77123,Leitrim,Kerry,South-West
+77124,Lickeen,Kerry,South-West
+77125,Lislaughtin,Kerry,South-West
+77126,Lisselton,Kerry,South-West
+77127,Listowel Rural,Kerry,South-West
+77128,Listowel Urban,Kerry,South-West
+77129,Lixnaw,Kerry,South-West
+77130,Loughbrin,Kerry,South-West
+77131,Loughcurrane,Kerry,South-West
+77132,Marhin,Kerry,South-West
+77134,Maum,Kerry,South-West
+77135,Millbrook,Kerry,South-West
+77136,Milltown,Kerry,South-West
+77137,Minard,Kerry,South-West
+77138,Molahiffe,Kerry,South-West
+77139,Mount Eagle,Kerry,South-West
+77140,Moynsha,Kerry,South-West
+77141,Muckross,Kerry,South-West
+77142,Newtownsandes,Kerry,South-West
+77143,Nohaval,Kerry,South-West
+77144,O'Brennan,Kerry,South-West
+77145,Portmagee,Kerry,South-West
+77146,Ratass,Kerry,South-West
+77147,Rathea,Kerry,South-West
+77148,Rathmore,Kerry,South-West
+77149,Reen,Kerry,South-West
+77150,Rockfield,Kerry,South-West
+77151,Scartaglin,Kerry,South-West
+77152,Shronowen,Kerry,South-West
+77153,Sneem,Kerry,South-West
+77154,St. Finan'S,Kerry,South-West
+77155,Stradbally,Kerry,South-West
+77156,Tahilla,Kerry,South-West
+77157,Tarbert,Kerry,South-West
+77158,Tarmon,Kerry,South-West
+77159,Teeranearagh,Kerry,South-West
+77160,Tralee Rural,Kerry,South-West
+77161,Tralee Urban,Kerry,South-West
+77162,Trienearagh,Kerry,South-West
+77163,Tubrid,Kerry,South-West
+77164,Urlee,Kerry,South-West
+77165,Valencia,Kerry,South-West
+77166,Ventry,Kerry,South-West
+87001,Athy Rural,Kildare,Mid-East
+87002,Athy West Urban,Kildare,Mid-East
+87003,Ballaghmoon,Kildare,Mid-East
+87004,Ballitore,Kildare,Mid-East
+87005,Ballybrackan,Kildare,Mid-East
+87006,Ballymore Eustace,Kildare,Mid-East
+87007,Ballynadrumny,Kildare,Mid-East
+87008,Ballysax East,Kildare,Mid-East
+87009,Ballysax West,Kildare,Mid-East
+87010,Ballyshannon,Kildare,Mid-East
+87011,Balraheen,Kildare,Mid-East
+87012,Belan,Kildare,Mid-East
+87013,Bert,Kildare,Mid-East
+87014,Bodenstown,Kildare,Mid-East
+87015,Burtown,Kildare,Mid-East
+87016,Cadamstown,Kildare,Mid-East
+87017,Carbury,Kildare,Mid-East
+87018,Carnalway,Kildare,Mid-East
+87019,Carragh,Kildare,Mid-East
+87020,Carrick,Kildare,Mid-East
+87021,Carrigeen,Kildare,Mid-East
+87022,Castledermot,Kildare,Mid-East
+87023,Celbridge,Kildare,Mid-East
+87024,Churchtown,Kildare,Mid-East
+87025,Clane,Kildare,Mid-East
+87026,Cloncurry,Kildare,Mid-East
+87027,Cloncurry,Kildare,Mid-East
+87028,Donadea,Kildare,Mid-East
+87029,Donaghcumper,Kildare,Mid-East
+87030,Donore,Kildare,Mid-East
+87031,Downings,Kildare,Mid-East
+87032,Drehid,Kildare,Mid-East
+87033,Droichead Nua (Newbridge) Rural,Kildare,Mid-East
+87034,Droichead Nua (Newbridge) Urban,Kildare,Mid-East
+87035,Dunfierth,Kildare,Mid-East
+87036,Dunmanoge,Kildare,Mid-East
+87037,Dunmurry,Kildare,Mid-East
+87038,Feighcullen,Kildare,Mid-East
+87039,Fontstown,Kildare,Mid-East
+87040,Gilltown,Kildare,Mid-East
+87041,Graney,Kildare,Mid-East
+87042,Grangemellon,Kildare,Mid-East
+87043,Harristown,Kildare,Mid-East
+87044,Inchaquire,Kildare,Mid-East
+87045,Johnstown,Kildare,Mid-East
+87046,Kilberry,Kildare,Mid-East
+87047,Kilcock,Kildare,Mid-East
+87048,Kilcullen,Kildare,Mid-East
+87049,Kildangan,Kildare,Mid-East
+87050,Kildare,Kildare,Mid-East
+87051,Kilkea,Kildare,Mid-East
+87052,Kill,Kildare,Mid-East
+87053,Killashee,Kildare,Mid-East
+87054,Killinthomas,Kildare,Mid-East
+87055,Kilmeage North,Kildare,Mid-East
+87056,Kilmeage South,Kildare,Mid-East
+87057,Kilpatrick,Kildare,Mid-East
+87058,Kilrainy,Kildare,Mid-East
+87059,Kilrush,Kildare,Mid-East
+87060,Kilteel,Kildare,Mid-East
+87061,Lackagh,Kildare,Mid-East
+87062,Ladytown,Kildare,Mid-East
+87064,Leixlip,Kildare,Mid-East
+87065,Lullymore,Kildare,Mid-East
+87066,Maynooth,Kildare,Mid-East
+87067,Monasterevin,Kildare,Mid-East
+87068,Moone,Kildare,Mid-East
+87069,Morristownbiller,Kildare,Mid-East
+87070,Naas Rural,Kildare,Mid-East
+87071,Naas Urban,Kildare,Mid-East
+87072,Narraghmore,Kildare,Mid-East
+87073,Newtown,Kildare,Mid-East
+87074,Nurney,Kildare,Mid-East
+87075,Oldconnell,Kildare,Mid-East
+87076,Oughterard,Kildare,Mid-East
+87077,Pollardstown,Kildare,Mid-East
+87078,Quinsborough,Kildare,Mid-East
+87079,Rathangan,Kildare,Mid-East
+87080,Rathernan,Kildare,Mid-East
+87081,Rathmore,Kildare,Mid-East
+87082,Robertstown,Kildare,Mid-East
+87083,Skerries,Kildare,Mid-East
+87084,Straffan,Kildare,Mid-East
+87085,Thomastown,Kildare,Mid-East
+87086,Timahoe North,Kildare,Mid-East
+87087,Timahoe South,Kildare,Mid-East
+87088,Usk,Kildare,Mid-East
+87089,Windmill Cross,Kildare,Mid-East
+87090,Athy East Urban,Kildare,Mid-East
+97001,Aghaviller,Kilkenny,South-East
+97002,Aglish,Kilkenny,South-East
+97003,Attanagh,Kilkenny,South-East
+97004,Balleen,Kilkenny,South-East
+97005,Ballinamara,Kilkenny,South-East
+97006,Ballincrea,Kilkenny,South-East
+97007,Ballybeagh,Kilkenny,South-East
+97008,Ballycallan,Kilkenny,South-East
+97009,Ballyconra,Kilkenny,South-East
+97010,Ballyhale,Kilkenny,South-East
+97011,Ballyragget,Kilkenny,South-East
+97012,Ballyvool,Kilkenny,South-East
+97013,Baunmore,Kilkenny,South-East
+97014,Bennettsbridge,Kilkenny,South-East
+97015,Boolyglass,Kilkenny,South-East
+97016,Bramblestown,Kilkenny,South-East
+97017,Brownsford,Kilkenny,South-East
+97018,Burnchurch,Kilkenny,South-East
+97019,Callan Rural,Kilkenny,South-East
+97020,Callan Urban,Kilkenny,South-East
+97021,Castlebanny,Kilkenny,South-East
+97022,Castlecomer,Kilkenny,South-East
+97023,Castlegannon,Kilkenny,South-East
+97024,Clara,Kilkenny,South-East
+97025,Clogh,Kilkenny,South-East
+97026,Clogharinka,Kilkenny,South-East
+97027,Clomantagh,Kilkenny,South-East
+97028,Coolaghmore,Kilkenny,South-East
+97029,Coolcraheen,Kilkenny,South-East
+97030,Coolhill,Kilkenny,South-East
+97031,Danesfort,Kilkenny,South-East
+97032,Dunbell,Kilkenny,South-East
+97033,Dunkitt,Kilkenny,South-East
+97034,Dunmore,Kilkenny,South-East
+97035,Dunnamaggan,Kilkenny,South-East
+97036,Dysartmoon,Kilkenny,South-East
+97037,Earlstown,Kilkenny,South-East
+97038,Ennisnag,Kilkenny,South-East
+97039,Famma,Kilkenny,South-East
+97040,Farnoge,Kilkenny,South-East
+97041,Fiddown,Kilkenny,South-East
+97042,Freaghana,Kilkenny,South-East
+97043,Freshford,Kilkenny,South-East
+97044,Galmoy,Kilkenny,South-East
+97045,Glashare,Kilkenny,South-East
+97046,Goresbridge,Kilkenny,South-East
+97047,Gowran,Kilkenny,South-East
+97048,Graiguenamanagh,Kilkenny,South-East
+97049,Grange,Kilkenny,South-East
+97050,Inistioge,Kilkenny,South-East
+97051,Jerpoint Church,Kilkenny,South-East
+97052,Jerpoint West,Kilkenny,South-East
+97053,Johnstown,Kilkenny,South-East
+97054,Kells,Kilkenny,South-East
+97055,Kilbeacon,Kilkenny,South-East
+97056,Kilbride,Kilkenny,South-East
+97057,Kilcolumb,Kilkenny,South-East
+97058,Kilculliheen,Kilkenny,South-East
+97059,Kilfane,Kilkenny,South-East
+97060,Kilkeasy,Kilkenny,South-East
+97061,Kilkenny No. 1 Urban,Kilkenny,South-East
+97062,Kilkenny No. 2 Urban,Kilkenny,South-East
+97063,Kilkenny Rural,Kilkenny,South-East
+97064,Kilkieran,Kilkenny,South-East
+97065,Killahy,Kilkenny,South-East
+97066,Killamery,Kilkenny,South-East
+97067,Kilmacar,Kilkenny,South-East
+97068,Kilmaganny,Kilkenny,South-East
+97069,Kilmakevoge,Kilkenny,South-East
+97070,Kilmanagh,Kilkenny,South-East
+97071,Kiltorcan,Kilkenny,South-East
+97072,Knocktopher,Kilkenny,South-East
+97073,Lisdowney,Kilkenny,South-East
+97074,Listerlin,Kilkenny,South-East
+97075,Mallardstown,Kilkenny,South-East
+97076,Moneenroe,Kilkenny,South-East
+97077,Mothell,Kilkenny,South-East
+97078,Muckalee,Kilkenny,South-East
+97079,Muckalee,Kilkenny,South-East
+97080,Odagh,Kilkenny,South-East
+97081,Outrath,Kilkenny,South-East
+97082,Paulstown,Kilkenny,South-East
+97083,Pilltown,Kilkenny,South-East
+97084,Pleberstown,Kilkenny,South-East
+97085,Pollrone,Kilkenny,South-East
+97086,Portnascully,Kilkenny,South-East
+97087,Powerstown,Kilkenny,South-East
+97088,Rathbeagh,Kilkenny,South-East
+97089,Rathcoole,Kilkenny,South-East
+97090,Rathealy,Kilkenny,South-East
+97091,Rathpatrick,Kilkenny,South-East
+97092,Rosbercon Rural,Kilkenny,South-East
+97093,Rossinan,Kilkenny,South-East
+97094,Scotsborough,Kilkenny,South-East
+97095,Shanbogh,Kilkenny,South-East
+97096,Shankill,Kilkenny,South-East
+97097,St. Canice,Kilkenny,South-East
+97098,Stonyford,Kilkenny,South-East
+97099,Templeorum,Kilkenny,South-East
+97100,The Rower,Kilkenny,South-East
+97101,Thomastown,Kilkenny,South-East
+97102,Tiscoffin,Kilkenny,South-East
+97103,Tubbrid,Kilkenny,South-East
+97104,Tubbridbrittain,Kilkenny,South-East
+97105,Tullaghanbrogue,Kilkenny,South-East
+97106,Tullaherin,Kilkenny,South-East
+97107,Tullahought,Kilkenny,South-East
+97108,Tullaroan,Kilkenny,South-East
+97109,Ullard,Kilkenny,South-East
+97110,Ullid,Kilkenny,South-East
+97111,Urlingford,Kilkenny,South-East
+97112,Whitechurch,Kilkenny,South-East
+97113,Woolengrange,Kilkenny,South-East
