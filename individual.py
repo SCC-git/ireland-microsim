@@ -1,6 +1,5 @@
 from __future__ import annotations
 from numpy import random
-from constants import mortality_by_age_2016
 
 
 class Individual:
@@ -23,6 +22,21 @@ class Individual:
                  ed: str = None,
                  born_in_simulation: bool = False,
                  current_year: int = None):
+        """
+        Creates an Individual object with the assigned characteristics
+
+        :param age: An integer
+        :param sex: 'M' or 'F'
+        :param marital_status: "SGL", "MAR", "WID", or "SEP"
+        :param citizenship: "IE", "UK", "EU", or "RW"
+        :param moved_to_ireland_in_last_year: Boolean
+        :param economic_status: W", "UNE", "R", "UTWSD", "S", "LAHF", "OTH", or "NA"
+        :param education: "NF", "P", "LS", "US", "PLC", "HC", "DGR", "PD", "D", or "NA"
+        :param parents: The person's parent(s) (Individual objects)
+        :param ed: Their home ED (the ED_ID)
+        :param born_in_simulation: Boolean
+        :param current_year: The current year of the simulation
+        """
 
         self.age = age
 
@@ -68,10 +82,7 @@ class Individual:
         else:
             self.birth_year = current_year - age
 
-        # self._spouse = None
-        # self._graduation_date = None
-        # self._prospective_highest_level_of_education = None
-
+    # A neat feature which tracks all if the changes to a person's attributes (memory-intensive)
     # def __setattr__(self, key, value):
     #     if key != "history":
     #         if not hasattr(self, 'age'):
@@ -100,8 +111,11 @@ class Individual:
     #     super().__delattr__(item)
 
     def __str__(self):
-        # string_rep = f"Sex: {self.sex} | Age: {self.age} | Marital Status: {self.marital_status} | " \
-        #              f"Economic Status: {self.economic_status} | Education: {self.education} | ED: {self.ed}"
+        """
+        Returns a string representation of the individual's important characteristics
+
+        :return: the string
+        """
         string_rep = f"Sex: {self.sex} | Age: {self.age} | Marital Status: {self.marital_status} | " \
                      f"Citizenship: {self.citizenship} | " \
                      f"Moved to Ireland in last year: {self.moved_to_ireland_in_last_year} | " \
@@ -109,45 +123,22 @@ class Individual:
         return string_rep
 
     def should_survive(self, year, years_mortality_rates: dict):
-        # Using last year's stats
-        if self.age >= 105:  # Too old, kill
+        """
+        Decides whether the Individual should survive the year based on their age, sex and the year's mortality rates.
+        References to and from Individuals who do not survive are removed
+
+        :param year: The current year of the simulation
+        :param years_mortality_rates: A dictionary representing the per-sex, per-age mortality rates for the year
+        :return: a boolean indicating whether the person survived or not
+        """
+
+        if self.age >= 105:  # Beyond the valid age for our simulation, kill
             self.remove_references_to_and_from_person()
             # if self.age not in self.history:
             #     self.history[self.age] = []
             # self.history[self.age].append(f"Died in {year}")
             return False
         else:
-            # # Make mortality rates improve every year
-            # chance_of_dying_in_last_year = mortality_by_age_2016[self.sex][self.age]
-            # if self.age < 100:  # Mortality rates above 100 are not improved
-            #     new_mortality_as_percentage_of_original = 1.0  # Starts as 100% of original
-            #     # Improve by 2.5% per annum between 2016 and 2022 (excluding 2020 and 2021)
-            #     if 2016 <= year:
-            #         new_mortality_as_percentage_of_original *= 0.975 ** (min(2022, year) - 2016)
-            #
-            #     # Improve by a linear decrease from 2.5% to 1.5% per annum from 2022 to 2047
-            #     # Male and female are the same
-            #     if 2022 <= year:
-            #         for improvement_year in range(2022, year):
-            #             if improvement_year >= 2047:
-            #                 break
-            #
-            #             improvement_amount_this_year = (0.975 + ((0.985 - 0.975) / (2047 - 2022)) *
-            #                                             (improvement_year - 2022))
-            #             new_mortality_as_percentage_of_original *= improvement_amount_this_year
-            #
-            #     if 2047 <= year:
-            #         # Further improvements of 1.5% per annum after 2047
-            #         new_mortality_as_percentage_of_original *= 0.985 ** (year - 2047)
-            #
-            #     # The improvements for people above 90 are scaled from full improvements at 90 to no improvements at 100
-            #     if self.age > 90:
-            #         ninety_year_olds_improved_mortality_percentage = new_mortality_as_percentage_of_original
-            #         new_mortality_as_percentage_of_original = ninety_year_olds_improved_mortality_percentage + \
-            #                                                   ((self.age - 90) / (100 - 90)) * \
-            #                                                   (1 - ninety_year_olds_improved_mortality_percentage)
-            #
-            #     chance_of_dying_in_last_year *= new_mortality_as_percentage_of_original
             chance_of_dying_in_last_year = years_mortality_rates[self.sex][self.age]
 
             chance_of_dying_in_last_year = float(chance_of_dying_in_last_year)
@@ -161,8 +152,13 @@ class Individual:
 
         return True
 
-    # Do this when we remove someone from the population (death, emigration)
     def remove_references_to_and_from_person(self, emigrate=False):
+        """
+        Removes inter-Individual references from an Individual that is being removed from the population (whether
+        through death or emigration)
+
+        :param emigrate: a Boolean indicating whether the person is emigrating (or dying)
+        """
         if hasattr(self, 'spouse') and self.spouse != "Outsider":
             if emigrate:
                 self.spouse.spouse = "Outsider"

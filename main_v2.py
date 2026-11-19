@@ -1,7 +1,5 @@
 import copy
 import os.path
-
-import citizenship
 import fertility
 from place_v2 import Place
 import pandas as pd
@@ -22,6 +20,14 @@ import citizenship
 
 
 def setup(initial_population: [Individual], start_year: int, places: dict[str, Place]):
+    """
+    A helper function which calls a number of other functions to fix invalid characteristic values that may have been
+    assigned from the population loading process. Citizenship, education and marital statuses are handled.
+
+    :param initial_population: The population before the simulation begins
+    :param start_year: The simulation start year
+    :param places: A dictionary of EDs with ED_IDs being the keys, and their Place objects being the values
+    """
     print("-"*50)
     print("SETUP")
 
@@ -61,6 +67,13 @@ def setup(initial_population: [Individual], start_year: int, places: dict[str, P
 
 
 def main(raw_args=None):
+    """
+    The main simulation controller. Figures out the simulation scenarios, loads the initial population and calls each
+    module in the desired order. Saves the population and prints statistics at the conclusion of the simulation
+
+    :param raw_args: The command line inputs which decide on the simulation scenario
+    """
+
     output_to_file = False
     if output_to_file:
         orig_stdout = sys.stdout
@@ -95,23 +108,15 @@ def main(raw_args=None):
 
     start_year = 2022
     end_year = 2058
-    # end_year = 2038
-    # end_year = 2025
-    # static_generation_approach = "ipf"
-    # static_generation_approach = "ipf_no_zero_cells_less_iter"
     static_generation_approach = "ipf_rescaled_pop"
-    save_population = True
-    save_initial_population = True  # This terminates the program when the initial population is saved
-    save_at_checkpoints = True
-    # checkpoints = [2025, 2035]
+    save_population = False
+    save_initial_population = False  # This terminates the program when the initial population is saved
+    save_at_checkpoints = False
     checkpoints = [2027, 2032, 2037, 2042, 2047, 2052]
     save_every_year = False
 
-    # results_folder = "./results/new/" + timestamp + f"_{start_year}_{end_year}_{fertility_scenario}_dublin_{'outflow' if dublin_outflow else 'inflow'}_" \
-    #                                                 f"{international_migration_scenario}_international_migration_{static_generation_approach}_divorces_by_rate_cso_international_migrant_proportions/"
-
-    results_folder = "./results/including_citizenship/" + timestamp + f"_{start_year}_{end_year}_{fertility_scenario}_dublin_{'outflow' if dublin_outflow else 'inflow'}_" \
-                                                    f"{international_migration_scenario}_international_migration_{static_generation_approach}/"
+    results_folder = "./results/post_viva/" + timestamp + f"_{start_year}_{end_year}_{fertility_scenario}_dublin_{'outflow' if dublin_outflow else 'inflow'}_" \
+                                                                      f"{international_migration_scenario}_international_migration_{static_generation_approach}/"
 
     if not os.path.exists(results_folder):
         os.makedirs(results_folder)
@@ -123,6 +128,7 @@ def main(raw_args=None):
     annual_places_population_dfs = {}
 
     population_folder = f"./populations/{static_generation_approach}/"
+
     # Get ED IDs
     areas_of_interest = [f.split(".")[0] for f in os.listdir(population_folder) if f[-4:]==".pkl"]
 
@@ -153,17 +159,9 @@ def main(raw_args=None):
                                               "Net International Migration": [], "Births": [],
                                               "Ending Population": [], "TFR": []}
 
-        # annual_places_population_dfs[area]["Year"].append(start_year)
-        # annual_places_population_dfs[area]["Starting Population"].append(pops[-1])
-        #
-        # places_tfr = sum(f2_fertility_rates[areas_region].values()) * 5 / 1000
-        # annual_places_population_dfs[area]["TFR"].append(places_tfr)
-
     # Transform to 2022 values
     years_mortality_rates = copy.deepcopy(mortality_by_age_2016)
 
-    # for year in range(2017, 2022):
-    #     if year not in [2020, 2021]:
     for sex, age_specific_mortality_rates in years_mortality_rates.items():
         for age, original_mortality_rate in age_specific_mortality_rates.items():
             # years_mortality_rates[sex][age] = original_mortality_rate * 0.975
@@ -188,7 +186,6 @@ def main(raw_args=None):
             pkl.dump(properly_set_up_ireland_initial_population, f)
         return
 
-    # for year in range(start_year, end_year):
     for year in range(start_year+1, end_year):
         print(f"BEGINNING {year} at {datetime.now()}")
 
@@ -210,7 +207,6 @@ def main(raw_args=None):
                     if 2023 <= year <= 2038:
                         for age_group, original_value in f2_fertility_rates[region].items():
                             f2_fertility_rates[region][age_group] = 0.988342437 * original_value
-                            # f2_fertility_rates[region][age_group] = 0.985436 * original_value
 
             for ed_id, ed_place in places.items():
                 annual_places_population_dfs[ed_id]["Year"].append(year)
@@ -218,7 +214,6 @@ def main(raw_args=None):
 
                 places_tfr = sum(f2_fertility_rates[ed_place.region].values()) * 5 / 1000
                 annual_places_population_dfs[ed_id]["TFR"].append(places_tfr)
-
 
         print(f" - Calculating deaths in {year}")
         state_deaths = 0
@@ -253,20 +248,15 @@ def main(raw_args=None):
             internal_migrants_ed_with_realistic_destination_proportions_and_migrants(dublin_outflow, places)
 
         print(f" - Calculating international migration in {year}")
-        # regional_net_international_migration = migration.international_migration_eds_with_csos_average_realistic_proportions(international_migration_scenario, places, year)
-        # regional_net_international_migration = migration. \
-        #     international_migration_eds_with_csos_average_realistic_proportions_with_citizenship(
-        #     international_migration_scenario, places, year)
         regional_net_international_migration = migration. \
             international_migration_eds_with_csos_average_realistic_proportions_with_citizenship_correct_net_migrations(
             international_migration_scenario, places, year)
-
 
         print(f" - Calculating births in {year}")
         births_per_ed = fertility.regional_births(places, year, f2_fertility_rates)
         print(f" - # Births in {year}: {sum(births_per_ed.values())}")
 
-        # All steps that affect which people are in the population complete for the year
+        # All steps that affect population size complete for the year
 
         print(f" - Calculating divorces, separations and marriages in {year}")
         # Break up existing marriages and create new marriages
@@ -278,11 +268,10 @@ def main(raw_args=None):
 
         print(f" - Calculating economic status changes in {year}")
         # Employment
-        # employment.change_peoples_economic_statuses_v2(places)
         employment.change_peoples_economic_statuses_v3(places)
 
         for place_id, place in places.items():
-            # Log internal migration, international migration, births, TFR, ending population
+            # Log internal migration, international migration, births, ending population
             annual_places_population_dfs[place_id]["Net Internal Migration"].append(
                 regional_net_internal_migration[place_id])
             annual_places_population_dfs[place_id]["Net International Migration"].append(
@@ -303,7 +292,6 @@ def main(raw_args=None):
                 pkl.dump(years_population, f)
 
         if save_at_checkpoints:
-            # if checkpoint == year:
             if year in checkpoints:
                 checkpoint_population = []
                 for _, place in places.items():
@@ -335,17 +323,5 @@ def main(raw_args=None):
 
 
 if __name__ == '__main__':
-    # main(["-im", "M1", "-f", "F2", "-dub_outflow"])
-    # main(["-im", "M2", "-f", "F2", "-dub_outflow"])
-    # main(["-im", "M1", "-f", "F2", "-dub_inflow"])
-    # main(["-im", "M2", "-f", "F2", "-dub_inflow"])
-    # main(["-im", "M3", "-f", "F2", "-dub_inflow"])
-    # main(["-im", "M3", "-f", "F2", "-dub_outflow"])
+    # Test
     main(["-im", "new_M1", "-f", "new", "-dub_outflow"])
-    # main(["-im", "new_M2", "-f", "new", "-dub_outflow"])
-    # main(["-im", "new_M3", "-f", "new", "-dub_outflow"])
-    # main(["-im", "new_M3", "-f", "new", "-dub_outflow"])
-    # main(["-im", "new_M1", "-f", "new", "-dub_inflow"])
-    # main(["-im", "new_M2", "-f", "new", "-dub_inflow"])
-    # main(["-im", "new_M3", "-f", "new", "-dub_inflow"])
-    # main(["-im", "M1", "-f", "F2", "-dub_inflow"])

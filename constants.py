@@ -83,57 +83,21 @@ mothers_age_and_within_marriage_births_proportions = {'15 - 19 years': .145, '20
                                                       '35 - 39 years': .728, '40 - 44 years': .683,
                                                       '45 - 49 years': .617}
 
-# From Table 6.1 https://www.cso.ie/en/releasesandpublications/ep/p-plfp/populationandlabourforceprojections2023-2057/migrationassumptions/
-def new_cso_international_migration(international_migration_scenario: str, year: int):
-    # Return (num. immigrants, num. emigrants)
-    if international_migration_scenario == "new_M1":
-        # Net International Migration tapering from +75,000 in 2022 to +45,000 in 2028
-        if 2022 <= year < 2028:
-            num_immigrants = 135_000 - (year - 2022) * 5_000
-            # net_migration = 75_000 - (year - 2022) * 5_000
-            net_migration = 75_000 - (year - 2022) * ((75_000 - 45_000) / (2027 - 2022))
-            num_emigrants = num_immigrants - net_migration
-        elif 2028 <= year < 2032:
-            # Immigrants decreasing from 100k to 95k in this period
-            num_immigrants = 110_000 - (year - 2028) * 3_750
-            net_migration = 45_000
-            num_emigrants = num_immigrants - net_migration
-        else:  # year >= 2032
-            num_immigrants = 95_000
-            num_emigrants = 50_000
-    elif international_migration_scenario == "new_M2":
-        # Net International Migration tapering from +75,000 in 2022 to +30,000 in 2032
-        if 2022 <= year < 2032:
-            num_immigrants = 120_000 - (year - 2022) * 4_000
-            net_migration = 75_000 - (year - 2022) * ((75_000 - 30_000) / (2032 - 2022))
-            num_emigrants = num_immigrants - net_migration
-        else:  # year >= 2032
-            num_immigrants = 80_000
-            num_emigrants = 50_000
-    else:  # new_M3
-        # Net International Migration tapering from +75,000 in 2022 to +25,000 in 2027 and +10,000 in 2032
-        if 2022 <= year < 2027:
-            num_immigrants = 115_000 - (year - 2022) * 6_000
-            net_migration = 75_000 - (year - 2022) * ((75_000 - 25_000) / (2027 - 2022))
-            num_emigrants = num_immigrants - net_migration
-        elif 2027 <= year < 2032:
-            num_immigrants = 85_000 - (year - 2027) * ((85_000 - 80_000) / (2032 - 2027))
-            net_migration = 25_000 - (year - 2027) * 3_000
-            num_emigrants = num_immigrants - net_migration
-        else:  # year >= 2032
-            num_immigrants = 70_000
-            num_emigrants = 60_000
-
-    return int(num_immigrants), int(num_emigrants)
-
 
 # From: https://data.cso.ie/table/PEC27
 def cso_international_migration_from_regional_projections(international_migration_scenario: str, year: int):
-    # Return (num. immigrants, num. emigrants)
+    """
+    Calculates the total number of immigrants and emigrants for a year, based on the CSO's international migration assumptions
+
+    :param international_migration_scenario: A string indicating which of the CSO's international migration assumptions
+    to follow (new_M1, new_M2, or new_M3)
+    :param year: The current year of the simulation
+    :return: num_immigrants, num_emigrants
+    """
+
     if international_migration_scenario == "new_M1":
         # Net International Migration tapering from +75,000 in 2022 to +45,000 in 2028
         if 2022 <= year < 2028:
-            # Too awkward to come up with a formula for this
             # first_5_year_values = {2022: 75_000,
             #                        2023: 75_000,
             #                        2024: 72_000,
@@ -755,7 +719,8 @@ education_durations = {1: 8,
                        7: 1,
                        8: 4}
 
-# College completion rate is ~85%. That means each year, around 7% drop out (over 4 years - ~75% will not have dropped out)
+# College completion rate is ~85%
+# That means each year, around 7% drop out (over 4 years - ~75% will not have dropped out)
 # Same principle for all educations with more than one year duration
 education_dropout_rates = {1: 0,
                            2: 0.025,

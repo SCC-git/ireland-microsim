@@ -6,17 +6,12 @@ import numpy as np
 import pickle as pkl
 from place_v2 import Place
 from constants import regions, \
-    international_emigration_proportions, \
-    county_emigrants_by_county_2022, \
-    county_emigrants_by_county_2016, \
     county_emigrants_by_county_average, \
-    actual_international_immigration, \
-    actual_international_emigration, \
     number_of_within_county_migrants, \
     proportion_of_counties_immigrants_from_same_county_stripped_ids, \
     proportion_of_counties_immigrants_from_different_county_stripped_ids, \
     proportion_of_countries_international_immigrants_stripped_ids, \
-    new_cso_international_migration, within_county_migrant_proportions, different_county_migration_proportions, \
+    within_county_migrant_proportions, different_county_migration_proportions, \
     emigration_proportions_2017_2022_average, \
     immigration_proportions_2017_2022_average, citizenship_of_international_immigrants_2017_2022_average, \
     citizenship_of_international_emigrants_2017_2022_average, \
@@ -50,6 +45,13 @@ for person in recent_immigrants_from_2022_census:
 
 
 def distribute_within_county_realistic_migrants_unique_destination_origin(county: str, countys_eds: dict[str, Place]):
+    """
+    Moves migrants around within a county's EDs based on the Ed population sizes and historic data about numbers of
+    migrants, migrants' profiles, etc.
+
+    :param county: The county in question
+    :param countys_eds: A dictionary of the county's EDs' Place objects
+    """
     num_migrants_to_distribute_in_county = number_of_within_county_migrants[county]
 
     countys_ed_ids = list(countys_eds.keys())
@@ -175,6 +177,15 @@ def distribute_within_county_realistic_migrants_unique_destination_origin(county
 
 # Need to have people removed from their current ED before using this function
 def distribute_migrants_from_other_counties(migrants_to_destination_county, countys_eds: dict[str, Place], destination_county:str):
+    """
+    Adds individuals moving from another county to this county. The destination ED for each individual is chosen
+    proportionally to each possible destination ED's population
+
+    :param migrants_to_destination_county: A list of Individuals moving into the county
+    :param countys_eds: A dictionary of the county's EDs' Place objects
+    :param destination_county: The county in question
+    """
+
     num_migrants_coming_into_county = len(migrants_to_destination_county)
 
     destinations = random.choices(list(proportion_of_counties_immigrants_from_different_county_stripped_ids[destination_county].keys()),
@@ -191,6 +202,14 @@ def distribute_migrants_from_other_counties(migrants_to_destination_county, coun
 
 
 def distribute_international_immigrants_to_eds(international_immigrants, eds: dict[str, Place]):
+    """
+    Assigns international immigrants to EDs based proportionally on the number of individuals living in each ED in 2022
+    who had a usual residence outside Ireland a year earlier
+
+    :param international_immigrants:A list of Individuals moving into the country
+    :param eds: A dictionary of the country's EDs' Place objects
+    """
+
     num_migrants_coming_into_country = len(international_immigrants)
 
     destinations = random.choices(list(proportion_of_countries_international_immigrants_stripped_ids.keys()),
@@ -206,16 +225,19 @@ def distribute_international_immigrants_to_eds(international_immigrants, eds: di
         eds[destination_ed_id].add_people_to_places_population(migrants_to_ed, from_abroad=True)
 
 
-def internal_migrants_ed_with_realistic_destination_proportions_and_migrants(dublin_outflow:bool, eds: dict[str, Place]):
+def internal_migrants_ed_with_realistic_destination_proportions_and_migrants(eds: dict[str, Place]):
+    """
+    Calls the within-county migration function and calculates both the number of Individuals and which Individuals will
+    be moved between counties. Moves these Individuals based on the sizes of EDs in the destination county
+
+    :param eds: A dictionary of all EDs' Place objects
+    :return: the net population size change due to internal migration for each ED that year
+    """
+
     starting_populations = {}
     net_changes_in_eds_population = {}
     for ed_id, place in eds.items():
         starting_populations[ed_id] = len(place.population)
-
-    # if dublin_outflow:
-    #     emigrants_data = county_emigrants_by_county_2022
-    # else:
-    #     emigrants_data = county_emigrants_by_county_2016
 
     emigrants_data = county_emigrants_by_county_average
 
@@ -346,553 +368,24 @@ def internal_migrants_ed_with_realistic_destination_proportions_and_migrants(dub
     return net_changes_in_eds_population
 
 
-def international_migration_eds_with_csos_average_realistic_proportions(international_migration_scenario: str,
-                                                                        eds: dict[str, Place],
-                                                                        current_year: int):
-    regional_net_international_migration = {}
-    if international_migration_scenario == "M1":
-        num_immigrants_state = 80_000
-        num_emigrants_state = 50_000
-    elif international_migration_scenario == "custom":
-        num_immigrants_state = 100_000
-        num_emigrants_state = 50_000
-    elif international_migration_scenario == "M2":
-        num_immigrants_state = 70_000
-        num_emigrants_state = 50_000
-    elif international_migration_scenario == "actual":
-        num_immigrants_state = actual_international_immigration[current_year]
-        num_emigrants_state = actual_international_emigration[current_year]
-    elif "new" in international_migration_scenario:
-        num_immigrants_state, num_emigrants_state = new_cso_international_migration(international_migration_scenario,
-                                                                                    year=current_year)
-    else:
-        num_immigrants_state = 70_000
-        num_emigrants_state = 60_000
-
-    print(f"- Num. immigrants to Ireland: {num_immigrants_state}")
-    print(f"- Num. emigrants from Ireland: {num_emigrants_state}")
-
-    state_emigrant_cohort_counts = {}
-
-    initial_ed_populations = {}
-    for region in tqdm(regions, desc="Regional International Emigrants"):
-        regions_eds = {ed_id: ed for ed_id, ed in eds.items() if ed.region == region}
-
-        regions_eds_populations = {ed_id: len(ed.population) for ed_id, ed in regions_eds.items()}
-
-        for ed_id_in_region, pop_in_region in regions_eds_populations.items():
-            initial_ed_populations[ed_id_in_region] = pop_in_region
-
-        origin_regions_whole_population = []
-        for ed_id, ed_object in regions_eds.items():
-            origin_regions_whole_population.extend(ed_object.population)
-
-        num_emigrants_from_region = round(international_emigration_proportions[region] * num_emigrants_state)
-
-        # cohort_populations = {}
-        cohort_peoples_eds_populations = {}
-        for person in origin_regions_whole_population:
-            if person.age > 0:
-                if 0 <= person.age <= 14:
-                    age_label = "0 - 14 years"
-                elif 15 <= person.age <= 24:
-                    age_label = "15 - 24 years"
-                elif 25 <= person.age <= 44:
-                    age_label = "25 - 44 years"
-                elif 45 <= person.age <= 64:
-                    age_label = "45 - 64 years"
-                else:  # person.age >= 65:
-                    age_label = "65 years and over"
-
-                if (person.sex, age_label) not in cohort_peoples_eds_populations:
-                    cohort_peoples_eds_populations[(person.sex, age_label)] = {person: regions_eds_populations[person.ed]}
-                else:
-                    cohort_peoples_eds_populations[(person.sex, age_label)][person] = regions_eds_populations[person.ed]
-
-        valid_proportions = {k: v for k, v in emigration_proportions_2017_2022_average.items()
-                             if k in cohort_peoples_eds_populations}
-
-        emigrants_cohorts = random.choices(list(valid_proportions.keys()),
-                                           list(valid_proportions.values()),
-                                           k=num_emigrants_from_region)
-
-        emigrant_cohort_counter = Counter(emigrants_cohorts)
-
-        while len(emigrant_cohort_counter) > 0:
-            (sex, age_group), num_migrants_in_cohort = random.choice(list(emigrant_cohort_counter.items()))
-
-            if ((sex, age_group) not in cohort_peoples_eds_populations) or \
-                    (num_migrants_in_cohort > len(cohort_peoples_eds_populations[(sex, age_group)])):
-                if (sex, age_group) not in cohort_peoples_eds_populations:
-                    num_replacements = num_migrants_in_cohort
-                    chosen_candidates = []
-
-                    del emigrant_cohort_counter[(sex, age_group)]
-                else:
-                    num_replacements = num_migrants_in_cohort - len(cohort_peoples_eds_populations[(sex, age_group)])
-                    chosen_candidates = list(cohort_peoples_eds_populations[(sex, age_group)].keys())
-
-                    emigrant_cohort_counter[(sex, age_group)] -= num_replacements
-
-                if num_replacements > 0:
-                    valid_proportions = {k: v for k, v in emigration_proportions_2017_2022_average.items()
-                                         if (k in cohort_peoples_eds_populations) and (k != (sex, age_group))}
-
-                    replacement_cohorts = random.choices(list(valid_proportions.keys()),
-                                                         list(valid_proportions.values()),
-                                                         k=num_replacements)
-
-                    for (replacement_sex, replacement_age_group) in replacement_cohorts:
-                        if (replacement_sex, replacement_age_group) in emigrant_cohort_counter:
-                            emigrant_cohort_counter[(replacement_sex, replacement_age_group)] += 1
-                        else:
-                            emigrant_cohort_counter[(replacement_sex, replacement_age_group)] = 1
-            else:
-                total_pops_of_cohort = sum(list(cohort_peoples_eds_populations[(sex, age_group)].values()))
-                normalised_cohort_peoples_eds_populations = {k: v / total_pops_of_cohort for k, v in
-                                                             cohort_peoples_eds_populations[(sex, age_group)].items()}
-                chosen_candidates = np.random.choice(list(normalised_cohort_peoples_eds_populations.keys()),
-                                                     size=num_migrants_in_cohort,
-                                                     replace=False,
-                                                     p=list(normalised_cohort_peoples_eds_populations.values()))
-
-            for chosen_candidate in chosen_candidates:
-                del cohort_peoples_eds_populations[(sex, age_group)][chosen_candidate]
-
-                if (sex, age_group) in state_emigrant_cohort_counts:
-                    state_emigrant_cohort_counts[(sex, age_group)] += 1
-                else:
-                    state_emigrant_cohort_counts[(sex, age_group)] = 1
-
-                # Remove them from their origin ED
-                eds[chosen_candidate.ed].population.remove(chosen_candidate)
-                chosen_candidate.remove_references_to_and_from_person(emigrate=True)
-
-                if len(cohort_peoples_eds_populations[(sex, age_group)]) == 0:
-                    del cohort_peoples_eds_populations[(sex, age_group)]
-                    del valid_proportions[(sex, age_group)]
-
-                emigrant_cohort_counter[(sex, age_group)] -= 1
-                if emigrant_cohort_counter[(sex, age_group)] == 0:
-                    del emigrant_cohort_counter[(sex, age_group)]
-
-    state_total_emigrants = sum(list(state_emigrant_cohort_counts.values()))
-    print(f"\n{current_year} state emigrant proportions:")
-    for cohort_label, count in state_emigrant_cohort_counts.items():
-        print(f"\t{cohort_label}: {count / state_total_emigrants:.3f}")
-
-    pre_immigration_population = []
-    for ed_id, ed_object in eds.items():
-        pre_immigration_population.extend(ed_object.population)
-
-    pre_immigration_cohort_populations = {}
-    for person in pre_immigration_population:
-        if person.age > 0:
-            if 0 <= person.age <= 14:
-                age_label = "0 - 14 years"
-            elif 15 <= person.age <= 24:
-                age_label = "15 - 24 years"
-            elif 25 <= person.age <= 44:
-                age_label = "25 - 44 years"
-            elif 45 <= person.age <= 64:
-                age_label = "45 - 64 years"
-            else:  # person.age >= 65:
-                age_label = "65 years and over"
-
-            if (person.sex, age_label) not in pre_immigration_cohort_populations:
-                pre_immigration_cohort_populations[(person.sex, age_label)] = [person]
-            else:
-                pre_immigration_cohort_populations[(person.sex, age_label)].append(person)
-
-    state_immigrant_cohort_counts = {}
-    # Immigration done all in one
-    international_immigrants = []
-
-    for (sex, age_group), proportion in tqdm(immigration_proportions_2017_2022_average.items(),
-                                             desc=f"Generating international immigrants in cohort"):
-
-        num_immigrants_in_bracket = round(num_immigrants_state * proportion)
-
-        pre_immigration_cohort = pre_immigration_cohort_populations[(sex, age_group)]
-
-        if (sex, age_group) in state_immigrant_cohort_counts:
-            state_immigrant_cohort_counts[(sex, age_group)] += num_immigrants_in_bracket
-        else:
-            state_immigrant_cohort_counts[(sex, age_group)] = num_immigrants_in_bracket
-
-        international_immigrants.extend(
-            create_realistic_immigrant_based_on_age_and_sex(pre_immigration_cohort,
-                                                                           num_immigrants_in_bracket,
-                                                                           current_year=current_year))
-    distribute_international_immigrants_to_eds(international_immigrants, eds)
-
-    state_total_immigrants = sum(list(state_immigrant_cohort_counts.values()))
-    print(f"\n{current_year} state immigrant proportions:")
-    for cohort_label, count in state_immigrant_cohort_counts.items():
-        print(f"\t{cohort_label}: {count / state_total_immigrants:.3f}")
-
-    for ed_id, ed in eds.items():
-        regional_net_international_migration[ed_id] = len(eds[ed_id].population) - initial_ed_populations[ed_id]
-
-    return regional_net_international_migration
-
-
-def create_realistic_immigrant_based_on_age_and_sex(pre_immigration_cohort: [Individual],
-                                                                   num_immigrants: int,
-                                                                   current_year: int):
-    donors = random.choices(pre_immigration_cohort, k=num_immigrants)
-
-    # Do donor method
-    immigrants = []
-    for immigrant_idx in range(num_immigrants):
-
-        immigrants.append(Individual(age=donors[immigrant_idx].age,
-                                     sex=donors[immigrant_idx].sex,
-                                     marital_status=donors[immigrant_idx].marital_status,
-                                     economic_status=donors[immigrant_idx].economic_status,
-                                     education=donors[immigrant_idx].education,
-                                     current_year=current_year
-                                     ))
-
-    return immigrants
-
-
-def international_migration_eds_with_csos_average_realistic_proportions_with_citizenship(
-        international_migration_scenario: str,
-        eds: dict[str, Place],
-        current_year: int):
-    regional_net_international_migration = {}
-    if international_migration_scenario == "M1":
-        num_immigrants_state = 80_000
-        num_emigrants_state = 50_000
-    elif international_migration_scenario == "custom":
-        num_immigrants_state = 100_000
-        num_emigrants_state = 50_000
-    elif international_migration_scenario == "M2":
-        num_immigrants_state = 70_000
-        num_emigrants_state = 50_000
-    elif international_migration_scenario == "actual":
-        num_immigrants_state = actual_international_immigration[current_year]
-        num_emigrants_state = actual_international_emigration[current_year]
-    elif "new" in international_migration_scenario:
-        num_immigrants_state, num_emigrants_state = new_cso_international_migration(international_migration_scenario,
-                                                                                    year=current_year)
-    else:
-        num_immigrants_state = 70_000
-        num_emigrants_state = 60_000
-
-    # recent_immigrant_pre_immigration_population = []
-    # for ed_id, ed_object in eds.items():
-    #     for person in ed_object.population:
-    #         if person.moved_to_ireland_in_last_year:
-    #             recent_immigrant_pre_immigration_population.append(person)
-    #         person.moved_to_ireland_in_last_year = False
-    #     # pre_immigration_population.extend(ed_object.population)
-    #
-    # print(f"Number of recent immigrants: {len(recent_immigrant_pre_immigration_population)}")
-    #
-    # # Do this before emigration to ensure that all of the recent immigrants' characteristics are
-    # # captured even if they emigrate
-    # # pre_immigration_cohort_populations = {}
-    # recent_immigrant_pre_immigration_cohort_populations = {}
-    # # for person in pre_immigration_population:
-    # for person in recent_immigrant_pre_immigration_population:
-    #     # if person.age > 0:
-    #     # if (person.age > 0) and person.moved_to_ireland_in_last_year:
-    #     if person.age > 0:
-    #         if 0 <= person.age <= 14:
-    #             age_label = "0 - 14 years"
-    #         elif 15 <= person.age <= 24:
-    #             age_label = "15 - 24 years"
-    #         elif 25 <= person.age <= 44:
-    #             age_label = "25 - 44 years"
-    #         elif 45 <= person.age <= 64:
-    #             age_label = "45 - 64 years"
-    #         else:  # person.age >= 65:
-    #             age_label = "65 years and over"
-    #
-    #         # if (person.sex, age_label) not in pre_immigration_cohort_populations:
-    #         #     pre_immigration_cohort_populations[(person.sex, age_label)] = [person]
-    #         # else:
-    #         #     pre_immigration_cohort_populations[(person.sex, age_label)].append(person)
-    #
-    #         if (person.sex, age_label, person.citizenship) not in recent_immigrant_pre_immigration_cohort_populations:
-    #             recent_immigrant_pre_immigration_cohort_populations[(person.sex, age_label, person.citizenship)] = [person]
-    #         else:
-    #             recent_immigrant_pre_immigration_cohort_populations[(person.sex, age_label, person.citizenship)].append(person)
-
-    print(f"- Num. immigrants to Ireland: {num_immigrants_state}")
-    print(f"- Num. emigrants from Ireland: {num_emigrants_state}")
-
-    state_emigrant_cohort_counts = {}
-
-    emigration_proportions_with_citizenship = {}
-    for (sex, age), sex_age_proportion in emigration_proportions_2017_2022_average.items():
-        for citizenship, citizenship_proportion in citizenship_of_international_emigrants_2017_2022_average.items():
-            emigration_proportions_with_citizenship[(sex, age, citizenship)] = sex_age_proportion * citizenship_proportion
-
-    immigration_proportions_with_citizenship = {}
-    for (sex, age), sex_age_proportion in immigration_proportions_2017_2022_average.items():
-        for citizenship, citizenship_proportion in citizenship_of_international_immigrants_2017_2022_average.items():
-            immigration_proportions_with_citizenship[(sex, age, citizenship)] = sex_age_proportion * citizenship_proportion
-
-    initial_ed_populations = {}
-    for region in tqdm(regions, desc="Regional International Emigrants"):
-        regions_eds = {ed_id: ed for ed_id, ed in eds.items() if ed.region == region}
-
-        regions_eds_populations = {ed_id: len(ed.population) for ed_id, ed in regions_eds.items()}
-
-        for ed_id_in_region, pop_in_region in regions_eds_populations.items():
-            initial_ed_populations[ed_id_in_region] = pop_in_region
-
-        origin_regions_whole_population = []
-        for ed_id, ed_object in regions_eds.items():
-            origin_regions_whole_population.extend(ed_object.population)
-
-        num_emigrants_from_region = round(international_emigration_proportions[region] * num_emigrants_state)
-
-        # cohort_populations = {}
-        cohort_peoples_eds_populations = {}
-        for person in origin_regions_whole_population:
-            if person.age > 0:
-            # if person.age > 0 and (not person.moved_to_ireland_in_last_year):  # Assume people stay for at least one year
-                if 0 <= person.age <= 14:
-                    age_label = "0 - 14 years"
-                elif 15 <= person.age <= 24:
-                    age_label = "15 - 24 years"
-                elif 25 <= person.age <= 44:
-                    age_label = "25 - 44 years"
-                elif 45 <= person.age <= 64:
-                    age_label = "45 - 64 years"
-                else:  # person.age >= 65:
-                    age_label = "65 years and over"
-
-                # if (person.sex, age_label) not in cohort_peoples_eds_populations:
-                #     cohort_peoples_eds_populations[(person.sex, age_label)] = {person: regions_eds_populations[person.ed]}
-                # else:
-                #     cohort_peoples_eds_populations[(person.sex, age_label)][person] = regions_eds_populations[person.ed]
-
-                if (person.sex, age_label, person.citizenship) not in cohort_peoples_eds_populations:
-                    cohort_peoples_eds_populations[(person.sex, age_label, person.citizenship)] = {person: regions_eds_populations[person.ed]}
-                else:
-                    cohort_peoples_eds_populations[(person.sex, age_label, person.citizenship)][person] = regions_eds_populations[person.ed]
-
-        # valid_proportions = {k: v for k, v in emigration_proportions_2017_2022_average.items()
-        #                      if k in cohort_peoples_eds_populations}
-        valid_proportions = {k: v for k, v in emigration_proportions_with_citizenship.items()
-                             if k in cohort_peoples_eds_populations}
-
-        emigrants_cohorts = random.choices(list(valid_proportions.keys()),
-                                           list(valid_proportions.values()),
-                                           k=num_emigrants_from_region)
-
-        emigrant_cohort_counter = Counter(emigrants_cohorts)
-
-        while len(emigrant_cohort_counter) > 0:
-            # (sex, age_group), num_migrants_in_cohort = random.choice(list(emigrant_cohort_counter.items()))
-            (sex, age_group, citizenship), num_migrants_in_cohort = random.choice(list(emigrant_cohort_counter.items()))
-
-            # if ((sex, age_group) not in cohort_peoples_eds_populations) or \
-            #         (num_migrants_in_cohort > len(cohort_peoples_eds_populations[(sex, age_group)])):
-            if ((sex, age_group, citizenship) not in cohort_peoples_eds_populations) or \
-                    (num_migrants_in_cohort > len(cohort_peoples_eds_populations[(sex, age_group, citizenship)])):
-                # if (sex, age_group) not in cohort_peoples_eds_populations:
-                if (sex, age_group, citizenship) not in cohort_peoples_eds_populations:
-                    num_replacements = num_migrants_in_cohort
-                    chosen_candidates = []
-
-                    del emigrant_cohort_counter[(sex, age_group, citizenship)]
-                else:
-                    # num_replacements = num_migrants_in_cohort - len(cohort_peoples_eds_populations[(sex, age_group)])
-                    # chosen_candidates = list(cohort_peoples_eds_populations[(sex, age_group)].keys())
-                    num_replacements = num_migrants_in_cohort - len(cohort_peoples_eds_populations[(sex, age_group, citizenship)])
-                    chosen_candidates = list(cohort_peoples_eds_populations[(sex, age_group, citizenship)].keys())
-
-                    # emigrant_cohort_counter[(sex, age_group)] -= num_replacements
-                    emigrant_cohort_counter[(sex, age_group, citizenship)] -= num_replacements
-
-                if num_replacements > 0:
-                    # valid_proportions = {k: v for k, v in emigration_proportions_2017_2022_average.items()
-                    #                      if (k in cohort_peoples_eds_populations) and (k != (sex, age_group))}
-                    valid_replacement_proportions = {k: v for k, v in emigration_proportions_with_citizenship.items()
-                                         if (k in cohort_peoples_eds_populations) and (k != (sex, age_group, citizenship))}
-
-                    replacement_cohorts = random.choices(list(valid_replacement_proportions.keys()),
-                                                         list(valid_replacement_proportions.values()),
-                                                         k=num_replacements)
-
-                    # for (replacement_sex, replacement_age_group) in replacement_cohorts:
-                    #     if (replacement_sex, replacement_age_group) in emigrant_cohort_counter:
-                    #         emigrant_cohort_counter[(replacement_sex, replacement_age_group)] += 1
-                    #     else:
-                    #         emigrant_cohort_counter[(replacement_sex, replacement_age_group)] = 1
-                    for (replacement_sex, replacement_age_group, replacement_citizenship) in replacement_cohorts:
-                        if (replacement_sex, replacement_age_group, replacement_citizenship) in emigrant_cohort_counter:
-                            emigrant_cohort_counter[(replacement_sex, replacement_age_group, replacement_citizenship)] += 1
-                        else:
-                            emigrant_cohort_counter[(replacement_sex, replacement_age_group, replacement_citizenship)] = 1
-            else:
-                # total_pops_of_cohort = sum(list(cohort_peoples_eds_populations[(sex, age_group)].values()))
-                # normalised_cohort_peoples_eds_populations = {k: v / total_pops_of_cohort for k, v in
-                #                                              cohort_peoples_eds_populations[(sex, age_group)].items()}
-                total_pops_of_cohort = sum(list(cohort_peoples_eds_populations[(sex, age_group, citizenship)].values()))
-                normalised_cohort_peoples_eds_populations = {k: v / total_pops_of_cohort for k, v in
-                                                             cohort_peoples_eds_populations[(sex, age_group, citizenship)].items()}
-                chosen_candidates = np.random.choice(list(normalised_cohort_peoples_eds_populations.keys()),
-                                                     size=num_migrants_in_cohort,
-                                                     replace=False,
-                                                     p=list(normalised_cohort_peoples_eds_populations.values()))
-
-            for chosen_candidate in chosen_candidates:
-                # del cohort_peoples_eds_populations[(sex, age_group)][chosen_candidate]
-                del cohort_peoples_eds_populations[(sex, age_group, citizenship)][chosen_candidate]
-
-                # if (sex, age_group) in state_emigrant_cohort_counts:
-                #     state_emigrant_cohort_counts[(sex, age_group)] += 1
-                # else:
-                #     state_emigrant_cohort_counts[(sex, age_group)] = 1
-                if (sex, age_group, citizenship) in state_emigrant_cohort_counts:
-                    state_emigrant_cohort_counts[(sex, age_group, citizenship)] += 1
-                else:
-                    state_emigrant_cohort_counts[(sex, age_group, citizenship)] = 1
-
-                # Remove them from their origin ED
-                eds[chosen_candidate.ed].population.remove(chosen_candidate)
-                chosen_candidate.remove_references_to_and_from_person(emigrate=True)
-
-                # if len(cohort_peoples_eds_populations[(sex, age_group)]) == 0:
-                #     del cohort_peoples_eds_populations[(sex, age_group)]
-                #     del valid_proportions[(sex, age_group)]
-                #
-                # emigrant_cohort_counter[(sex, age_group)] -= 1
-                # if emigrant_cohort_counter[(sex, age_group)] == 0:
-                #     del emigrant_cohort_counter[(sex, age_group)]
-
-                if len(cohort_peoples_eds_populations[(sex, age_group, citizenship)]) == 0:
-                    del cohort_peoples_eds_populations[(sex, age_group, citizenship)]
-                    # try:
-                    #     del valid_proportions[(sex, age_group, citizenship)]
-                    # except KeyError:
-                    #     print("Got that key error on del valid proportions")
-
-                emigrant_cohort_counter[(sex, age_group, citizenship)] -= 1
-                if emigrant_cohort_counter[(sex, age_group, citizenship)] == 0:
-                    del emigrant_cohort_counter[(sex, age_group, citizenship)]
-
-    state_total_emigrants = sum(list(state_emigrant_cohort_counts.values()))
-    print(f"\n{current_year} state emigrant proportions:")
-    for cohort_label, count in state_emigrant_cohort_counts.items():
-        print(f"\t{cohort_label}: {count / state_total_emigrants:.3f}")
-
-    # pre_immigration_population = []
-    state_immigrant_cohort_counts = {}
-    # Immigration done all in one
-    international_immigrants = []
-
-    # recent_immigrant_pre_immigration_population = []
-    for ed_id, ed_object in eds.items():
-        for person in ed_object.population:
-            if person.moved_to_ireland_in_last_year:
-                # recent_immigrant_pre_immigration_population.append(person)
-                person.moved_to_ireland_in_last_year = False
-        # pre_immigration_population.extend(ed_object.population)
-
-    # print(f"Number of recent immigrants: {len(recent_immigrant_pre_immigration_population)}")
-
-    # Do this before emigration to ensure that all of the recent immigrants' characteristics are
-    # captured even if they emigrate
-    # pre_immigration_cohort_populations = {}
-    # recent_immigrant_pre_immigration_cohort_populations = {}
-    # # for person in pre_immigration_population:
-    # # for person in recent_immigrant_pre_immigration_population:
-    # for person in recent_immigrants_from_2022_census:
-    #     # if person.age > 0:
-    #     # if (person.age > 0) and person.moved_to_ireland_in_last_year:
-    #     if person.age > 0:
-    #         if 0 <= person.age <= 14:
-    #             age_label = "0 - 14 years"
-    #         elif 15 <= person.age <= 24:
-    #             age_label = "15 - 24 years"
-    #         elif 25 <= person.age <= 44:
-    #             age_label = "25 - 44 years"
-    #         elif 45 <= person.age <= 64:
-    #             age_label = "45 - 64 years"
-    #         else:  # person.age >= 65:
-    #             age_label = "65 years and over"
-    #
-    #         # if (person.sex, age_label) not in pre_immigration_cohort_populations:
-    #         #     pre_immigration_cohort_populations[(person.sex, age_label)] = [person]
-    #         # else:
-    #         #     pre_immigration_cohort_populations[(person.sex, age_label)].append(person)
-    #
-    #         if (person.sex, age_label, person.citizenship) not in recent_immigrant_pre_immigration_cohort_populations:
-    #             recent_immigrant_pre_immigration_cohort_populations[(person.sex, age_label, person.citizenship)] = [person]
-    #         else:
-    #             recent_immigrant_pre_immigration_cohort_populations[(person.sex, age_label, person.citizenship)].append(person)
-
-    # for (sex, age_group), proportion in tqdm(immigration_proportions_2017_2022_average.items(),
-    #                                          desc=f"Generating international immigrants in cohort"):
-    for (sex, age_group, citizenship), proportion in tqdm(immigration_proportions_with_citizenship.items(),
-                                             desc=f"Generating international immigrants in cohort"):
-
-        num_immigrants_in_bracket = round(num_immigrants_state * proportion)
-
-        # pre_immigration_cohort = pre_immigration_cohort_populations[(sex, age_group)]
-        # pre_immigration_cohort = pre_immigration_cohort_populations[(sex, age_group, citizenship)]
-        try:
-            recent_immigrant_pre_immigration_cohort = recent_immigrant_pre_immigration_cohort_populations[(sex, age_group, citizenship)]
-        except KeyError:  # Sex, age group, citizenship not in recent immigrants
-            # Swap to a different citizenship
-            # For people who aren't in the dictionary, assume citizenship is the problem
-            print("Somehow didn't find the right cohort")
-            possible_citizenships = list(citizenship_of_international_immigrants_2017_2022_average.keys())
-            random.shuffle(possible_citizenships)
-            for other_citizenship in possible_citizenships:
-                if other_citizenship != citizenship:
-                    possible_new_key = (sex, age_group, other_citizenship)
-                    if possible_new_key in recent_immigrant_pre_immigration_cohort_populations:
-                        recent_immigrant_pre_immigration_cohort = recent_immigrant_pre_immigration_cohort_populations[possible_new_key]
-
-                        # No need to look at other citizenships, this one worked
-                        break
-                    elif other_citizenship == possible_citizenships[-1]:
-                        # If we reached here, no citizenships worked
-                        raise KeyError(f"None of the possible citizenships worked for {(sex, age_group)}")
-
-        # if (sex, age_group) in state_immigrant_cohort_counts:
-        #     state_immigrant_cohort_counts[(sex, age_group)] += num_immigrants_in_bracket
-        # else:
-        #     state_immigrant_cohort_counts[(sex, age_group)] = num_immigrants_in_bracket
-        if (sex, age_group, citizenship) in state_immigrant_cohort_counts:
-            state_immigrant_cohort_counts[(sex, age_group, citizenship)] += num_immigrants_in_bracket
-        else:
-            state_immigrant_cohort_counts[(sex, age_group, citizenship)] = num_immigrants_in_bracket
-
-        international_immigrants.extend(
-            create_realistic_immigrant_from_same_cohort(recent_immigrant_pre_immigration_cohort,
-                                                        num_immigrants_in_bracket,
-                                                        current_year=current_year))
-    distribute_international_immigrants_to_eds(international_immigrants, eds)
-
-    state_total_immigrants = sum(list(state_immigrant_cohort_counts.values()))
-    print(f"\n{current_year} state immigrant proportions:")
-    for cohort_label, count in state_immigrant_cohort_counts.items():
-        print(f"\t{cohort_label}: {count / state_total_immigrants:.3f}")
-
-    for ed_id, ed in eds.items():
-        regional_net_international_migration[ed_id] = len(eds[ed_id].population) - initial_ed_populations[ed_id]
-
-    return regional_net_international_migration
-
-
 def international_migration_eds_with_csos_average_realistic_proportions_with_citizenship_correct_net_migrations(
         international_migration_scenario: str,
         eds: dict[str, Place],
         current_year: int):
+    """
+    Handles international migration at the ED level. Samples realistic emigrants from realistic origin EDs and moves
+    them out of the population. Also calculates the number of international immigrants to each ED and adds realistic
+    immigrant Individuals to these destination EDs
+
+    :param international_migration_scenario: A string indicating which of the CSO's international migration assumptions
+    to follow (new_M1, new_M2, or new_M3)
+    :param eds: A dictionary of all EDs' Place objects
+    :param current_year: The current year of the simulation
+    :return: each ED's net population change due to international migration
+    """
+
     regional_net_international_migration = {}
 
-    # num_immigrants_state, num_emigrants_state = new_cso_international_migration(international_migration_scenario,
-    #                                                                             year=current_year)
     num_immigrants_state, num_emigrants_state = cso_international_migration_from_regional_projections(
         international_migration_scenario,
         year=current_year)
@@ -938,7 +431,6 @@ def international_migration_eds_with_csos_average_realistic_proportions_with_cit
             five_year_group_lower = int(split_years[0])
             five_year_group_upper = int(split_years[1])
 
-            # if five_year_group_lower <= current_year < five_year_group_upper:
             if five_year_group_lower < current_year < five_year_group_upper:
                 csos_average_net_migration_state = sum(each_regions_net_migration.values())
                 for region, regions_net_migration in each_regions_net_migration.items():
@@ -949,7 +441,6 @@ def international_migration_eds_with_csos_average_realistic_proportions_with_cit
                 # This is the only one that will work so we can stop looping
                 break
 
-    # print(f"- Num. emigrants from Ireland: {num_emigrants_state}")
     num_emigrants_state = sum(regional_num_emigrants.values())
     print(f"- Num. emigrants from Ireland: {num_emigrants_state}")
 
@@ -978,14 +469,11 @@ def international_migration_eds_with_csos_average_realistic_proportions_with_cit
         for ed_id, ed_object in regions_eds.items():
             origin_regions_whole_population.extend(ed_object.population)
 
-        # num_emigrants_from_region = round(international_emigration_proportions[region] * num_emigrants_state)
         num_emigrants_from_region = regional_num_emigrants[region]
 
-        # cohort_populations = {}
         cohort_peoples_eds_populations = {}
         for person in origin_regions_whole_population:
             if person.age > 0:
-                # if person.age > 0 and (not person.moved_to_ireland_in_last_year):  # Assume people stay for at least one year
                 if 0 <= person.age <= 14:
                     age_label = "0 - 14 years"
                 elif 15 <= person.age <= 24:
@@ -997,18 +485,11 @@ def international_migration_eds_with_csos_average_realistic_proportions_with_cit
                 else:  # person.age >= 65:
                     age_label = "65 years and over"
 
-                # if (person.sex, age_label) not in cohort_peoples_eds_populations:
-                #     cohort_peoples_eds_populations[(person.sex, age_label)] = {person: regions_eds_populations[person.ed]}
-                # else:
-                #     cohort_peoples_eds_populations[(person.sex, age_label)][person] = regions_eds_populations[person.ed]
-
                 if (person.sex, age_label, person.citizenship) not in cohort_peoples_eds_populations:
                     cohort_peoples_eds_populations[(person.sex, age_label, person.citizenship)] = {person: regions_eds_populations[person.ed]}
                 else:
                     cohort_peoples_eds_populations[(person.sex, age_label, person.citizenship)][person] = regions_eds_populations[person.ed]
 
-        # valid_proportions = {k: v for k, v in emigration_proportions_2017_2022_average.items()
-        #                      if k in cohort_peoples_eds_populations}
         valid_proportions = {k: v for k, v in emigration_proportions_with_citizenship.items()
                              if k in cohort_peoples_eds_populations}
 
@@ -1019,31 +500,22 @@ def international_migration_eds_with_csos_average_realistic_proportions_with_cit
         emigrant_cohort_counter = Counter(emigrants_cohorts)
 
         while len(emigrant_cohort_counter) > 0:
-            # (sex, age_group), num_migrants_in_cohort = random.choice(list(emigrant_cohort_counter.items()))
             (sex, age_group, citizenship), num_migrants_in_cohort = random.choice(list(emigrant_cohort_counter.items()))
 
-            # if ((sex, age_group) not in cohort_peoples_eds_populations) or \
-            #         (num_migrants_in_cohort > len(cohort_peoples_eds_populations[(sex, age_group)])):
             if ((sex, age_group, citizenship) not in cohort_peoples_eds_populations) or \
                     (num_migrants_in_cohort > len(cohort_peoples_eds_populations[(sex, age_group, citizenship)])):
-                # if (sex, age_group) not in cohort_peoples_eds_populations:
                 if (sex, age_group, citizenship) not in cohort_peoples_eds_populations:
                     num_replacements = num_migrants_in_cohort
                     chosen_candidates = []
 
                     del emigrant_cohort_counter[(sex, age_group, citizenship)]
                 else:
-                    # num_replacements = num_migrants_in_cohort - len(cohort_peoples_eds_populations[(sex, age_group)])
-                    # chosen_candidates = list(cohort_peoples_eds_populations[(sex, age_group)].keys())
                     num_replacements = num_migrants_in_cohort - len(cohort_peoples_eds_populations[(sex, age_group, citizenship)])
                     chosen_candidates = list(cohort_peoples_eds_populations[(sex, age_group, citizenship)].keys())
 
-                    # emigrant_cohort_counter[(sex, age_group)] -= num_replacements
                     emigrant_cohort_counter[(sex, age_group, citizenship)] -= num_replacements
 
                 if num_replacements > 0:
-                    # valid_proportions = {k: v for k, v in emigration_proportions_2017_2022_average.items()
-                    #                      if (k in cohort_peoples_eds_populations) and (k != (sex, age_group))}
                     valid_replacement_proportions = {k: v for k, v in emigration_proportions_with_citizenship.items()
                                                      if (k in cohort_peoples_eds_populations) and (k != (sex, age_group, citizenship))}
 
@@ -1051,20 +523,12 @@ def international_migration_eds_with_csos_average_realistic_proportions_with_cit
                                                          list(valid_replacement_proportions.values()),
                                                          k=num_replacements)
 
-                    # for (replacement_sex, replacement_age_group) in replacement_cohorts:
-                    #     if (replacement_sex, replacement_age_group) in emigrant_cohort_counter:
-                    #         emigrant_cohort_counter[(replacement_sex, replacement_age_group)] += 1
-                    #     else:
-                    #         emigrant_cohort_counter[(replacement_sex, replacement_age_group)] = 1
                     for (replacement_sex, replacement_age_group, replacement_citizenship) in replacement_cohorts:
                         if (replacement_sex, replacement_age_group, replacement_citizenship) in emigrant_cohort_counter:
                             emigrant_cohort_counter[(replacement_sex, replacement_age_group, replacement_citizenship)] += 1
                         else:
                             emigrant_cohort_counter[(replacement_sex, replacement_age_group, replacement_citizenship)] = 1
             else:
-                # total_pops_of_cohort = sum(list(cohort_peoples_eds_populations[(sex, age_group)].values()))
-                # normalised_cohort_peoples_eds_populations = {k: v / total_pops_of_cohort for k, v in
-                #                                              cohort_peoples_eds_populations[(sex, age_group)].items()}
                 total_pops_of_cohort = sum(list(cohort_peoples_eds_populations[(sex, age_group, citizenship)].values()))
                 normalised_cohort_peoples_eds_populations = {k: v / total_pops_of_cohort for k, v in
                                                              cohort_peoples_eds_populations[(sex, age_group, citizenship)].items()}
@@ -1074,13 +538,8 @@ def international_migration_eds_with_csos_average_realistic_proportions_with_cit
                                                      p=list(normalised_cohort_peoples_eds_populations.values()))
 
             for chosen_candidate in chosen_candidates:
-                # del cohort_peoples_eds_populations[(sex, age_group)][chosen_candidate]
                 del cohort_peoples_eds_populations[(sex, age_group, citizenship)][chosen_candidate]
 
-                # if (sex, age_group) in state_emigrant_cohort_counts:
-                #     state_emigrant_cohort_counts[(sex, age_group)] += 1
-                # else:
-                #     state_emigrant_cohort_counts[(sex, age_group)] = 1
                 if (sex, age_group, citizenship) in state_emigrant_cohort_counts:
                     state_emigrant_cohort_counts[(sex, age_group, citizenship)] += 1
                 else:
@@ -1090,20 +549,8 @@ def international_migration_eds_with_csos_average_realistic_proportions_with_cit
                 eds[chosen_candidate.ed].population.remove(chosen_candidate)
                 chosen_candidate.remove_references_to_and_from_person(emigrate=True)
 
-                # if len(cohort_peoples_eds_populations[(sex, age_group)]) == 0:
-                #     del cohort_peoples_eds_populations[(sex, age_group)]
-                #     del valid_proportions[(sex, age_group)]
-                #
-                # emigrant_cohort_counter[(sex, age_group)] -= 1
-                # if emigrant_cohort_counter[(sex, age_group)] == 0:
-                #     del emigrant_cohort_counter[(sex, age_group)]
-
                 if len(cohort_peoples_eds_populations[(sex, age_group, citizenship)]) == 0:
                     del cohort_peoples_eds_populations[(sex, age_group, citizenship)]
-                    # try:
-                    #     del valid_proportions[(sex, age_group, citizenship)]
-                    # except KeyError:
-                    #     print("Got that key error on del valid proportions")
 
                 emigrant_cohort_counter[(sex, age_group, citizenship)] -= 1
                 if emigrant_cohort_counter[(sex, age_group, citizenship)] == 0:
@@ -1114,61 +561,20 @@ def international_migration_eds_with_csos_average_realistic_proportions_with_cit
     for cohort_label, count in state_emigrant_cohort_counts.items():
         print(f"\t{cohort_label}: {count / state_total_emigrants:.3f}")
 
-    # pre_immigration_population = []
-    state_immigrant_cohort_counts = {}
     # Immigration done all in one
+    state_immigrant_cohort_counts = {}
     international_immigrants = []
 
-    # recent_immigrant_pre_immigration_population = []
     for ed_id, ed_object in eds.items():
         for person in ed_object.population:
             if person.moved_to_ireland_in_last_year:
-                # recent_immigrant_pre_immigration_population.append(person)
                 person.moved_to_ireland_in_last_year = False
-        # pre_immigration_population.extend(ed_object.population)
 
-    # print(f"Number of recent immigrants: {len(recent_immigrant_pre_immigration_population)}")
-
-    # Do this before emigration to ensure that all of the recent immigrants' characteristics are
-    # captured even if they emigrate
-    # pre_immigration_cohort_populations = {}
-    # recent_immigrant_pre_immigration_cohort_populations = {}
-    # # for person in pre_immigration_population:
-    # # for person in recent_immigrant_pre_immigration_population:
-    # for person in recent_immigrants_from_2022_census:
-    #     # if person.age > 0:
-    #     # if (person.age > 0) and person.moved_to_ireland_in_last_year:
-    #     if person.age > 0:
-    #         if 0 <= person.age <= 14:
-    #             age_label = "0 - 14 years"
-    #         elif 15 <= person.age <= 24:
-    #             age_label = "15 - 24 years"
-    #         elif 25 <= person.age <= 44:
-    #             age_label = "25 - 44 years"
-    #         elif 45 <= person.age <= 64:
-    #             age_label = "45 - 64 years"
-    #         else:  # person.age >= 65:
-    #             age_label = "65 years and over"
-    #
-    #         # if (person.sex, age_label) not in pre_immigration_cohort_populations:
-    #         #     pre_immigration_cohort_populations[(person.sex, age_label)] = [person]
-    #         # else:
-    #         #     pre_immigration_cohort_populations[(person.sex, age_label)].append(person)
-    #
-    #         if (person.sex, age_label, person.citizenship) not in recent_immigrant_pre_immigration_cohort_populations:
-    #             recent_immigrant_pre_immigration_cohort_populations[(person.sex, age_label, person.citizenship)] = [person]
-    #         else:
-    #             recent_immigrant_pre_immigration_cohort_populations[(person.sex, age_label, person.citizenship)].append(person)
-
-    # for (sex, age_group), proportion in tqdm(immigration_proportions_2017_2022_average.items(),
-    #                                          desc=f"Generating international immigrants in cohort"):
     for (sex, age_group, citizenship), proportion in tqdm(immigration_proportions_with_citizenship.items(),
                                                           desc=f"Generating international immigrants in cohort"):
 
         num_immigrants_in_bracket = round(num_immigrants_state * proportion)
 
-        # pre_immigration_cohort = pre_immigration_cohort_populations[(sex, age_group)]
-        # pre_immigration_cohort = pre_immigration_cohort_populations[(sex, age_group, citizenship)]
         try:
             recent_immigrant_pre_immigration_cohort = recent_immigrant_pre_immigration_cohort_populations[(sex, age_group, citizenship)]
         except KeyError:  # Sex, age group, citizenship not in recent immigrants
@@ -1189,10 +595,6 @@ def international_migration_eds_with_csos_average_realistic_proportions_with_cit
                         # If we reached here, no citizenships worked
                         raise KeyError(f"None of the possible citizenships worked for {(sex, age_group)}")
 
-        # if (sex, age_group) in state_immigrant_cohort_counts:
-        #     state_immigrant_cohort_counts[(sex, age_group)] += num_immigrants_in_bracket
-        # else:
-        #     state_immigrant_cohort_counts[(sex, age_group)] = num_immigrants_in_bracket
         if (sex, age_group, citizenship) in state_immigrant_cohort_counts:
             state_immigrant_cohort_counts[(sex, age_group, citizenship)] += num_immigrants_in_bracket
         else:
@@ -1216,8 +618,18 @@ def international_migration_eds_with_csos_average_realistic_proportions_with_cit
 
 
 def create_realistic_immigrant_from_same_cohort(pre_immigration_cohort: [Individual],
-                                                    num_immigrants: int,
-                                                    current_year: int):
+                                                num_immigrants: int,
+                                                current_year: int):
+    """
+    For a cohort of immigrants (based on age group, sex, and citizenship), give them the same extra characteristics as
+    a similar individual from the recently immigrated population
+
+    :param pre_immigration_cohort: A list of Individuals with the same age, sex, and citizenship from the
+        pre-immigration population
+    :param num_immigrants: The number of immigrants to be created for this cohort
+    :param current_year: The current year of the simulation
+    :return: a list of realistic immigrant Individuals
+    """
 
     donors = random.choices(pre_immigration_cohort, k=num_immigrants)
 

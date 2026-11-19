@@ -3,6 +3,12 @@ from individual import Individual
 
 
 def sort_out_ns_citizenship(people: [Individual]):
+    """
+    This is a helper function to assign valid citizenships to Individuals who were assigned a value of 'Not Stated'
+
+    :param people: A list of individuals, some of whom may have a citizenship of 'NS'
+    """
+
     print("- Sorting out people with NS citizenship\n")
     # Sort out people with "NS" as citizenship
     people_with_invalid_citizenship = [person for person in people if (person.citizenship == "NS")]

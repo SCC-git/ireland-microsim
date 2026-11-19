@@ -1,3 +1,8 @@
+"""
+This script can be used to calculate the proportion of individuals with each economic status for each cohort
+disaggregated by age group, sex, citizenship and education from the LFS
+"""
+
 import pandas as pd
 from sa_constants import saps_ages, sexes, trimmed_employment_status, trimmed_education, saps_citizenships
 
@@ -27,6 +32,6 @@ for group, groups_rows in micro_df.groupby(columns_of_interest):
     print(group)
     print(groups_rows.value_counts("refperiod"))
 
-# crosstab = pd.crosstab(micro_df[columns_of_interest[0]], [micro_df[c] for c in columns_of_interest[1:]], dropna=True, normalize="columns")
-# crosstab = crosstab.to_dict()
-# print(crosstab)
+crosstab = pd.crosstab(micro_df[columns_of_interest[0]], [micro_df[c] for c in columns_of_interest[1:]], dropna=True, normalize="columns")
+crosstab = crosstab.to_dict()
+print(crosstab)

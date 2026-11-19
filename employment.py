@@ -8,66 +8,14 @@ from tqdm import tqdm
 import main_v2
 
 
-def change_peoples_economic_statuses_v2(places: dict[str, Place]):
-    whole_population = []
-    for _, place in places.items():
-        whole_population.extend(place.population)
-
-    # Children will remain NA. Students can get sorted by the education module
-    non_students_and_children = list(filter(lambda person: (person.economic_status != "S") and (person.age >= 15),
-                                            whole_population))
-
-    age_ranges = []
-    for (age_range, _, _) in economic_status_by_age_sex_and_education_without_students.keys():
-        if age_range not in age_ranges:
-            age_ranges.append(age_range)
-
-    pbar = tqdm(total=len(non_students_and_children), desc="Bracketing adults by age, sex and education")
-
-    people_in_population_with_age_sex_and_education = {}
-    while len(non_students_and_children) > 0:
-        pbar.update(1)
-        person = non_students_and_children.pop()
-
-        # Find person's bracket
-        for age_range in age_ranges:
-            if age_range != "GE_85":
-                age_range_lower_bound = int(age_range.split("_")[0])
-                age_range_upper_bound = int(age_range.split("_")[1])
-            else:
-                age_range_lower_bound = 85
-                age_range_upper_bound = 200
-
-            if age_range_lower_bound <= person.age <= age_range_upper_bound:
-                key = (age_range, person.sex, person.education)
-                if key in people_in_population_with_age_sex_and_education:
-                    people_in_population_with_age_sex_and_education[key].append(person)
-                    break
-                else:
-                    people_in_population_with_age_sex_and_education[key] = [person]
-
-    pbar.close()
-
-    for bracket_key, people_in_bracket in tqdm(people_in_population_with_age_sex_and_education.items(),
-                                               desc="Changing Economic Statuses for All Brackets of People"):
-        num_people_in_bracket = len(people_in_bracket)
-
-        num_brackets_not_in_it = 0
-        # For people who aren't in the dictionary, don't change their economic status
-        if bracket_key in economic_status_by_age_sex_and_education_without_students:
-            economic_status_proportions = economic_status_by_age_sex_and_education_without_students[bracket_key]
-
-            economic_statuses = random.choices(list(economic_status_proportions.keys()),
-                                               list(economic_status_proportions.values()),
-                                               k=num_people_in_bracket)
-
-            for idx, person in enumerate(people_in_bracket):
-                person.economic_status = economic_statuses[idx]
-        else:
-            num_brackets_not_in_it += 1
-
-
 def change_peoples_economic_statuses_v3(places: dict[str, Place]):
+    """
+    For each Individual who is not a student or child, decides their economic status for the next year based on their
+    age, sex, education, and citizenship
+
+    :param places: A dictionary of EDs with ED_IDs being the keys, and their Place objects being the values
+    """
+
     whole_population = []
     for _, place in places.items():
         whole_population.extend(place.population)
@@ -77,7 +25,6 @@ def change_peoples_economic_statuses_v3(places: dict[str, Place]):
                                             whole_population))
 
     age_ranges = []
-    # for (age_range, _, _) in economic_status_by_age_sex_and_education_without_students.keys():
     for (age_range, _, _, _) in economic_status_by_age_sex_education_and_citizenship_without_students.keys():
         if age_range not in age_ranges:
             age_ranges.append(age_range)
@@ -112,7 +59,6 @@ def change_peoples_economic_statuses_v3(places: dict[str, Place]):
                                                desc="Changing Economic Statuses for All Brackets of People"):
         num_people_in_bracket = len(people_in_bracket)
 
-        # num_brackets_not_in_it = 0
         if bracket_key in economic_status_by_age_sex_education_and_citizenship_without_students:
             economic_status_proportions = economic_status_by_age_sex_education_and_citizenship_without_students[bracket_key]
 
@@ -147,6 +93,8 @@ def change_peoples_economic_statuses_v3(places: dict[str, Place]):
 
 
 if __name__ == '__main__':
+    # Bare minimum population setup and then test of employment module
+
     start_year = 2022
     # static_generation_approach = "ga_renamed"
     static_generation_approach = "ipf_no_zero_cells_less_iter"

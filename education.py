@@ -17,6 +17,14 @@ broad_educations = [2, 5, 8]
 
 
 def education_loop(places: dict[str, Place], current_year: int):
+    """
+    This function calls each of the operating functions in the education module in the desired order and modifies the
+    population(s) in-place
+
+    :param places: A dictionary of EDs with ED_IDs being the keys, and their Place objects being the values
+    :param current_year: The current year of the simulation
+    """
+
     whole_population = []
     for _, place in places.items():
         whole_population.extend(place.population)
@@ -51,8 +59,15 @@ def education_loop(places: dict[str, Place], current_year: int):
     educate_younger_adults_more_simply(younger_adults=younger_adults, current_year=current_year)
 
 
-# Input: all students
 def estimate_level_of_education_for_students(students: [Individual], current_year: int):
+    """
+    This is a helper function which estimates (based on age) the level of education of students who have an invalid
+    (or nonexistent) education for whatever reason
+
+    :param students: List of Individuals with an economic status of 'S'
+    :param current_year: The current year of the simulation
+    """
+
     print("- Getting Education for those under 18")
     children = list(filter(lambda student: student.age < 18, students))
     get_graduation_date_for_those_already_in_school(children, current_year=current_year)
@@ -67,8 +82,13 @@ def estimate_level_of_education_for_students(students: [Individual], current_yea
 
 
 def highest_parents_highest_level_of_education(parents: [Individual]):
-    # Return number for the minute (might need to change this to string)
-    # Also returning parent's education at the time of birth, but this can be updated
+    """
+    Calculates the highest level of education achieved by either parent
+
+    :param parents: A list of Individuals who have been assigned as a parent to another Individual
+    :return: The highest level of education achieved by either parent
+    """
+
     parents_educations = []
     for parent in parents:
         if parent.education not in ["NA", "NS"]:
@@ -81,6 +101,16 @@ def highest_parents_highest_level_of_education(parents: [Individual]):
 
 def predict_newborns_highest_level_of_education(baby: Individual,
                                                 years_broad_education_to_specific=broad_educations_to_specific_education_proportions):
+    """
+    Predicts a newborn's highest level of education they will attain in their life, based on their parents' highest
+    level of education achieved and that statistic's historical data
+
+    :param baby: The newborn Individual
+    :param years_broad_education_to_specific: A dictionary specifying the proportion of individuals within each level of
+     education at the primary, secondary and tertiary levels for the year
+    :return: The newborn's predicted highest level of education to be attained
+    """
+
     parents_highest = highest_parents_highest_level_of_education(baby.parents)
 
     if parents_highest == "None valid":
@@ -105,8 +135,15 @@ def predict_newborns_highest_level_of_education(baby: Individual,
     return specific_education_from_broad_education
 
 
-# Input: all people with an education
 def get_years_broad_educations_to_specific_education_proportions(population_with_valid_education: [Individual]):
+    """
+    Calculates the proportion of individuals within each level of education at the primary, secondary and tertiary
+    levels for the current year
+
+    :param population_with_valid_education: All Individuals with a valid education characteristic
+    :return: A dictionary with the proportions within each education level
+    """
+
     years_broad_educations_to_specific_education_counts = {2: {1: 0, 2: 0},
                                                            5: {3: 0, 4: 0, 5: 0},
                                                            8: {6: 0, 7: 0, 8: 0}}
@@ -133,6 +170,14 @@ def get_years_broad_educations_to_specific_education_proportions(population_with
 # Note: not deciding dropouts here, just moving graduates along
 # Input: list of students
 def graduate_students(students: [Individual], current_year: int):
+    """
+    Finds students who should be graduating and decides their destination (further education, working, unemployment,
+    etc) based on the level of education they're graduating from
+
+    :param students: A list of Individuals with an economic status of 'S'
+    :param current_year: The current year of the simulation
+    """
+
     to_graduate = list(filter(lambda student: (hasattr(student, 'graduation_date')) and (student.graduation_date == current_year), students))
     for grad in tqdm(to_graduate, desc="Graduates"):
         if grad.prospective_highest_level_of_education == "P":  # Primary School Kids continue
@@ -180,8 +225,15 @@ def graduate_students(students: [Individual], current_year: int):
 
 
 # Progression proportions from: https://data.cso.ie/table/NPO03
-# Input: list of students
 def dropout_students(students: [Individual], current_year: int):
+    """
+    Removes a proportion of the student population from education (based on historical data)
+
+    :param students: A list of Individuals with an economic status of 'S'
+    :param current_year: The current year of the simulation
+    :return: A list of students still in education
+    """
+
     to_dropout = []
 
     for education_level_numeric, dropout_rate in education_dropout_rates.items():
@@ -267,8 +319,14 @@ def dropout_students(students: [Individual], current_year: int):
     return remaining_students
 
 
-# Input whole population
 def add_children_to_school(total_population: [Individual], current_year: int):
+    """
+    Assigns children of the chosen school enrollment age an economic status of 'S' and allocates them to primary school
+
+    :param total_population: The entire population of Ireland
+    :param current_year: The current year of the simulation
+    """
+
     to_enroll = list(filter(lambda person: person.age==school_enrollment_age, total_population))
     for enroller in tqdm(to_enroll, desc=f"Enrolling {school_enrollment_age} year olds in school"):
         enroller.economic_status = "S"
@@ -276,8 +334,14 @@ def add_children_to_school(total_population: [Individual], current_year: int):
         enroller.prospective_highest_level_of_education = "P"
 
 
-# Input: students < 18
 def get_graduation_date_for_those_already_in_school(school_goers_of_relevant_age: [Individual], current_year):
+    """
+    Assigns a graduation data to children who do not have one based on their age
+
+    :param school_goers_of_relevant_age: Students with an age <18
+    :param current_year: The current year of the simulation
+    """
+
     # for student in tqdm(school_goers_of_relevant_age, desc="School goers graduation date"):
     for student in school_goers_of_relevant_age:
         if not hasattr(student, 'graduation_date'):
@@ -297,7 +361,18 @@ def get_graduation_date_for_those_already_in_school(school_goers_of_relevant_age
                 student.prospective_highest_level_of_education = "US"
 
 
-def finish_level_of_education_with_optional_continuance(grad: Individual, current_year: int, progression_weights: list, is_dropout=False):
+def finish_level_of_education_with_optional_continuance(grad: Individual, current_year: int, progression_weights: list,
+                                                        is_dropout=False):
+    """
+    This function assigns the future economic status, and cleans up other characteristics for an Individual who is
+    leaving their current level of education
+
+    :param grad: The Individual leaving their current level of education
+    :param current_year: The current year of the simulation
+    :param progression_weights: The Individual's probability of moving to each of the possible next steps
+    :param is_dropout: A boolean which indicates whether the Individual is dropping out (or graduating)
+    """
+
     next_steps = ["Continue Education", "W", "UNE", "UTWSD", "LAHF", "OTH"]
 
     # Award level of education if higher than current
@@ -327,12 +402,18 @@ def finish_level_of_education_with_optional_continuance(grad: Individual, curren
         grad.economic_status = next_step
 
 
-# Input: list of students >=18 and <25
 def assign_education_to_young_adults(young_adult_students: [Individual], year: int):
+    """
+    Estimates the level of education (NFQ levels 5-10) for young adult students
+
+    :param young_adult_students: A list of students with ages >=18 and <25
+    :param year: The current year of the simulation
+    """
+
     total_proportion_of_students = plc_proportion + higher_cert_proportion + degree_proportion
     plc_proportion_of_students = plc_proportion / total_proportion_of_students
     hc_proportion_of_students = higher_cert_proportion / total_proportion_of_students
-    college_proportion_of_students = degree_proportion / total_proportion_of_students
+    # college_proportion_of_students = degree_proportion / total_proportion_of_students
 
     num_young_adult_students = len(young_adult_students)
 
@@ -375,6 +456,14 @@ def assign_education_to_young_adults(young_adult_students: [Individual], year: i
 
 # Input: list of students >=25
 def assign_education_to_older_adults(older_adult_students: [Individual], year: int):
+    """
+    Estimates the prospective level of education (NFQ levels 5-10) for adult students over the age of 24 based on the
+    rate of attainment of qulifications from the general adult population
+
+    :param older_adult_students: A list of students with ages >=25
+    :param year: The current year of the simulation
+    """
+
     # Using educations of adults in age group
     for older in older_adult_students:
         older.education = random.choices(list(older_adult_educations_2022.keys()),
@@ -383,13 +472,22 @@ def assign_education_to_older_adults(older_adult_students: [Individual], year: i
         to_take = decide_adults_course_to_undertake(education_to_number[older.education])
         older.prospective_highest_level_of_education = to_take
 
-        # Randomly assign them some length along their college journey
+        # Randomly assign them some length along their education journey
         older.graduation_date = random.choice(range(year, year + education_durations[
             education_to_number[older.prospective_highest_level_of_education]] + 1))
 
 
 # Adult data from: https://data.cso.ie/table/AES65
 def decide_adults_course_to_undertake(current_level_of_education: int, education_to_be_achieved_in_lifetime=None):
+    """
+    Decides which level of education an adult learner will be enrolled into (based on their current level of education)
+
+    :param current_level_of_education: The adults current level of education (as an integer)
+    :param education_to_be_achieved_in_lifetime: The highest education level which the adult was previously predicted
+        to attain
+    :return: The level of education the adult will be assigned to study for
+    """
+
     if current_level_of_education in [0, 1, 2]:  # NF, P, LS
         # Move to next level of education
         return list(education_to_number.keys())[list(education_to_number.values()).index(current_level_of_education + 1)]
@@ -435,6 +533,13 @@ def decide_adults_course_to_undertake(current_level_of_education: int, education
 
 
 def add_adult_back_to_education_system(person: Individual, year: int):
+    """
+    Assigns the extra education-based characteristics to an adult that is becoming a student
+
+    :param person: The Individual who is becoming a student
+    :param year: The current year of the simulation
+    """
+
     persons_education_to_number = education_to_number[person.education]
 
     person.economic_status = "S"
@@ -451,8 +556,15 @@ def add_adult_back_to_education_system(person: Individual, year: int):
     person.graduation_date = year + duration_of_said_education
 
 
-# Input: population between 18 and 24 (inclusive)
 def educate_younger_adults_more_simply(younger_adults: [Individual], current_year: int):
+    """
+    Decides which young adults will be added back to formal education in the year, based on their current level of
+    education and the education they have been predicted to attain in their lifetime
+
+    :param younger_adults: The population aged between 18 and 24 (inclusive)
+    :param current_year: The current year of the simulation
+    """
+
     num_who_should_be_in_formal_education = round(proportion_of_younger_adults_that_should_be_students
                                                   * len(younger_adults))
 
@@ -494,14 +606,20 @@ def educate_younger_adults_more_simply(younger_adults: [Individual], current_yea
             add_adult_back_to_education_system(person, year=current_year)
 
 
-# Input: whole population
 def educate_adults_more_simply(places: dict[str, Place], current_year: int):
+    """
+    Decides which adults will be returned to formal education based on their current education, predicted highest level
+    of education to be achieved in their lifetime, and the regional adult student proportions
+
+    :param places: A dictionary of EDs with ED_IDs being the keys, and their Place objects being the values
+    :param current_year: The current year of the simulation
+    """
+
     for region, constituent_counties in tqdm(regions_counties.items(), desc=f"Adult Education per region"):
         regions_whole_pop = []
         for county in constituent_counties:
             for ed_id in counties_ed_ids_stripped_no_repeats[county]:
-                if ed_id in places:  # TODO: Remove this for full simulations
-                    regions_whole_pop.extend(places[ed_id].population)
+                regions_whole_pop.extend(places[ed_id].population)
 
         region_age_eligible_population = list(filter(lambda person: 25 <= person.age <= 69, regions_whole_pop))
         for sex in ["M", "F"]:
@@ -566,8 +684,14 @@ def educate_adults_more_simply(places: dict[str, Place], current_year: int):
 
 # Input: Everyone except students and children
 def sort_out_ns_education(non_student_adults: [Individual]):
+    """
+    This is a helper function to assign valid educations to Individuals who were assigned a value of 'Not Stated' or
+    'Not Applicable'
+
+    :param non_student_adults: Adult Individuals who do not have an economic status of 'S' (student)
+    """
+
     print("- Sorting out people with NS or NA (and not students) education\n")
-    # Sort out people with "NS" as education
     people_with_invalid_education = [person for person in non_student_adults if (person.education == "NS")
                                      or ((person.education == "NA")
                                          and (person.economic_status != "S")
@@ -622,78 +746,7 @@ def sort_out_ns_education(non_student_adults: [Individual]):
 
 
 if __name__ == '__main__':
-    # current_level_of_education = [i for i in range(1, 9)]
-    # for i in range(0,9):
-    #     print(i, decide_adults_course_to_undertake(current_level_of_education=i, education_to_be_achieved_in_lifetime=8))
-
-    # start_year = 2022
-    # static_generation_approach = "ga_renamed"
-    #
-    # population_folder = f"./populations/{static_generation_approach}/"
-    # areas_of_interest = [f.split(".")[0] for f in os.listdir(population_folder)]
-    # # areas_of_interest = random.sample(areas_of_interest, k=750)
-    #
-    # places = {}
-    # for area in tqdm(areas_of_interest, desc="Population Initialisation"):
-    #     # areas_county = ed_id_to_county[int(area)]
-    #     for county, constituent_eds_ids in counties_ed_ids_stripped_no_repeats.items():
-    #         if area in constituent_eds_ids:
-    #             areas_county = county
-    #             break
-    #
-    #     for higher_region, constituent_counties in regions_counties.items():
-    #         if areas_county in constituent_counties:
-    #             areas_region = higher_region
-    #             break
-    #
-    #     places[area] = Place(ed_id=area, county=areas_county, region=areas_region, static_generation_approach=static_generation_approach, start_year=start_year)
-    #
-    # ireland_initial_population = []
-    # for _, place in places.items():
-    #     ireland_initial_population.extend(place.population)
-    #
-    # non_student_adults = [person for person in ireland_initial_population
-    #                       if (person.age >= 15) and (person.economic_status != "S")]
-    # sort_out_ns_education(non_student_adults)
-    #
-    # # Set up education
-    # students = [person for person in ireland_initial_population if (person.economic_status=="S")]
-    # estimate_level_of_education_for_students(students, start_year)
-    #
-    # # region_age_eligible_population = list(filter(lambda person: 25 <= person.age <= 69, ireland_initial_population))
-    # # possible_adult_learners = [person for person in ireland_initial_population if (25 <= person.age <= 69)]
-    # # for learner in possible_adult_learners:
-    # #     if random.uniform(0, 1) < 0.01:
-    # #         learner.education_to_be_achieved_in_lifetime = \
-    # #             random.randint(education_to_number[learner.education], 8)
-    # #
-    # # educate_adults_more_simply(places, start_year)
-    #
-    # for student in students:
-    #     if random.uniform(0, 1) < 0.02:
-    #         student.education_to_be_achieved_in_lifetime = education_to_number[
-    #                                                            student.prospective_highest_level_of_education]-1
-    #     else:
-    #         student.education_to_be_achieved_in_lifetime = random.randint(
-    #             education_to_number[student.prospective_highest_level_of_education], 8)
-    #
-    # dropout_students(students, start_year)
-
-    # current_year = 2023
-    #
-    # for _ in range(20):
-    #     # Baby testing
-    #     newborn = Individual(age=0, sex="F", marital_status="SGL",education="NA",economic_status="NA", ed="68013", current_year=current_year)
-    #     newborn.parents = [Individual(age=42, sex="F", marital_status="MAR",education="D",economic_status="W", ed="68013", current_year=current_year),
-    #                        Individual(age=42, sex="M", marital_status="MAR",education="NF",economic_status="W", ed="68013", current_year=current_year)]
-    #
-    #     print(predict_newborns_highest_level_of_education(newborn))
-
-    # Progression with defined highest level of education to achieve in lifetime
-    # for _ in range(50):
-    #     print(decide_adults_course_to_undertake(current_level_of_education=3, education_to_be_achieved_in_lifetime=8))
-
-    # Graduation
+    # Graduation testing
     this_year = 2023
     should_graduate = []
     for _ in range(100):

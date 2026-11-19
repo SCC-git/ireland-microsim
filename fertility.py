@@ -1,7 +1,5 @@
 import os
 import random
-
-# import education
 from constants import counties_ed_ids_stripped_no_repeats, regions_counties, \
     mothers_age_and_within_marriage_births_proportions
 from individual import Individual
@@ -10,6 +8,21 @@ from tqdm import tqdm
 
 
 def regional_births(places: dict[str, place_v2.Place], year: int, f2_fertility_rates: dict[str, dict[str, float]]):
+    """
+    This function:
+    - Decides which Individuals will have children in this year of the simulation based on their age
+      group, region, and marital status
+    - Creates newborns (age=0, random sex, single marital status, Irish citizenship and an economic status and education
+      of 'NA')
+    - Assigns the child's parent(s) as their parents and the parents' child as their child
+    - Adds the newborn to the mother's ED's population
+
+    :param places: A dictionary of EDs with ED_IDs being the keys, and their Place objects being the values
+    :param year:The current year of the simulation
+    :param f2_fertility_rates: Per-region, per-age group fertility rates
+    :return: a dictionary of the number of births in each ED
+    """
+
     num_births_per_ed = {}
 
     for region, constituent_counties in regions_counties.items():
@@ -17,8 +30,7 @@ def regional_births(places: dict[str, place_v2.Place], year: int, f2_fertility_r
         regions_pop = []
         for county in constituent_counties:
             for ed_id in counties_ed_ids_stripped_no_repeats[county]:
-                if ed_id in places:  # TODO: Remove this for full simulations
-                    regions_pop.extend(places[ed_id].population)
+                regions_pop.extend(places[ed_id].population)
 
         women_in_age_bands = {
             "15 - 19 years": 0,
@@ -30,7 +42,6 @@ def regional_births(places: dict[str, place_v2.Place], year: int, f2_fertility_r
             "45 - 49 years": 0
         }
 
-        # Easier to do it like this
         for person in regions_pop:
             if person.sex == "F":
                 if 15 <= person.age <= 19:
@@ -61,7 +72,7 @@ def regional_births(places: dict[str, place_v2.Place], year: int, f2_fertility_r
                         lower_age <= potential_mother.age <= upper_age),
                        regions_pop))
 
-            # TODO: Make this less ugly
+            # TODO: Refactor
             if lower_age >= 25:
                 # Married = true, not married = False
                 women_in_age_bracket_within_marriage = {True: [], False: []}
@@ -109,9 +120,6 @@ def regional_births(places: dict[str, place_v2.Place], year: int, f2_fertility_r
                                 parents.append(mother.spouse)
 
                             # Add a baby
-                            # newborn = Individual(age=0, sex=random.choice(["F", "M"]), marital_status="SGL", economic_status="NA", education="NA",
-                            #                      parents=parents, ed=mother.ed, born_in_simulation=True, current_year=year)
-
                             newborn = Individual(age=0, sex=random.choice(["F", "M"]), marital_status="SGL", citizenship="IE", economic_status="NA", education="NA",
                                                  parents=parents, ed=mother.ed, born_in_simulation=True, current_year=year)
 

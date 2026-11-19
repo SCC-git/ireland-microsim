@@ -17,6 +17,16 @@ old_men_2016 = [0.21022628372497823, 0.17193211488250654, 0.1376414273281114, 0.
 def translate_characteristics_from_cso_code_to_readable_individual(person: [str],
                                                                    ed_id,
                                                                    start_year: int = 2022):
+    """
+    Created Individual objects from a list of strings defining an Individual with some pre-processing from the CSO's
+    format to ours
+
+    :param person: The person, defined as a list of strings
+    :param ed_id: The ED_ID of the ED the person will be added to initially
+    :param start_year: The start year of the simulation
+    :return: an Individual object representing the person
+    """
+
     age_and_sex = person[0]
     sex = age_and_sex[-1]
 
@@ -66,6 +76,15 @@ def translate_characteristics_from_cso_code_to_readable_individual(person: [str]
 
 
 def create_eds_individuals_from_population(population_folder: str, ed_id: str, start_year: int = 2022):
+    """
+    Reads in a previously generated pickle file representing and ED's population and creates a list of Individuals who
+    may have relationships with one another
+
+    :param population_folder: Where the pickle file is stored
+    :param ed_id:
+    :param start_year: The start year of the simulation
+    :return: the ED's population as a list of Individuals
+    """
     file = population_folder + ed_id + ".pkl"
 
     eds_row = ed_names_dataset[ed_names_dataset["ED_ID"] == ed_id]
@@ -114,12 +133,12 @@ def create_eds_individuals_from_population(population_folder: str, ed_id: str, s
                                                                                      marry_to_outsiders=False,
                                                                                      verbose=False)
 
-    # sort_out_ns_citizenship(population_as_individuals)
-
     return population_as_individuals
 
 
 if __name__ == '__main__':
+    # Test
+    
     # folder = "./populations/ipf/"
     # folder = "./populations/new_ipf/"
     folder = "./populations/ipf_no_zero_cells_less_iter/"

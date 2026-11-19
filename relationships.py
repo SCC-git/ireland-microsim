@@ -9,6 +9,12 @@ from tqdm import tqdm
 
 
 def annual_relationship_loop(places):
+    """
+    Calls the separation function, and then calls the functions to match up unmarried people on a region-by-region basis
+
+    :param places: A dictionary of EDs with ED_IDs being the keys, and their Place objects being the values
+    """
+
     whole_population = []
     for _, place in places.items():
         whole_population.extend(place.population)
@@ -45,6 +51,13 @@ def annual_relationship_loop(places):
 
 
 def separate_marriages_v2(married_people: [Individual]):
+    """
+    Calculates the number of divorces and separations to happen among the married population and separates that amount
+    of couples
+
+    :param married_people: A list of Individuals with the marital status 'MAR'
+    """
+
     num_divorces = round(divorce_rate * len(married_people))
     if not num_divorces % 2 == 0:
         num_divorces -= 1  # Must be even
@@ -71,8 +84,15 @@ def separate_marriages_v2(married_people: [Individual]):
     pbar.close()
 
 
-# Input: region's population
 def marry_unmarried_people_in_region(unmarried_adults_in_region: [Individual], num_people_to_get_married: int):
+    """
+    Decides which unmarried Individuals are to be married this year and then calls a function that matches Individuals
+    into couples (both same- and opposite-sex)
+
+    :param unmarried_adults_in_region: Individuals with a marital status other than 'MAR' in a region
+    :param num_people_to_get_married: The number of people to get married in the region (based on marriage rate)
+    :return:
+    """
     same_sex_marriage_rate = 0.03  # 3 percent of marriages are same sex
 
     people_to_be_married_to_same_sex = {"M": [], "F": []}
@@ -113,6 +133,14 @@ def marry_unmarried_people_in_region(unmarried_adults_in_region: [Individual], n
 
 
 def match_person_to_partner(person: Individual, possible_partners: [Individual]):
+    """
+    Performs a weighted random choice a partner for an Individual from a list of potential partners based on their
+    similarity in terms of age and education level
+
+    :param person:
+    :param possible_partners:
+    :return:
+    """
     dissimilarities = [(rank_dissimilarity_2(person, partner), partner) for partner in possible_partners]
 
     partners_sorted_by_dissimilarity = sorted(dissimilarities, key=lambda x: x[0], reverse=True)
@@ -129,7 +157,7 @@ def match_person_to_partner(person: Individual, possible_partners: [Individual])
     person.spouse = partner
     partner.spouse = person
 
-    # Make each person married (even if they already are)
+    # Make each person married
     person.marital_status = "MAR"
     partner.marital_status = "MAR"
 
@@ -137,6 +165,13 @@ def match_person_to_partner(person: Individual, possible_partners: [Individual])
 
 
 def rank_dissimilarity_2(person_1: Individual, person_2: Individual):
+    """
+    Calculates a numerical measure of dissimilarity between two individuals based on their ages and educations
+
+    :param person_1:
+    :param person_2:
+    :return: The Manhattan distance between the Individuals
+    """
     if (person_1.education in ["NS", "NA"]) or (person_2.education in ["NS", "NA"]):
         return abs(person_1.age - person_2.age)
     else:
@@ -144,11 +179,20 @@ def rank_dissimilarity_2(person_1: Individual, person_2: Individual):
 
 
 def rank_dissimilarity(person_1_age_and_education: (), person_2_age_and_education: ()):
+    """
+    Calculates a numerical measure of dissimilarity between two individuals based on their ages and educations
+
+    :param person_1_age_and_education: As a tuple
+    :param person_2_age_and_education: As a tuple
+    :return: The Manhattan distance between the Individuals
+    """
+
     # No education
     if (not person_1_age_and_education[1]) or (not person_2_age_and_education[1]):
         return abs(person_1_age_and_education[0] - person_2_age_and_education[0])
     else:
-        return abs(person_1_age_and_education[0] - person_2_age_and_education[0]) + abs(person_1_age_and_education[1] - person_2_age_and_education[1])
+        return abs(person_1_age_and_education[0] - person_2_age_and_education[0]) + abs(person_1_age_and_education[1] -
+                                                                                        person_2_age_and_education[1])
 
 
 # Input: Married people
@@ -156,6 +200,16 @@ def rank_dissimilarity(person_1_age_and_education: (), person_2_age_and_educatio
 def match_couples_to_be_married_in_region_no_specified_sexualities(people_to_marry: [Individual],
                                                                    marry_to_outsiders=True,
                                                                    verbose=True):
+    """
+    Matches individuals who have previously been assigned a marital status of 'MAR', e.g. from the static
+    microsimulation process, but who do not have a spouse.
+
+    :param people_to_marry: List of Individuals to be married
+    :param marry_to_outsiders: A Boolean which decides whether 'leftover' individuals are assigned a spouse of
+    'Outsider' or not
+    :param verbose:
+    """
+
     # https://data.cso.ie/table/VSB02 & https://data.cso.ie/table/VSA44
     homosexual_proportion = 0.03
 
@@ -259,6 +313,12 @@ def match_couples_to_be_married_in_region_no_specified_sexualities(people_to_mar
 # Input: Lists of spouses separated by sexuality
 def match_couples_to_be_married_in_region_with_specified_sexualities(same_sex_spouses: dict[str, list],
                                                                      opposite_sex_spouses: dict[str, list]):
+    """
+    Matches individuals who will be assigned a marital status of 'MAR' and assigns them a 'spouse' characteristic
+
+    :param same_sex_spouses: A dictionary of both males and females to be married to the same sex
+    :param opposite_sex_spouses: A dictionary of both males and females to be married to the opposite sex
+    """
     homosexual_married_females = same_sex_spouses["F"]
     heterosexual_married_females = opposite_sex_spouses["F"]
 
@@ -326,7 +386,7 @@ def match_couples_to_be_married_in_region_with_specified_sexualities(same_sex_sp
         person.spouse = partner
         partner.spouse = person
 
-        # Make each person married (even if they already are)
+        # Make each person married
         person.marital_status = "MAR"
         partner.marital_status = "MAR"
 

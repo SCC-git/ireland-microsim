@@ -108,6 +108,13 @@ saps_employment_statuses = {
 
 
 def employment_status(row):
+    """
+    Pre-processes employment statuses from numeric to string format
+
+    :param row: the row of the Pandas dataset
+    :return: formatted employment status
+    """
+
     if isnan(row["MAINSTAT"]) or (row["MAINSTAT"] == ""):
         return "T8_1_OTH" + sexes[row["SEX"]]
     elif row["MAINSTAT"] == 9:
@@ -117,6 +124,13 @@ def employment_status(row):
 
 
 def trimmed_employment_status(row):
+    """
+    Trims sex if it exists in employment status string
+
+    :param row: the row of the Pandas dataset
+    :return: the trimmed string
+    """
+
     possibly_gendered_status = employment_status(row).split("T8_1_")[1]
     if possibly_gendered_status[-1] in ["M", "F"]:
         return possibly_gendered_status[:-1]
@@ -125,6 +139,13 @@ def trimmed_employment_status(row):
 
 
 def highest_level_of_education(row):
+    """
+    Pre-processes education from numeric to string format
+
+    :param row: the row of the Pandas dataset
+    :return: formatted education
+    """
+
     childrens_ages = ["T1_1AGE0_4M",
                       "T1_1AGE5_9M",
                       "T1_1AGE10_14M",
@@ -142,6 +163,13 @@ def highest_level_of_education(row):
 
 
 def trimmed_education(row):
+    """
+    Trims sex if it exists in education string
+
+    :param row: the row of the Pandas dataset
+    :return: the trimmed string
+    """
+
     possibly_gendered_education = highest_level_of_education(row).split("T10_4_")[1]
     if possibly_gendered_education[-1] in ["M", "F"]:
         return possibly_gendered_education[:-1]
