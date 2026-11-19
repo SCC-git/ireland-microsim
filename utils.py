@@ -113,7 +113,7 @@ def create_eds_individuals_from_population(population_folder: str, ed_id: str, s
                                                   population_as_individuals
                                                   [idx_tracker:idx_tracker + people_in_house_count]))
 
-            # TODO: Find a better way of doing this than random people in the same house
+            # TODO: Improve
             while len(married_people_in_house) > 1:
                 first_person_to_marry = married_people_in_house.pop(random.randrange(len(married_people_in_house)))
                 second_person_to_marry = married_people_in_house.pop(random.randrange(len(married_people_in_house)))
